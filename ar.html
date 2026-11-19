@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Madinah – Give where it’s needed most | مدينة</title>
+<meta name="description" content="تبرّع لجمعيات إسلامية موثّقة بدون رسوم منصّة. زكاة بمراجعة العلماء، وإيصالات فورية، وإثبات للأثر.">
+<meta property="og:title" content="Madinah – Give where it’s needed most | مدينة">
+<meta property="og:description" content="تبرّع لجمعيات إسلامية موثّقة بدون رسوم منصّة. زكاة بمراجعة العلماء، وإيصالات فورية، وإثبات للأثر.">
+<meta property="og:image" content="madinah-wordmark.png">
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700;800&amp;family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#037A72}a:hover{color:#025A54}
+*{box-sizing:border-box}
+@property --n{syntax:'<integer>';initial-value:0;inherits:false}
+@keyframes mdDraw{to{stroke-dashoffset:0}}
+@keyframes mdFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes mdSpin{to{transform:rotate(360deg)}}
+@keyframes mdMarquee{to{transform:translateX(-50%)}}
+@keyframes mdRise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes mdGrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes mdPulse{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(35,188,246,.45)}50%{transform:scale(1.08);box-shadow:0 0 0 10px rgba(35,188,246,0)}}
+@keyframes mdNotif{0%{opacity:0;transform:translateY(18px) scale(.97)}12%,88%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-8px)}}
+@keyframes mdShimmer{to{background-position:200% 0}}
+@keyframes mdCount{from{--n:0}}
+.md-draw path{stroke-dasharray:1600;stroke-dashoffset:1600;animation:mdDraw 3.4s cubic-bezier(.3,.6,.2,1) forwards}
+.md-draw path:nth-child(2){animation-delay:.15s}.md-draw path:nth-child(3){animation-delay:.3s}.md-draw path:nth-child(4){animation-delay:.45s}.md-draw path:nth-child(5){animation-delay:.6s}.md-draw path:nth-child(6){animation-delay:.75s}.md-draw path:nth-child(7){animation-delay:.9s}.md-draw path:nth-child(8){animation-delay:1.05s}.md-draw path:nth-child(9){animation-delay:1.2s}.md-draw path:nth-child(10){animation-delay:1.35s}
+.md-underline path{stroke-dasharray:600;stroke-dashoffset:600;animation:mdDraw 1.4s .9s cubic-bezier(.3,.6,.2,1) forwards}
+.md-float{animation:mdFloat 7s ease-in-out infinite}
+.md-spin{animation:mdSpin 140s linear infinite;transform-origin:50% 50%}
+.md-marquee{animation:mdMarquee 38s linear infinite}
+.md-rise{animation:mdRise .9s cubic-bezier(.2,.7,.2,1) both}
+.md-d1{animation-delay:.12s}.md-d2{animation-delay:.24s}.md-d3{animation-delay:.36s}.md-d4{animation-delay:.48s}
+.md-lift{transition:transform .28s cubic-bezier(.2,.7,.2,1),box-shadow .28s}
+.md-lift:hover{transform:translateY(-6px);box-shadow:0 22px 48px -22px rgba(11,20,36,.28)}
+.md-bar{transform-origin:right center;animation:mdGrow 1.8s .4s cubic-bezier(.2,.7,.2,1) both}
+.md-pulse{animation:mdPulse 2.6s ease-in-out infinite}
+.md-n1{animation:mdNotif 9s .4s ease-in-out infinite both}.md-n2{animation:mdNotif 9s 1.4s ease-in-out infinite both}.md-n3{animation:mdNotif 9s 2.4s ease-in-out infinite both}
+.md-shine{background-image:linear-gradient(90deg,#7077FB,#23BCF6,#07A8A3,#01966F,#23BCF6,#7077FB);background-size:200% 100%;animation:mdShimmer 8s linear infinite}
+.md-count{animation:mdCount 2.4s .3s cubic-bezier(.2,.7,.2,1) both;counter-reset:n var(--n)}
+.md-count::before{content:counter(n)}
+.md-reveal{animation:mdRise .9s cubic-bezier(.2,.7,.2,1) both}
+.md-reveal:nth-child(2){animation-delay:.08s}.md-reveal:nth-child(3){animation-delay:.16s}.md-reveal:nth-child(4){animation-delay:.24s}.md-reveal:nth-child(5){animation-delay:.32s}.md-reveal:nth-child(6){animation-delay:.4s}.md-reveal:nth-child(n+7){animation-delay:.48s}
+.md-btn{transition:transform .2s,box-shadow .2s,background-color .2s}
+.md-btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px -12px rgba(11,20,36,.45)}
+.md-btn:focus-visible,.md-chip:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #23BCF6;outline-offset:2px}
+.md-chip{transition:background-color .2s,color .2s,border-color .2s,transform .2s}
+.md-chip:hover{transform:translateY(-1px)}
+.md-off *,.md-off *::before{animation:none!important;transition:none!important}
+.md-off .md-draw path,.md-off .md-underline path{stroke-dashoffset:0}
+@keyframes mdSkyDraw{to{stroke-dashoffset:0}}
+@keyframes mdFade{from{opacity:0}to{opacity:1}}
+@keyframes mdGlowPulse{0%,100%{opacity:.65}50%{opacity:1}}
+@keyframes mdMoon{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-8px) rotate(0deg)}}
+.md-sky g path{stroke-dasharray:1;stroke-dashoffset:1;animation:mdSkyDraw 2.6s cubic-bezier(.3,.6,.2,1) forwards}
+.md-sky g path:nth-child(1){animation-delay:.2s}.md-sky g path:nth-child(2){animation-delay:.5s;animation-duration:3.2s}.md-sky g path:nth-child(3){animation-delay:.7s}.md-sky g path:nth-child(n+4){animation-delay:.9s}.md-sky g path:nth-child(n+10){animation-delay:1.3s;animation-duration:3s}.md-sky g path:nth-child(n+12){animation-delay:1.7s}
+.md-sky .md-glow{opacity:0;animation:mdFade 1.6s 2.4s ease forwards,mdGlowPulse 6s 4s ease-in-out infinite}
+.md-sky .md-cres{opacity:0;animation:mdFade 1s 3.4s ease forwards}
+.md-moon{animation:mdMoon 9s ease-in-out infinite}.md-moon path{stroke-dasharray:1;stroke-dashoffset:1;animation:mdSkyDraw 2s 1s ease forwards}
+.md-off .md-sky g path,.md-off .md-moon path{stroke-dashoffset:0}.md-off .md-sky .md-glow,.md-off .md-sky .md-cres{opacity:1}
+@media (prefers-reduced-motion: reduce){.md-sky g path,.md-moon path{stroke-dashoffset:0!important}.md-sky .md-glow,.md-sky .md-cres{opacity:1!important}*,*::before{animation:none!important;transition:none!important}.md-draw path,.md-underline path{stroke-dashoffset:0}}
+.md-ph img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}.md-lift:hover .md-ph img{transform:scale(1.05)}
+@keyframes mdKen{0%{transform:scale(1.14) translate(-2%,1%)}100%{transform:scale(1.02) translate(1%,-1%)}}
+@keyframes mdWipe{from{clip-path:inset(0 100% 0 0 round 26px)}to{clip-path:inset(0 0 0 0 round 26px)}}
+@keyframes mdToast{0%,4%{opacity:0;transform:translateY(10px) scale(.98)}8%,30%{opacity:1;transform:none}34%,100%{opacity:0;transform:translateY(-8px)}}
+@keyframes mdSheen{0%{transform:translateX(-120%) skewX(-18deg)}100%{transform:translateX(320%) skewX(-18deg)}}
+.md-hero-ph{animation:mdWipe 1.4s .45s cubic-bezier(.7,0,.2,1) both}
+.md-hero-ph img{animation:mdKen 22s ease-in-out infinite alternate;transform-origin:60% 40%}
+.md-hero-ph .md-sheen{animation:mdSheen 2.2s 1.6s cubic-bezier(.4,0,.2,1) both}
+.md-toast{opacity:0;animation:mdToast 12s ease-in-out infinite}
+.md-toast:nth-child(2){animation-delay:4s}.md-toast:nth-child(3){animation-delay:8s}
+.md-off .md-hero-ph,.md-off .md-hero-ph img,.md-off .md-sheen{animation:none}.md-off .md-toast{animation:none}.md-off .md-toast:first-child{opacity:1}
+@media (prefers-reduced-motion: reduce){.md-toast:first-child{opacity:1!important}}
+.md-mnav{display:none;position:static}.md-mnav summary{list-style:none;cursor:pointer}.md-mnav summary::-webkit-details-marker{display:none}.md-mnav[open] .md-mnav-ic1{display:none}.md-mnav:not([open]) .md-mnav-ic2{display:none}
+@media (max-width: 860px){.md-navlinks{display:none!important}.md-mnav{display:block}.md-hide-sm{display:none!important}.md-hero-in{padding-top:36px!important;padding-bottom:150px!important;gap:36px!important}.md-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}.md-stats>div{padding:18px!important}.md-stats>div>div:first-child{font-size:34px!important;letter-spacing: 0!important}.md-hero-ph{height:240px!important}.md-hero-fig{margin-top:56px!important}}
+
+svg{direction:ltr}input[type=email],input[type=tel],input[inputmode=numeric],input[autocomplete^=cc-],input[autoComplete^=cc-],input[autocomplete=postal-code]{direction:ltr;text-align:right}body,button,input,textarea,select{font-family:IBM Plex Sans Arabic,system-ui,sans-serif}h1,h2,h3{line-height:1.35!important}
+</style>
+</head>
+<body>
+<div id="app"><div class="" style="font-family: IBM Plex Sans Arabic, sans-serif; color: #0B1424; background: #FFFFFF; overflow: hidden">
+  <div style="background: #F6F9FA; border-bottom: 1px solid #E3EAEE">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; font-size: 13px; color: #3B4657">
+      <div style="display: flex; gap: 18px; flex-wrap: wrap; align-items: center">
+        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>0% رسوم منصّة</div>
+        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>زكاة بمراجعة العلماء</div>
+        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>ضمان العطاء</div>
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <label style="display: flex; gap: 6px; align-items: center; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">اللغة
+          <select value="ar" data-dc-change="h0" style="font-family: IBM Plex Sans Arabic, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
+            <option value="en">الإنجليزية</option>
+            <option value="ar">العربية</option>
+            <option value="tr">Türkçe</option>
+            <option value="fr">الفرنسية</option>
+            <option value="ur">اردو</option>
+          </select>
+        </label>
+        <label style="display: flex; gap: 6px; align-items: center; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">العملة
+          <select value="USD" data-dc-change="h1" style="font-family: IBM Plex Sans Arabic, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
+            <option value="USD">USD $</option>
+            <option value="CAD">CAD $</option>
+            <option value="GBP">GBP £</option>
+            <option value="EUR">EUR €</option>
+            <option value="TRY">TRY ₺</option>
+            <option value="AED">AED</option>
+            <option value="MYR">MYR</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+  <header style="position: relative; z-index: 20; border-bottom: 1px solid #EEF2F4; background: rgba(255,255,255,0.92)">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
+      <a href="ar.html" aria-label="الصفحة الرئيسية لمدينة" style="display: flex"><img src="madinah-wordmark.png" alt="مدينة" style="height: 34px; width: auto; display: block"></a>
+      <nav class="md-navlinks" aria-label="الرئيسية" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+        <a href="ar-discover.html" style="color: #0B1424; text-decoration: none">اكتشف</a>
+        <a href="ar-zakat.html" style="color: #0B1424; text-decoration: none">زكاة</a>
+        <a href="ar-charity.html" style="color: #0B1424; text-decoration: none">الجمعيات</a>
+        <a href="ar-learn.html" style="color: #0B1424; text-decoration: none">تعلّم</a>
+        <a href="ar-ramadan.html" style="color: #0B1424; text-decoration: none">رمضان</a>
+        <a href="ar-merch.html" style="color: #0B1424; text-decoration: none">المنتجات</a>
+      </nav>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <a data-lang-switch="" href="index.html" class="md-hide-sm" lang="en" style="font-size: 15px; font-weight: 600; color: #037A72; text-decoration: none; padding: 10px 12px; border-radius: 10px; border: 1.5px solid #CDEBEC">English</a><a href="ar-signin-donor.html" class="md-hide-sm" style="font-size: 15px; font-weight: 500; color: #0B1424; text-decoration: none; padding: 10px 12px">تسجيل الدخول</a>
+        <a href="#donate" class="md-btn" style="font-size: 15px; font-weight: 600; color: #FFFFFF; background: #0B1424; text-decoration: none; padding: 12px 20px; border-radius: 999px; min-height: 44px; display: flex; align-items: center">تبرّع</a>
+        <details class="md-mnav"><summary aria-label="القائمة" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #D5DEE3; display: flex; align-items: center; justify-content: center; background: #FFFFFF"><svg class="md-mnav-ic1" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="md-mnav-ic2" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary><nav aria-label="الجوال" style="position: absolute; right: 0; left: 0; top: 100%; background: #FFFFFF; border-bottom: 1px solid #E3EAEE; box-shadow: 0 30px 50px -30px rgba(11,20,36,0.35); padding: 8px 24px 20px; display: flex; flex-direction: column"><a href="ar-discover.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">اكتشف<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-zakat.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">زكاة<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-charity.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">الجمعيات<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-learn.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">تعلّم<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-ramadan.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">رمضان<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-merch.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">المنتجات<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-about.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">حول<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-faq.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">المساعدة والأسئلة الشائعة<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-signin-donor.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">تسجيل الدخول<span aria-hidden="true" style="color: #037A72">→</span></a></nav></details>
+      </div>
+    </div>
+  </header>
+  <section id="donate" style="position: relative; isolation: isolate; overflow: hidden">
+    <svg class="md-draw" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1">
+      <defs><linearGradient id="mdHeroG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".5" stop-color="#23BCF6"></stop><stop offset=".8" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient></defs>
+      <path d="M 520 780 C 760 600, 900 360, 1460 300" stroke="url(#mdHeroG)" stroke-width="1.3" fill="none" opacity=".35"></path>
+      <path d="M 545 780 C 785 610, 925 380, 1460 330" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".3"></path>
+      <path d="M 570 780 C 810 620, 950 400, 1460 360" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".26"></path>
+      <path d="M 595 780 C 835 630, 975 420, 1460 390" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".22"></path>
+      <path d="M 620 780 C 860 640, 1000 440, 1460 420" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".35"></path>
+      <path d="M 645 780 C 885 650, 1025 460, 1460 450" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".3"></path>
+      <path d="M -20 120 C 180 60, 300 200, 520 -20" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".35"></path>
+      <path d="M -20 150 C 200 90, 320 230, 560 -20" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".28"></path>
+      <path d="M -20 180 C 220 120, 340 260, 600 -20" stroke="url(#mdHeroG)" stroke-width="1" fill="none" opacity=".22"></path>
+    </svg>
+    <svg class="md-sky" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" style="position: absolute; right: 0; left: 0; bottom: 0; width: 100%; height: 300px; z-index: -1"><defs><linearGradient id="mdSkyG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".45" stop-color="#23BCF6"></stop><stop offset=".75" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient><radialGradient id="mdSkyGlow" cx="50%" cy="100%" r="60%"><stop offset="0" stop-color="#07A8A3" stop-opacity=".22"></stop><stop offset="1" stop-color="#07A8A3" stop-opacity="0"></stop></radialGradient></defs><ellipse class="md-glow" cx="720" cy="300" rx="320" ry="190" fill="url(#mdSkyGlow)"></ellipse><g fill="none" stroke="url(#mdSkyG)" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M 120 290 H 1320" stroke-width="1.4" opacity="0.8"></path><path pathLength="1" d="M 260 290 V 264 Q 276 244 292 264 V 290 M 300 290 V 264 Q 316 244 332 264 V 290 M 340 290 V 264 Q 356 244 372 264 V 290 M 380 290 V 264 Q 396 244 412 264 V 290 M 420 290 V 264 Q 436 244 452 264 V 290 M 460 290 V 264 Q 476 244 492 264 V 290 M 500 290 V 264 Q 516 244 532 264 V 290 M 540 290 V 264 Q 556 244 572 264 V 290 M 580 290 V 264 Q 596 244 612 264 V 290 M 860 290 V 264 Q 876 244 892 264 V 290 M 900 290 V 264 Q 916 244 932 264 V 290 M 940 290 V 264 Q 956 244 972 264 V 290 M 980 290 V 264 Q 996 244 1012 264 V 290 M 1020 290 V 264 Q 1036 244 1052 264 V 290 M 1060 290 V 264 Q 1076 244 1092 264 V 290 M 1100 290 V 264 Q 1116 244 1132 264 V 290 M 1140 290 V 264 Q 1156 244 1172 264 V 290" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 250 236 H 600 M 840 236 H 1190" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 332 290 V 110 M 348 290 V 110 M 326 190 H 354 V 182 H 326 Z M 326 140 H 354 V 132 H 326 Z M 332 110 H 348 M 332 110 L 340 70 L 348 110 M 340 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 461 290 V 80 M 479 290 V 80 M 455 160 H 485 V 152 H 455 Z M 455 110 H 485 V 102 H 455 Z M 461 80 H 479 M 461 80 L 470 40 L 479 80 M 470 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 591 290 V 104 M 609 290 V 104 M 585 184 H 615 V 176 H 585 Z M 585 134 H 615 V 126 H 585 Z M 591 104 H 609 M 591 104 L 600 64 L 609 104 M 600 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 831 290 V 104 M 849 290 V 104 M 825 184 H 855 V 176 H 825 Z M 825 134 H 855 V 126 H 825 Z M 831 104 H 849 M 831 104 L 840 64 L 849 104 M 840 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 961 290 V 80 M 979 290 V 80 M 955 160 H 985 V 152 H 955 Z M 955 110 H 985 V 102 H 955 Z M 961 80 H 979 M 961 80 L 970 40 L 979 80 M 970 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 1092 290 V 110 M 1108 290 V 110 M 1086 190 H 1114 V 182 H 1086 Z M 1086 140 H 1114 V 132 H 1086 Z M 1092 110 H 1108 M 1092 110 L 1100 70 L 1108 110 M 1100 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 501 236 V 210 M 569 236 V 210 M 501 210 C 501 169, 524 152, 535 150 C 545 152, 569 169, 569 210 M 535 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 871 236 V 210 M 939 236 V 210 M 871 210 C 871 169, 894 152, 905 150 C 915 152, 939 169, 939 210 M 905 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 652 290 V 194 H 788 V 290" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 640 194 H 800" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 658 194 C 646 130, 676 78, 720 64 C 764 78, 794 130, 782 194" stroke-width="2" opacity="1"></path><path pathLength="1" d="M 720 64 V 40" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 672 270 V 230 Q 680 218 688 230 V 270 M 700 270 V 230 Q 708 218 716 230 V 270 M 728 270 V 230 Q 736 218 744 230 V 270 M 756 270 V 230 Q 764 218 772 230 V 270" stroke-width="1.1" opacity="0.7"></path></g><path class="md-cres" d="M 727 22 A 9 9 0 1 1 727 38 A 7 7 0 1 0 727 22 Z" fill="#07A8A3"></path></svg>
+    <svg class="md-moon" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="position: absolute; left: 7%; top: 44px; z-index: -1"><path pathLength="1" d="M 40 8 A 24 24 0 1 0 56 44 A 19 19 0 1 1 40 8 Z" fill="none" stroke="url(#mdHeroG)" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+    <div class="md-hero-in" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 250px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 56px; align-items: center">
+      <div dir="rtl" lang="ar">
+        <div class="md-rise" style="display: inline-flex; gap: 8px; align-items: center; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72; background: #EAF6F7; border: 1px solid #CDEBEC; padding: 7px 12px; border-radius: 999px">
+          <div class="md-pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #07A8A3"></div>عطاء إسلامي موثوق · 0% رسوم منصّة
+        </div>
+        <h1 class="md-rise md-d1" style="margin: 22px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.04; letter-spacing: 0; text-wrap: balance">تبرّع حيث <span style="position: relative; display: inline-block">تشتدّ الحاجة.<svg class="md-underline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; right: 0; bottom: -10px; width: 100%; height: 16px"><path d="M 4 14 C 80 4, 200 4, 296 12" stroke="url(#mdHeroG)" stroke-width="5" fill="none" stroke-linecap="round"></path></svg></span></h1>
+        <p class="md-rise md-d2" style="margin: 28px 0 0; font-size: 19px; line-height: 1.6; color: #3B4657; max-width: 520px">جمعيات خيرية موثّقة، وزكاة يراجعها العلماء، وبدون رسوم منصّة. اختر قضية وتبرّع في أقل من دقيقة.</p>
+        <div class="md-rise md-d3" style="display: flex; gap: 22px; margin-top: 30px; flex-wrap: wrap">
+          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #EEF0FF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linejoin="round"></path><path d="M9 12l2 2 4-4" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>جمعيات موثّقة</b><br><span style="color: #4A5568">تم التحقق من التسجيل</span></div></div>
+          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E3F6FD; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4" stroke="#1A8FC2" stroke-width="2" fill="none" stroke-linecap="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>مُقيَّمة للزكاة</b><br><span style="color: #4A5568">من مجلس العلماء</span></div></div>
+          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E2F5EF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" stroke="#017A5B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>استرداد المال</b><br><span style="color: #4A5568">ضمان العطاء</span></div></div>
+        </div>
+        <figure class="md-rise md-d4 md-hero-fig" style="position: relative; margin: 48px 0 0; max-width: 560px">
+          <div class="md-hero-ph" style="position: relative; height: 290px; border-radius: 26px; overflow: hidden; background: #E9EEF1; box-shadow: 0 40px 70px -42px rgba(11,20,36,0.55)">
+            <img src="hero-water-tap.jpg" alt="طفلان يشربان ماءً نظيفًا من صنبور جديد" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,19,33,0.82) 0%, rgba(6,19,33,0.25) 45%, rgba(6,19,33,0) 70%), linear-gradient(120deg, rgba(112,119,251,0.18), rgba(7,168,163,0) 55%)"></div>
+            <div class="md-sheen" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: 0; width: 30%; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.28), rgba(255,255,255,0))"></div>
+            <div style="position: absolute; right: 16px; top: 16px; display: inline-flex; align-items: center; gap: 8px; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #FFFFFF; background: rgba(11,20,36,0.38); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.22); padding: 6px 11px; border-radius: 999px"><span class="md-pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #3FE0C5"></span>بتمويل من متبرعين مثلك</div>
+            <figcaption style="position: absolute; right: 20px; left: 20px; bottom: 18px; color: #FFFFFF">
+              <div dir="rtl" lang="ar" style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0; line-height: 1.15">مياه نظيفة، وصلت.</div>
+              <div style="font-size: 13.5px; color: rgba(255,255,255,0.86); margin-top: 4px">2,140 عائلة تشرب الآن ماءً آمنًا · صندوق كليرويل للمياه</div>
+              <div style="margin-top: 12px; height: 4px; border-radius: 4px; background: rgba(255,255,255,0.22); overflow: hidden"><div class="md-bar md-shine" style="height: 100%; width: 86%; border-radius: 4px"></div></div>
+            </figcaption>
+          </div>
+          <div class="md-float" aria-hidden="true" style="position: absolute; left: -18px; top: -22px; width: 250px; height: 62px; background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #E3EAEE; border-radius: 18px; box-shadow: 0 24px 44px -26px rgba(11,20,36,0.45); padding: 0 14px">
+            <div style="position: relative; height: 100%"><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #7077FB, #23BCF6); color: #061321; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">AR</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>عائشة</b> <span style="color: #4A5568">من تورنتو</span><br><span style="color: #037A72; font-weight: 600">تبرّع بـ $50</span> <span style="color: #4A5568">· الآن</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #23BCF6, #07A8A3); color: #061321; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">حسنًا</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>عمر</b> <span style="color: #4A5568">من لندن</span><br><span style="color: #037A72; font-weight: 600">تبرّع بـ £25</span> <span style="color: #4A5568">· قبل دقيقة</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #07A8A3, #01966F); color: #061321; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">FY</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>فاطمة</b> <span style="color: #4A5568">من إسطنبول</span><br><span style="color: #037A72; font-weight: 600">تبرّعت بـ ₺750</span> <span style="color: #4A5568">· قبل دقيقتين</span></div></div></div>
+          </div>
+        </figure>
+      </div>
+      <div class="md-rise md-d2" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 28px; padding: 28px; box-shadow: 0 40px 80px -40px rgba(11,20,36,0.28), 0 2px 0 0 rgba(255,255,255,1) inset; position: relative">
+        <div class="md-shine" style="position: absolute; right: 28px; left: 28px; top: -1px; height: 3px; border-radius: 3px"></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+          <h2 style="margin: 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0">تبرّع سريع</h2>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">تستغرق 30 ثانية</div>
+        </div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568; margin-top: 18px">1 · اختر قضية</div>
+        <div role="group" aria-label="القضية" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px">
+          
+            <button type="button" class="md-chip" data-dc-click="h2" aria-pressed="true" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #0B1424; background: #0B1424; color: #FFFFFF">الأكثر حاجة</button>
+          
+            <button type="button" class="md-chip" data-dc-click="h3" aria-pressed="false" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #D5DEE3; background: #FFFFFF; color: #0B1424">زكاة</button>
+          
+            <button type="button" class="md-chip" data-dc-click="h4" aria-pressed="false" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #D5DEE3; background: #FFFFFF; color: #0B1424">غزة</button>
+          
+            <button type="button" class="md-chip" data-dc-click="h5" aria-pressed="false" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #D5DEE3; background: #FFFFFF; color: #0B1424">الأيتام</button>
+          
+            <button type="button" class="md-chip" data-dc-click="h6" aria-pressed="false" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #D5DEE3; background: #FFFFFF; color: #0B1424">المياه</button>
+          
+            <button type="button" class="md-chip" data-dc-click="h7" aria-pressed="false" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #D5DEE3; background: #FFFFFF; color: #0B1424">المساجد</button>
+          
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 10px; flex-wrap: wrap">
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">2 · كم مرة</div>
+          <div role="group" aria-label="التكرار" style="display: flex; background: #F1F5F7; border-radius: 999px; padding: 4px">
+            <button type="button" data-dc-click="h8" aria-pressed="true" style="min-height: 38px; padding: 8px 16px; border: 0; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; background: #FFFFFF; color: #0B1424; box-shadow: 0 2px 8px rgba(11,20,36,0.12)">مرة واحدة</button>
+            <button type="button" data-dc-click="h9" aria-pressed="false" style="min-height: 38px; padding: 8px 16px; border: 0; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; background: transparent; color: #4A5568; box-shadow: none">شهريًا</button>
+          </div>
+        </div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568; margin-top: 20px">3 · اختر مبلغًا</div>
+        <div role="group" aria-label="المبلغ" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px">
+          
+            <button type="button" class="md-chip" data-dc-click="h10" aria-pressed="false" style="text-align: right; min-height: 72px; padding: 12px 14px; border-radius: 16px; cursor: pointer; font-family: IBM Plex Sans Arabic, sans-serif; border: 1.5px solid #E3EAEE; background: #FFFFFF">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; color: #0B1424">$25</div>
+              <div style="font-size: 13px; color: #3B4657; margin-top: 2px; line-height: 1.35">طعام عاجل لعائلة</div>
+            </button>
+          
+            <button type="button" class="md-chip" data-dc-click="h11" aria-pressed="true" style="text-align: right; min-height: 72px; padding: 12px 14px; border-radius: 16px; cursor: pointer; font-family: IBM Plex Sans Arabic, sans-serif; border: 1.5px solid #07A8A3; background: #EAF6F7">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; color: #0B1424">$50</div>
+              <div style="font-size: 13px; color: #3B4657; margin-top: 2px; line-height: 1.35">أسبوع من الوجبات</div>
+            </button>
+          
+            <button type="button" class="md-chip" data-dc-click="h12" aria-pressed="false" style="text-align: right; min-height: 72px; padding: 12px 14px; border-radius: 16px; cursor: pointer; font-family: IBM Plex Sans Arabic, sans-serif; border: 1.5px solid #E3EAEE; background: #FFFFFF">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; color: #0B1424">$100</div>
+              <div style="font-size: 13px; color: #3B4657; margin-top: 2px; line-height: 1.35">رعاية طبية لطفل</div>
+            </button>
+          
+            <button type="button" class="md-chip" data-dc-click="h13" aria-pressed="false" style="text-align: right; min-height: 72px; padding: 12px 14px; border-radius: 16px; cursor: pointer; font-family: IBM Plex Sans Arabic, sans-serif; border: 1.5px solid #E3EAEE; background: #FFFFFF">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; color: #0B1424">$250</div>
+              <div style="font-size: 13px; color: #3B4657; margin-top: 2px; line-height: 1.35">حقيبة إيواء طارئة</div>
+            </button>
+          
+        </div>
+        <label style="display: flex; align-items: center; gap: 10px; margin-top: 10px; border: 1.5px solid #D5DEE3; border-radius: 14px; padding: 0 14px; min-height: 48px; font-size: 14px; color: #4A5568">
+          <span style="font-weight: 600; color: #0B1424">أخرى</span>
+          <input type="number" min="1" inputmode="decimal" placeholder="أدخل المبلغ" value="" data-dc-change="h14" style="flex: 1; min-width: 0; border: 0; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424; background: transparent; padding: 12px 0">
+          <span style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px">USD</span>
+        </label>
+        <a href="ar-checkout.html" class="md-btn" style="width: 100%; margin-top: 16px; min-height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 16px; background: #0B1424; color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 17px; text-decoration: none">تبرّع $50</a>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px">
+          <button type="button" class="md-btn" style="min-height: 48px; border: 0; border-radius: 14px; background: #000000; color: #FFFFFF; font-family: IBM Plex Sans Arabic, sans-serif; font-weight: 600; font-size: 15px; cursor: pointer">Apple Pay</button>
+          <button type="button" class="md-btn" style="min-height: 48px; border: 1.5px solid #D5DEE3; border-radius: 14px; background: #FFFFFF; color: #0B1424; font-family: IBM Plex Sans Arabic, sans-serif; font-weight: 600; font-size: 15px; cursor: pointer">Google Pay</button>
+        </div>
+        <p style="margin: 14px 0 0; font-size: 13px; line-height: 1.5; color: #4A5568; text-align: center">مدينة تأخذ 0%. تُخصم رسوم معالجة البطاقة (نحو 3%) ما لم تختر تغطيتها. أمثلة الأثر توضيحية.</p>
+      </div>
+    </div>
+  </section>
+  <div style="border-top: 1px solid #EEF2F4; border-bottom: 1px solid #EEF2F4; background: #FBFCFD; overflow: hidden" aria-label="لماذا يثق المتبرعون بمدينة">
+    <div class="md-marquee" style="display: flex; width: max-content; gap: 48px; padding: 18px 0; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 17px; color: #2A3446; white-space: nowrap">
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>0% رسوم منصّة</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>جمعيات موثّقة</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>زكاة بمراجعة العلماء</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>ضمان العطاء</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>Apple Pay وGoogle Pay</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>⁦+35⁩ دولة</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>0% رسوم منصّة</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>جمعيات موثّقة</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>زكاة بمراجعة العلماء</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>ضمان العطاء</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>Apple Pay وGoogle Pay</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+        <div style="display: flex; gap: 48px; align-items: center"><span>⁦+35⁩ دولة</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      
+    </div>
+  </div>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #5A60E8; line-height: 1"><span class="md-count md-countv" style="--n: 2"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">حملة مستضافة</div></div>
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #1A8FC2; line-height: 1">$<span class="md-count md-countv" style="--n: 4"></span>M+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">جُمعت لقضايا الخير</div></div>
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #037A72; line-height: 1"><span class="md-count md-countv" style="--n: 40"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">متبرع حول العالم</div></div>
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #017A5B; line-height: 1"><span class="md-count md-countv" style="--n: 35"></span>+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">دولة وصلنا إليها</div></div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">تبرّع حسب القضية</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">اختر ما يحرّك قلبك.</h2>
+      </div>
+      <a href="ar-discover.html" style="font-weight: 600; font-size: 15px; text-decoration: none">كل القضايا ←</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 14px; margin-top: 30px">
+      
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #EEF0FF; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#5A60E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">الأكثر حاجة</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">تُرسل إلى أكثر النداءات الموثّقة إلحاحًا. ننشر وجهتها كل شهر.</div>
+        </a>
+      
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3F6FD; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1A8FC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 7h7.5a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6H17"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">زكاة</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">فقط إلى حملات صنّفها مجلس العلماء مستحقة للزكاة.</div>
+        </a>
+      
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E6F6F4; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#037A72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">غزة</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">غذاء ومياه ومأوى ومساعدات طبية عبر شركاء موثّقين.</div>
+        </a>
+      
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E2F5EF; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#017A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21v-2a6 6 0 0 1 12 0v2"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">الأيتام</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">كفالة شهرية تغطي الطعام والتعليم والرعاية.</div>
+        </a>
+      
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3F6FD; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1A8FC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">المياه</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">آبار ومضخات وفلاتر تدوم لسنوات.</div>
+        </a>
+      
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: #EEF0FF; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#5A60E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">المساجد</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">بناء المساجد والمراكز المجتمعية وترميمها وتشغيلها.</div>
+        </a>
+      
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">مميّز الآن</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">نداءات تحتاجك هذا الأسبوع.</h2>
+      </div>
+      <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568; border: 1px dashed #C9D4DA; padding: 6px 10px; border-radius: 999px">تُحدَّث يوميًا</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 18px; margin-top: 30px">
+      
+        <a href="ar-campaign.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; border: 1px solid #E3EAEE; border-radius: 24px; overflow: hidden; background: #FFFFFF; text-decoration: none; color: #0B1424">
+          <div class="md-ph" style="position: relative; height: 210px; background: #E9EEF1; overflow: hidden">
+            <img src="food-parcel.jpg" alt="جدّة وأطفال مع سلة غذائية طارئة" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block">
+            <div style="position: absolute; right: 14px; top: 14px; display: flex; gap: 6px; flex-wrap: wrap">
+              <div style="font-size: 12px; font-weight: 600; background: #FFFFFF; color: #0B1424; padding: 5px 10px; border-radius: 999px">جمعية موثّقة</div>
+              <div style="font-size: 12px; font-weight: 600; background: #0B1424; color: #FFFFFF; padding: 5px 10px; border-radius: 999px">مستحقة للزكاة</div>
+            </div>
+          </div>
+          <div style="padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+            <div style="font-size: 13px; color: #037A72; font-weight: 600">جسر الأمل للإغاثة</div>
+            <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25; letter-spacing: 0">دفء الشتاء للعائلات النازحة</div>
+            <div style="margin-top: auto; padding-top: 8px">
+              <div style="height: 8px; border-radius: 8px; background: #E9EEF1; overflow: hidden"><div class="md-bar md-barv" style="height: 100%; width: 69%; border-radius: 8px; background: linear-gradient(90deg, #7077FB, #23BCF6 55%, #07A8A3)"></div></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 14px"><span><b>$48,500</b> <span style="color: #4A5568">مجموعة</span></span><span style="color: #4A5568">69% من $70,000</span></div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 10px">رُوجعت القصة · نوفمبر 2026</div>
+            </div>
+          </div>
+        </a>
+      
+        <a href="ar-campaign.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; border: 1px solid #E3EAEE; border-radius: 24px; overflow: hidden; background: #FFFFFF; text-decoration: none; color: #0B1424">
+          <div class="md-ph" style="position: relative; height: 210px; background: #E9EEF1; overflow: hidden">
+            <img src="well-pump.jpg" alt="أهل القرية حول بئر جديدة بمضخة يدوية" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block">
+            <div style="position: absolute; right: 14px; top: 14px; display: flex; gap: 6px; flex-wrap: wrap">
+              <div style="font-size: 12px; font-weight: 600; background: #FFFFFF; color: #0B1424; padding: 5px 10px; border-radius: 999px">جمعية موثّقة</div>
+              
+            </div>
+          </div>
+          <div style="padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+            <div style="font-size: 13px; color: #037A72; font-weight: 600">صندوق كليرويل للمياه</div>
+            <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25; letter-spacing: 0">بئر لقرية من 600 شخص</div>
+            <div style="margin-top: auto; padding-top: 8px">
+              <div style="height: 8px; border-radius: 8px; background: #E9EEF1; overflow: hidden"><div class="md-bar md-barv" style="height: 100%; width: 92%; border-radius: 8px; background: linear-gradient(90deg, #7077FB, #23BCF6 55%, #07A8A3)"></div></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 14px"><span><b>$23,000</b> <span style="color: #4A5568">مجموعة</span></span><span style="color: #4A5568">92% من $25,000</span></div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 10px">رُوجعت القصة · نوفمبر 2026</div>
+            </div>
+          </div>
+        </a>
+      
+        <a href="ar-campaign.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; border: 1px solid #E3EAEE; border-radius: 24px; overflow: hidden; background: #FFFFFF; text-decoration: none; color: #0B1424">
+          <div class="md-ph" style="position: relative; height: 210px; background: #E9EEF1; overflow: hidden">
+            <img src="school-lunch.jpg" alt="تلاميذ يضحكون خلال وجبة الغداء المدرسية" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 45%; display: block">
+            <div style="position: absolute; right: 14px; top: 14px; display: flex; gap: 6px; flex-wrap: wrap">
+              <div style="font-size: 12px; font-weight: 600; background: #FFFFFF; color: #0B1424; padding: 5px 10px; border-radius: 999px">جمعية موثّقة</div>
+              <div style="font-size: 12px; font-weight: 600; background: #0B1424; color: #FFFFFF; padding: 5px 10px; border-radius: 999px">مستحقة للزكاة</div>
+            </div>
+          </div>
+          <div style="padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+            <div style="font-size: 13px; color: #037A72; font-weight: 600">فوانيس صغيرة لرعاية الأيتام</div>
+            <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25; letter-spacing: 0">اكفل تعليم طفل لمدة عام</div>
+            <div style="margin-top: auto; padding-top: 8px">
+              <div style="height: 8px; border-radius: 8px; background: #E9EEF1; overflow: hidden"><div class="md-bar md-barv" style="height: 100%; width: 34%; border-radius: 8px; background: linear-gradient(90deg, #7077FB, #23BCF6 55%, #07A8A3)"></div></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 14px"><span><b>$10,250</b> <span style="color: #4A5568">مجموعة</span></span><span style="color: #4A5568">34% من $30,000</span></div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 10px">رُوجعت القصة · نوفمبر 2026</div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="position: relative; overflow: hidden; isolation: isolate; border-radius: 32px; background: #F2F8FA; border: 1px solid #DDECF1; padding: clamp(28px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 36px; align-items: center">
+      <svg viewBox="0 0 600 300" aria-hidden="true" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: 0; width: 60%; height: 100%; z-index: -1; opacity: .5">
+        <path d="M 0 300 C 200 240, 360 120, 600 60" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none"></path>
+        <path d="M 40 300 C 240 250, 400 140, 600 90" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".7"></path>
+        <path d="M 80 300 C 280 260, 440 160, 600 120" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".26"></path>
+      </svg>
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">رمضان 2027 · يبدأ نحو 8 فبراير</div>
+        <h2 style="margin: 12px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 46px); letter-spacing: 0; line-height: 1.08">لا تفوّت<br>العشر الأواخر.</h2>
+        <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #3B4657; max-width: 480px">اضبطه مرة واحدة. نتبرع عنك كل ليلة، فتبلغ صدقتك ليلة القدر حتى لو كنت نائمًا أو مسافرًا أو معتكفًا.</p>
+        <a href="ar-ramadan.html" class="md-btn" style="display: inline-flex; align-items: center; margin-top: 24px; min-height: 52px; padding: 14px 24px; border-radius: 999px; background: #0B1424; color: #FFFFFF; font-weight: 600; text-decoration: none">جدوِل لياليّ العشر</a>
+      </div>
+      <div>
+        <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; max-width: 440px">
+          
+            <div class="md-pulse" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #7077FB, #23BCF6 60%, #07A8A3); color: #061321; border: 1.5px solid transparent; animation-delay: 0.00s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">21</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFFFF; color: #3B4657; border: 1.5px solid #D5DEE3; animation-delay: 0.25s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">22</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="md-pulse" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #7077FB, #23BCF6 60%, #07A8A3); color: #061321; border: 1.5px solid transparent; animation-delay: 0.50s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">23</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFFFF; color: #3B4657; border: 1.5px solid #D5DEE3; animation-delay: 0.75s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">24</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="md-pulse" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #7077FB, #23BCF6 60%, #07A8A3); color: #061321; border: 1.5px solid transparent; animation-delay: 1.00s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">25</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFFFF; color: #3B4657; border: 1.5px solid #D5DEE3; animation-delay: 1.25s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">26</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="md-pulse" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #7077FB, #23BCF6 60%, #07A8A3); color: #061321; border: 1.5px solid transparent; animation-delay: 1.50s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">27</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFFFF; color: #3B4657; border: 1.5px solid #D5DEE3; animation-delay: 1.75s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">28</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="md-pulse" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #7077FB, #23BCF6 60%, #07A8A3); color: #061321; border: 1.5px solid transparent; animation-delay: 2.00s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">29</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+            <div class="" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FFFFFF; color: #3B4657; border: 1.5px solid #D5DEE3; animation-delay: 2.25s">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">30</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          
+        </div>
+        <div style="margin-top: 14px; font-size: 14px; color: #3B4657">الليالي الوترية مميزة: الليالي التي يُتحرّى فيها ليلة القدر.</div>
+      </div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px; align-items: center">
+    <div class="md-reveal">
+      <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">الزكاة ببساطة</div>
+      <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">احسب زكاتك في دقيقة.</h2>
+      <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #3B4657">ثم ادفعها إلى حملات صنّفها مجلس العلماء مستحقة للزكاة. يظهر في كل تقييم من راجعه ومتى.</p>
+      <div style="display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap">
+        <a href="ar-zakat.html" style="font-weight: 600; text-decoration: none">حاسبة الزكاة الكاملة ←</a>
+        <a href="ar-zakat.html" style="font-weight: 600; text-decoration: none">اقرأ سياسة الزكاة ←</a>
+      </div>
+    </div>
+    <div class="md-reveal" style="border: 1px solid #E3EAEE; border-radius: 28px; padding: 26px; background: #FFFFFF; box-shadow: 0 30px 60px -36px rgba(11,20,36,0.25)">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px">
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">النقد والمدخرات<input type="number" min="0" inputmode="decimal" value="" data-dc-change="h15" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">الذهب والفضة<input type="number" min="0" inputmode="decimal" value="" data-dc-change="h16" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">الأسهم والاستثمارات<input type="number" min="0" inputmode="decimal" value="" data-dc-change="h17" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">ديون مستحقة الآن<input type="number" min="0" inputmode="decimal" value="" data-dc-change="h18" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142; grid-column: 1 / -1">النصاب اليوم بـ USD (حسب سعر الذهب أو الفضة الحالي)<input type="number" min="0" inputmode="decimal" value="" data-dc-change="h19" placeholder="أدخل قيمة النصاب اليوم" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+      </div>
+      <div style="margin-top: 18px; border-radius: 18px; background: #F2F8FA; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap">
+        <div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #037A72">زكاتك (2.5%)</div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0; margin-top: 4px">$0</div>
+          <div style="font-size: 13px; color: #3B4657; margin-top: 2px">أدخل أموالك لترى زكاتك.</div>
+        </div>
+        <a href="ar-zakat.html" class="md-btn" style="min-height: 48px; display: inline-flex; align-items: center; padding: 12px 20px; border-radius: 999px; background: #0B1424; color: #FFFFFF; font-weight: 600; text-decoration: none">ادفع زكاتي</a>
+      </div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">الجمعيات الموثّقة</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">تابع الجمعيات التي تثق بها.</h2>
+      </div>
+      <a href="ar-charity.html" style="font-weight: 600; font-size: 15px; text-decoration: none">كل الجمعيات ←</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 14px; margin-top: 30px">
+      
+        <div class="md-lift md-reveal" style="border: 1px solid #E3EAEE; border-radius: 22px; padding: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #7077FB, #23BCF6); color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 17px; display: flex; align-items: center; justify-content: center">HB</div>
+            <div style="min-width: 0">
+              <a href="ar-charity.html" style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 16px; color: #0B1424; text-decoration: none">جسر الأمل للإغاثة</a>
+              <div style="font-size: 13px; color: #4A5568">كندا · رقم التسجيل ⁦81234 5678 RR0001⁩</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <div style="font-size: 12px; font-weight: 600; color: #037A72; background: #EAF6F7; padding: 5px 10px; border-radius: 999px">موثّقة</div>
+            <div style="font-size: 12px; font-weight: 600; color: #3E44C9; background: #EEF0FF; padding: 5px 10px; border-radius: 999px">تقييم الزكاة: A</div>
+          </div>
+          <button type="button" class="md-chip" data-dc-click="h20" aria-pressed="false" style="margin-top: 4px; min-height: 44px; border-radius: 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #0B1424; background: #FFFFFF; color: #0B1424">متابعة</button>
+        </div>
+      
+        <div class="md-lift md-reveal" style="border: 1px solid #E3EAEE; border-radius: 22px; padding: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #23BCF6, #07A8A3); color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 17px; display: flex; align-items: center; justify-content: center">CW</div>
+            <div style="min-width: 0">
+              <a href="ar-charity.html" style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 16px; color: #0B1424; text-decoration: none">صندوق كليرويل للمياه</a>
+              <div style="font-size: 13px; color: #4A5568">المملكة المتحدة · رقم التسجيل ⁦81234 5678 RR0001⁩</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <div style="font-size: 12px; font-weight: 600; color: #037A72; background: #EAF6F7; padding: 5px 10px; border-radius: 999px">موثّقة</div>
+            <div style="font-size: 12px; font-weight: 600; color: #3E44C9; background: #EEF0FF; padding: 5px 10px; border-radius: 999px">تقييم الزكاة: A</div>
+          </div>
+          <button type="button" class="md-chip" data-dc-click="h21" aria-pressed="false" style="margin-top: 4px; min-height: 44px; border-radius: 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #0B1424; background: #FFFFFF; color: #0B1424">متابعة</button>
+        </div>
+      
+        <div class="md-lift md-reveal" style="border: 1px solid #E3EAEE; border-radius: 22px; padding: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #07A8A3, #01966F); color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 17px; display: flex; align-items: center; justify-content: center">LL</div>
+            <div style="min-width: 0">
+              <a href="ar-charity.html" style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 16px; color: #0B1424; text-decoration: none">فوانيس صغيرة لرعاية الأيتام</a>
+              <div style="font-size: 13px; color: #4A5568">الولايات المتحدة · رقم التسجيل ⁦81234 5678 RR0001⁩</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <div style="font-size: 12px; font-weight: 600; color: #037A72; background: #EAF6F7; padding: 5px 10px; border-radius: 999px">موثّقة</div>
+            <div style="font-size: 12px; font-weight: 600; color: #3E44C9; background: #EEF0FF; padding: 5px 10px; border-radius: 999px">تقييم الزكاة: B</div>
+          </div>
+          <button type="button" class="md-chip" data-dc-click="h22" aria-pressed="false" style="margin-top: 4px; min-height: 44px; border-radius: 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #0B1424; background: #FFFFFF; color: #0B1424">متابعة</button>
+        </div>
+      
+        <div class="md-lift md-reveal" style="border: 1px solid #E3EAEE; border-radius: 22px; padding: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #5A60E8, #07A8A3); color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 17px; display: flex; align-items: center; justify-content: center">NM</div>
+            <div style="min-width: 0">
+              <a href="ar-charity.html" style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 16px; color: #0B1424; text-decoration: none">صندوق مسجد النور</a>
+              <div style="font-size: 13px; color: #4A5568">تركيا · رقم التسجيل ⁦81234 5678 RR0001⁩</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <div style="font-size: 12px; font-weight: 600; color: #037A72; background: #EAF6F7; padding: 5px 10px; border-radius: 999px">موثّقة</div>
+            <div style="font-size: 12px; font-weight: 600; color: #3E44C9; background: #EEF0FF; padding: 5px 10px; border-radius: 999px">تقييم الزكاة: A</div>
+          </div>
+          <button type="button" class="md-chip" data-dc-click="h23" aria-pressed="false" style="margin-top: 4px; min-height: 44px; border-radius: 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid #0B1424; background: #FFFFFF; color: #0B1424">متابعة</button>
+        </div>
+      
+    </div>
+    <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 12px">تظهر التقييمات مع اسم المراجِع والتاريخ في كل ملف.</div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="text-align: center; max-width: 720px; margin: 0 auto">
+      <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">لماذا تتبرع عبر مدينة</div>
+      <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">كل تبرع يُراجَع ويُتتبَّع ويُحمى.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin-top: 36px">
+      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 13px; color: #5A60E8">01</div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">يُراجع قبل النشر</div>
+        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">نتحقق من تسجيل كل جمعية، ويقيّم مجلس العلماء طريقة تعاملها مع الزكاة.</p>
+      </div>
+      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 13px; color: #1A8FC2">02</div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">تحديثات تراها بعينك</div>
+        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">تحديثات بالصور والفيديو من الميدان، مباشرة إلى بريدك أو تطبيق مدينة.</p>
+      </div>
+      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #0B1424; color: #FFFFFF; position: relative; overflow: hidden">
+        <div class="md-shine" style="position: absolute; right: 0; left: 0; top: 0; height: 4px"></div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 13px; color: #7FD9F9">03</div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">ضمان العطاء من مدينة</div>
+        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #D5DDE8">إذا ثبت أن الحملة احتيالية، نعيد إليك تبرعك. بلا ألاعيب في الشروط.</p>
+        <a href="ar-trust.html" style="display: inline-block; margin-top: 14px; color: #7FD9F9; font-weight: 600; text-decoration: none">كيف يعمل الضمان ←</a>
+      </div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">مدينة تعلّم</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">أسئلة العطاء، وإجاباتها.</h2>
+      </div>
+      <a href="ar-learn.html" style="font-weight: 600; font-size: 15px; text-decoration: none">كل الإجابات ←</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; margin-top: 30px">
+      
+        <a href="ar-learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #037A72">الزكاة</div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: 0">هل يجوز دفع زكاتي لغزة؟</div>
+          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">نعم، إلى حملات تصل إلى المستحقين. ابحث عن شارة الاستحقاق للزكاة التي يراجعها مجلس العلماء.</div>
+          <div style="margin-top: auto; font-size: 13px; color: #4A5568">راجعه الشيخ حمزة إدريس · قراءة في دقيقتين</div>
+        </a>
+      
+        <a href="ar-learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #037A72">رمضان</div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: 0">كم زكاة الفطر هذا العام؟</div>
+          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">يعتمد ذلك على مكان إقامتك. ننشر المبلغ لكل دولة، بمراجعة علمائنا وتاريخها.</div>
+          <div style="margin-top: auto; font-size: 13px; color: #4A5568">راجعه الشيخ حمزة إدريس · قراءة في دقيقتين</div>
+        </a>
+      
+        <a href="ar-learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #037A72">الزكاة</div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: 0">هل تجب الزكاة في العملات الرقمية؟</div>
+          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">يرى أكثر العلماء أن العملات الرقمية المدّخرة أو المعدّة للتجارة مال زكوي. إليك طريقة تقييمها.</div>
+          <div style="margin-top: auto; font-size: 13px; color: #4A5568">راجعه الشيخ حمزة إدريس · قراءة في دقيقتين</div>
+        </a>
+      
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px">
+    <div class="md-reveal" style="border-radius: 32px; background: #F6F9FA; border: 1px solid #E3EAEE; padding: clamp(28px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 40px; align-items: center; overflow: hidden">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">تطبيق مدينة · قريبًا</div>
+        <h2 style="margin: 12px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 46px); letter-spacing: 0; line-height: 1.08">تابع الخير<br>صنعتَه أنت.</h2>
+        <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #3B4657; max-width: 460px">تابع الجمعيات، واحصل على تحديثات الحملات التي دعمتها، وتبرّع بنقرة واحدة عبر Apple Pay أو Google Pay.</p>
+        <div style="display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap">
+          <a href="#" class="md-btn" style="min-height: 52px; display: inline-flex; align-items: center; padding: 12px 20px; border-radius: 14px; background: #0B1424; color: #FFFFFF; font-weight: 600; text-decoration: none">أخبرني عند الإطلاق</a>
+          <a href="ar-signin-donor.html" style="min-height: 52px; display: inline-flex; align-items: center; padding: 12px 6px; font-weight: 600; text-decoration: none">افتح بوابة المتبرع ←</a>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <div class="md-float" style="width: 290px; height: 560px; border-radius: 44px; background: #0B1424; padding: 12px; box-shadow: 0 50px 90px -40px rgba(11,20,36,0.5)">
+          <div style="width: 100%; height: 100%; border-radius: 34px; background: linear-gradient(180deg, #F6F9FA, #FFFFFF); padding: 22px 16px; display: flex; flex-direction: column; gap: 12px; overflow: hidden">
+            <img src="madinah-wordmark.png" alt="" style="height: 22px; width: auto; align-self: flex-start">
+            <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; margin-top: 6px">المتابَعة</div>
+            <div class="md-n1" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 16px; padding: 12px; box-shadow: 0 10px 24px -16px rgba(11,20,36,0.3)">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; color: #037A72">تحديث جديد</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 4px">وصلت حقائب الشتاء إلى 120 عائلة</div>
+              <div style="font-size: 12px; color: #4A5568; margin-top: 2px">جسر الأمل للإغاثة · قبل ساعتين</div>
+            </div>
+            <div class="md-n2" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 16px; padding: 12px; box-shadow: 0 10px 24px -16px rgba(11,20,36,0.3)">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; color: #5A60E8">اقتربنا</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 4px">بئر القرية مموّلة بنسبة 92%</div>
+              <div style="height: 6px; border-radius: 6px; background: #E9EEF1; margin-top: 8px; overflow: hidden"><div style="width: 92%; height: 100%; background: linear-gradient(90deg, #7077FB, #23BCF6, #07A8A3)"></div></div>
+            </div>
+            <div class="md-n3" style="background: #0B1424; color: #FFFFFF; border-radius: 16px; padding: 12px">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; color: #7FD9F9">الليلة · الليلة السابعة والعشرون</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 4px">يخرج تبرعك المجدول عند المغرب.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background: #F6F9FA; border-top: 1px solid #E3EAEE">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <img src="madinah-wordmark.png" alt="مدينة" style="height: 30px; width: auto; align-self: flex-start">
+        <div style="font-size: 14px; line-height: 1.6; color: #3B4657">مجتمع من المعطائين. شركة مدينة للعطاء، 245 شارع كينغ الشرقي، تورنتو، أونتاريو.</div>
+      </div>
+      <nav aria-label="تبرّع" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">تبرّع</div><a href="ar.html" style="color: #0B1424; text-decoration: none">الأكثر حاجة</a><a href="ar-zakat.html" style="color: #0B1424; text-decoration: none">زكاة</a><a href="ar-discover.html" style="color: #0B1424; text-decoration: none">غزة</a><a href="ar-discover.html" style="color: #0B1424; text-decoration: none">الأيتام</a><a href="ar-discover.html" style="color: #0B1424; text-decoration: none">المياه</a></nav>
+      <nav aria-label="تعلّم" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">تعلّم</div><a href="ar-zakat.html" style="color: #0B1424; text-decoration: none">حاسبة الزكاة</a><a href="ar-learn.html" style="color: #0B1424; text-decoration: none">أدلة العطاء</a><a href="#" style="color: #0B1424; text-decoration: none">رمضان</a><a href="ar-merch.html" style="color: #0B1424; text-decoration: none">المنتجات</a></nav>
+      <nav aria-label="الجمعيات" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">الجمعيات</div><a href="ar-signin-client.html" style="color: #0B1424; text-decoration: none">ابدأ حملة تبرعات</a><a href="ar-signin-client.html" style="color: #0B1424; text-decoration: none">بوابة العميل</a><a href="ar-charity.html" style="color: #0B1424; text-decoration: none">شارة الشريك</a><a href="ar-signin-client.html" style="color: #0B1424; text-decoration: none">احصل على التوثيق</a></nav>
+      <nav aria-label="مدينة" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">مدينة</div><a href="ar-about.html" style="color: #0B1424; text-decoration: none">من نحن</a><a href="ar-trust.html" style="color: #0B1424; text-decoration: none">الثقة والضمان</a><a href="ar-trust.html" style="color: #0B1424; text-decoration: none">الرسوم</a><a href="ar-faq.html" style="color: #0B1424; text-decoration: none">تواصل معنا</a></nav>
+    </div>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 28px; border-top: 1px solid #E3EAEE; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: #4A5568">
+      <div>© 2026 مدينة. جميع الحقوق محفوظة.</div>
+      <div style="display: flex; gap: 16px"><a href="#" style="color: #4A5568">الخصوصية</a><a href="#" style="color: #4A5568">الشروط</a><a href="#" style="color: #4A5568">ملفات تعريف الارتباط</a></div>
+    </div>
+  </footer>
+</div></div>
+<template id="dc-tpl"><div class="{{rootClass}}" style="font-family: IBM Plex Sans Arabic, sans-serif; color: #0B1424; background: #FFFFFF; overflow: hidden">
+  <div style="background: #F6F9FA; border-bottom: 1px solid #E3EAEE">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; font-size: 13px; color: #3B4657">
+      <div style="display: flex; gap: 18px; flex-wrap: wrap; align-items: center">
+        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>0% رسوم منصّة</div>
+        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>زكاة بمراجعة العلماء</div>
+        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>ضمان العطاء</div>
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <label style="display: flex; gap: 6px; align-items: center; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">اللغة
+          <select value="{{lang}}" onChange="{{setLang}}" style="font-family: IBM Plex Sans Arabic, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
+            <option value="en">الإنجليزية</option>
+            <option value="ar">العربية</option>
+            <option value="tr">Türkçe</option>
+            <option value="fr">الفرنسية</option>
+            <option value="ur">اردو</option>
+          </select>
+        </label>
+        <label style="display: flex; gap: 6px; align-items: center; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">العملة
+          <select value="{{cur}}" onChange="{{setCur}}" style="font-family: IBM Plex Sans Arabic, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
+            <option value="USD">USD $</option>
+            <option value="CAD">CAD $</option>
+            <option value="GBP">GBP £</option>
+            <option value="EUR">EUR €</option>
+            <option value="TRY">TRY ₺</option>
+            <option value="AED">AED</option>
+            <option value="MYR">MYR</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+  <header style="position: relative; z-index: 20; border-bottom: 1px solid #EEF2F4; background: rgba(255,255,255,0.92)">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
+      <a href="ar.html" aria-label="الصفحة الرئيسية لمدينة" style="display: flex"><img src="madinah-wordmark.png" alt="مدينة" style="height: 34px; width: auto; display: block"></a>
+      <nav class="md-navlinks" aria-label="الرئيسية" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
+        <a href="ar-discover.html" style="color: #0B1424; text-decoration: none">اكتشف</a>
+        <a href="ar-zakat.html" style="color: #0B1424; text-decoration: none">زكاة</a>
+        <a href="ar-charity.html" style="color: #0B1424; text-decoration: none">الجمعيات</a>
+        <a href="ar-learn.html" style="color: #0B1424; text-decoration: none">تعلّم</a>
+        <a href="ar-ramadan.html" style="color: #0B1424; text-decoration: none">رمضان</a>
+        <a href="ar-merch.html" style="color: #0B1424; text-decoration: none">المنتجات</a>
+      </nav>
+      <div style="display: flex; gap: 10px; align-items: center">
+        <a data-lang-switch href="index.html" class="md-hide-sm" lang="en" style="font-size: 15px; font-weight: 600; color: #037A72; text-decoration: none; padding: 10px 12px; border-radius: 10px; border: 1.5px solid #CDEBEC">English</a><a href="ar-signin-donor.html" class="md-hide-sm" style="font-size: 15px; font-weight: 500; color: #0B1424; text-decoration: none; padding: 10px 12px">تسجيل الدخول</a>
+        <a href="#donate" class="md-btn" style="font-size: 15px; font-weight: 600; color: #FFFFFF; background: #0B1424; text-decoration: none; padding: 12px 20px; border-radius: 999px; min-height: 44px; display: flex; align-items: center">تبرّع</a>
+        <details class="md-mnav"><summary aria-label="القائمة" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #D5DEE3; display: flex; align-items: center; justify-content: center; background: #FFFFFF"><svg class="md-mnav-ic1" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="md-mnav-ic2" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary><nav aria-label="الجوال" style="position: absolute; right: 0; left: 0; top: 100%; background: #FFFFFF; border-bottom: 1px solid #E3EAEE; box-shadow: 0 30px 50px -30px rgba(11,20,36,0.35); padding: 8px 24px 20px; display: flex; flex-direction: column"><a href="ar-discover.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">اكتشف<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-zakat.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">زكاة<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-charity.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">الجمعيات<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-learn.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">تعلّم<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-ramadan.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">رمضان<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-merch.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">المنتجات<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-about.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">حول<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-faq.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">المساعدة والأسئلة الشائعة<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ar-signin-donor.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">تسجيل الدخول<span aria-hidden="true" style="color: #037A72">→</span></a></nav></details>
+      </div>
+    </div>
+  </header>
+  <section id="donate" style="position: relative; isolation: isolate; overflow: hidden">
+    <svg class="md-draw" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1">
+      <defs><linearGradient id="mdHeroG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".5" stop-color="#23BCF6"></stop><stop offset=".8" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient></defs>
+      <path d="M 520 780 C 760 600, 900 360, 1460 300" stroke="url(#mdHeroG)" stroke-width="1.3" fill="none" opacity=".35"></path>
+      <path d="M 545 780 C 785 610, 925 380, 1460 330" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".3"></path>
+      <path d="M 570 780 C 810 620, 950 400, 1460 360" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".26"></path>
+      <path d="M 595 780 C 835 630, 975 420, 1460 390" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".22"></path>
+      <path d="M 620 780 C 860 640, 1000 440, 1460 420" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".35"></path>
+      <path d="M 645 780 C 885 650, 1025 460, 1460 450" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".3"></path>
+      <path d="M -20 120 C 180 60, 300 200, 520 -20" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".35"></path>
+      <path d="M -20 150 C 200 90, 320 230, 560 -20" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".28"></path>
+      <path d="M -20 180 C 220 120, 340 260, 600 -20" stroke="url(#mdHeroG)" stroke-width="1" fill="none" opacity=".22"></path>
+    </svg>
+    <svg class="md-sky" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" style="position: absolute; right: 0; left: 0; bottom: 0; width: 100%; height: 300px; z-index: -1"><defs><linearGradient id="mdSkyG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".45" stop-color="#23BCF6"></stop><stop offset=".75" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient><radialGradient id="mdSkyGlow" cx="50%" cy="100%" r="60%"><stop offset="0" stop-color="#07A8A3" stop-opacity=".22"></stop><stop offset="1" stop-color="#07A8A3" stop-opacity="0"></stop></radialGradient></defs><ellipse class="md-glow" cx="720" cy="300" rx="320" ry="190" fill="url(#mdSkyGlow)"></ellipse><g fill="none" stroke="url(#mdSkyG)" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M 120 290 H 1320" stroke-width="1.4" opacity="0.8"></path><path pathLength="1" d="M 260 290 V 264 Q 276 244 292 264 V 290 M 300 290 V 264 Q 316 244 332 264 V 290 M 340 290 V 264 Q 356 244 372 264 V 290 M 380 290 V 264 Q 396 244 412 264 V 290 M 420 290 V 264 Q 436 244 452 264 V 290 M 460 290 V 264 Q 476 244 492 264 V 290 M 500 290 V 264 Q 516 244 532 264 V 290 M 540 290 V 264 Q 556 244 572 264 V 290 M 580 290 V 264 Q 596 244 612 264 V 290 M 860 290 V 264 Q 876 244 892 264 V 290 M 900 290 V 264 Q 916 244 932 264 V 290 M 940 290 V 264 Q 956 244 972 264 V 290 M 980 290 V 264 Q 996 244 1012 264 V 290 M 1020 290 V 264 Q 1036 244 1052 264 V 290 M 1060 290 V 264 Q 1076 244 1092 264 V 290 M 1100 290 V 264 Q 1116 244 1132 264 V 290 M 1140 290 V 264 Q 1156 244 1172 264 V 290" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 250 236 H 600 M 840 236 H 1190" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 332 290 V 110 M 348 290 V 110 M 326 190 H 354 V 182 H 326 Z M 326 140 H 354 V 132 H 326 Z M 332 110 H 348 M 332 110 L 340 70 L 348 110 M 340 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 461 290 V 80 M 479 290 V 80 M 455 160 H 485 V 152 H 455 Z M 455 110 H 485 V 102 H 455 Z M 461 80 H 479 M 461 80 L 470 40 L 479 80 M 470 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 591 290 V 104 M 609 290 V 104 M 585 184 H 615 V 176 H 585 Z M 585 134 H 615 V 126 H 585 Z M 591 104 H 609 M 591 104 L 600 64 L 609 104 M 600 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 831 290 V 104 M 849 290 V 104 M 825 184 H 855 V 176 H 825 Z M 825 134 H 855 V 126 H 825 Z M 831 104 H 849 M 831 104 L 840 64 L 849 104 M 840 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 961 290 V 80 M 979 290 V 80 M 955 160 H 985 V 152 H 955 Z M 955 110 H 985 V 102 H 955 Z M 961 80 H 979 M 961 80 L 970 40 L 979 80 M 970 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 1092 290 V 110 M 1108 290 V 110 M 1086 190 H 1114 V 182 H 1086 Z M 1086 140 H 1114 V 132 H 1086 Z M 1092 110 H 1108 M 1092 110 L 1100 70 L 1108 110 M 1100 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 501 236 V 210 M 569 236 V 210 M 501 210 C 501 169, 524 152, 535 150 C 545 152, 569 169, 569 210 M 535 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 871 236 V 210 M 939 236 V 210 M 871 210 C 871 169, 894 152, 905 150 C 915 152, 939 169, 939 210 M 905 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 652 290 V 194 H 788 V 290" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 640 194 H 800" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 658 194 C 646 130, 676 78, 720 64 C 764 78, 794 130, 782 194" stroke-width="2" opacity="1"></path><path pathLength="1" d="M 720 64 V 40" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 672 270 V 230 Q 680 218 688 230 V 270 M 700 270 V 230 Q 708 218 716 230 V 270 M 728 270 V 230 Q 736 218 744 230 V 270 M 756 270 V 230 Q 764 218 772 230 V 270" stroke-width="1.1" opacity="0.7"></path></g><path class="md-cres" d="M 727 22 A 9 9 0 1 1 727 38 A 7 7 0 1 0 727 22 Z" fill="#07A8A3"></path></svg>
+    <svg class="md-moon" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="position: absolute; left: 7%; top: 44px; z-index: -1"><path pathLength="1" d="M 40 8 A 24 24 0 1 0 56 44 A 19 19 0 1 1 40 8 Z" fill="none" stroke="url(#mdHeroG)" stroke-width="1.6" stroke-linejoin="round"></path></svg>
+    <div class="md-hero-in" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 250px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 56px; align-items: center">
+      <div dir="{{dir}}" lang="{{lang}}">
+        <div class="md-rise" style="display: inline-flex; gap: 8px; align-items: center; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72; background: #EAF6F7; border: 1px solid #CDEBEC; padding: 7px 12px; border-radius: 999px">
+          <div class="md-pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #07A8A3"></div>عطاء إسلامي موثوق · 0% رسوم منصّة
+        </div>
+        <h1 class="md-rise md-d1" style="margin: 22px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.04; letter-spacing: 0; text-wrap: balance">{{t.lead}} <span style="position: relative; display: inline-block">{{t.accent}}<svg class="md-underline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; right: 0; bottom: -10px; width: 100%; height: 16px"><path d="M 4 14 C 80 4, 200 4, 296 12" stroke="url(#mdHeroG)" stroke-width="5" fill="none" stroke-linecap="round"></path></svg></span></h1>
+        <p class="md-rise md-d2" style="margin: 28px 0 0; font-size: 19px; line-height: 1.6; color: #3B4657; max-width: 520px">{{t.sub}}</p>
+        <div class="md-rise md-d3" style="display: flex; gap: 22px; margin-top: 30px; flex-wrap: wrap">
+          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #EEF0FF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linejoin="round"></path><path d="M9 12l2 2 4-4" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>جمعيات موثّقة</b><br><span style="color: #4A5568">تم التحقق من التسجيل</span></div></div>
+          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E3F6FD; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4" stroke="#1A8FC2" stroke-width="2" fill="none" stroke-linecap="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>مُقيَّمة للزكاة</b><br><span style="color: #4A5568">من مجلس العلماء</span></div></div>
+          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E2F5EF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" stroke="#017A5B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>استرداد المال</b><br><span style="color: #4A5568">ضمان العطاء</span></div></div>
+        </div>
+        <figure class="md-rise md-d4 md-hero-fig" style="position: relative; margin: 48px 0 0; max-width: 560px">
+          <div class="md-hero-ph" style="position: relative; height: 290px; border-radius: 26px; overflow: hidden; background: #E9EEF1; box-shadow: 0 40px 70px -42px rgba(11,20,36,0.55)">
+            <img src="hero-water-tap.jpg" alt="طفلان يشربان ماءً نظيفًا من صنبور جديد" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block">
+            <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,19,33,0.82) 0%, rgba(6,19,33,0.25) 45%, rgba(6,19,33,0) 70%), linear-gradient(120deg, rgba(112,119,251,0.18), rgba(7,168,163,0) 55%)"></div>
+            <div class="md-sheen" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: 0; width: 30%; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.28), rgba(255,255,255,0))"></div>
+            <div style="position: absolute; right: 16px; top: 16px; display: inline-flex; align-items: center; gap: 8px; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #FFFFFF; background: rgba(11,20,36,0.38); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.22); padding: 6px 11px; border-radius: 999px"><span class="md-pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #3FE0C5"></span>بتمويل من متبرعين مثلك</div>
+            <figcaption style="position: absolute; right: 20px; left: 20px; bottom: 18px; color: #FFFFFF">
+              <div dir="rtl" lang="ar" style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0; line-height: 1.15">مياه نظيفة، وصلت.</div>
+              <div style="font-size: 13.5px; color: rgba(255,255,255,0.86); margin-top: 4px">2,140 عائلة تشرب الآن ماءً آمنًا · صندوق كليرويل للمياه</div>
+              <div style="margin-top: 12px; height: 4px; border-radius: 4px; background: rgba(255,255,255,0.22); overflow: hidden"><div class="md-bar md-shine" style="height: 100%; width: 86%; border-radius: 4px"></div></div>
+            </figcaption>
+          </div>
+          <div class="md-float" aria-hidden="true" style="position: absolute; left: -18px; top: -22px; width: 250px; height: 62px; background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #E3EAEE; border-radius: 18px; box-shadow: 0 24px 44px -26px rgba(11,20,36,0.45); padding: 0 14px">
+            <div style="position: relative; height: 100%"><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #7077FB, #23BCF6); color: #061321; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">AR</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>عائشة</b> <span style="color: #4A5568">من تورنتو</span><br><span style="color: #037A72; font-weight: 600">تبرّع بـ $50</span> <span style="color: #4A5568">· الآن</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #23BCF6, #07A8A3); color: #061321; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">حسنًا</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>عمر</b> <span style="color: #4A5568">من لندن</span><br><span style="color: #037A72; font-weight: 600">تبرّع بـ £25</span> <span style="color: #4A5568">· قبل دقيقة</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #07A8A3, #01966F); color: #061321; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">FY</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>فاطمة</b> <span style="color: #4A5568">من إسطنبول</span><br><span style="color: #037A72; font-weight: 600">تبرّعت بـ ₺750</span> <span style="color: #4A5568">· قبل دقيقتين</span></div></div></div>
+          </div>
+        </figure>
+      </div>
+      <div class="md-rise md-d2" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 28px; padding: 28px; box-shadow: 0 40px 80px -40px rgba(11,20,36,0.28), 0 2px 0 0 rgba(255,255,255,1) inset; position: relative">
+        <div class="md-shine" style="position: absolute; right: 28px; left: 28px; top: -1px; height: 3px; border-radius: 3px"></div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
+          <h2 style="margin: 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: 0">تبرّع سريع</h2>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">تستغرق 30 ثانية</div>
+        </div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568; margin-top: 18px">1 · اختر قضية</div>
+        <div role="group" aria-label="القضية" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px">
+          <template data-for="{{causes}}" data-as="c">
+            <button type="button" class="md-chip" onClick="{{c.pick}}" aria-pressed="{{c.on}}" style="min-height: 44px; padding: 10px 16px; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid {{c.bd}}; background: {{c.bg}}; color: {{c.fg}}">{{c.label}}</button>
+          </template>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 10px; flex-wrap: wrap">
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">2 · كم مرة</div>
+          <div role="group" aria-label="التكرار" style="display: flex; background: #F1F5F7; border-radius: 999px; padding: 4px">
+            <button type="button" onClick="{{setOnce}}" aria-pressed="{{onceOn}}" style="min-height: 38px; padding: 8px 16px; border: 0; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; background: {{onceBg}}; color: {{onceFg}}; box-shadow: {{onceSh}}">مرة واحدة</button>
+            <button type="button" onClick="{{setMonthly}}" aria-pressed="{{monthlyOn}}" style="min-height: 38px; padding: 8px 16px; border: 0; border-radius: 999px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; background: {{monthlyBg}}; color: {{monthlyFg}}; box-shadow: {{monthlySh}}">شهريًا</button>
+          </div>
+        </div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568; margin-top: 20px">3 · اختر مبلغًا</div>
+        <div role="group" aria-label="المبلغ" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px">
+          <template data-for="{{amounts}}" data-as="a">
+            <button type="button" class="md-chip" onClick="{{a.pick}}" aria-pressed="{{a.on}}" style="text-align: right; min-height: 72px; padding: 12px 14px; border-radius: 16px; cursor: pointer; font-family: IBM Plex Sans Arabic, sans-serif; border: 1.5px solid {{a.bd}}; background: {{a.bg}}">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; color: #0B1424">{{a.label}}</div>
+              <div style="font-size: 13px; color: #3B4657; margin-top: 2px; line-height: 1.35">{{a.impact}}</div>
+            </button>
+          </template>
+        </div>
+        <label style="display: flex; align-items: center; gap: 10px; margin-top: 10px; border: 1.5px solid #D5DEE3; border-radius: 14px; padding: 0 14px; min-height: 48px; font-size: 14px; color: #4A5568">
+          <span style="font-weight: 600; color: #0B1424">أخرى</span>
+          <input type="number" min="1" inputMode="decimal" placeholder="أدخل المبلغ" value="{{custom}}" onChange="{{setCustom}}" style="flex: 1; min-width: 0; border: 0; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424; background: transparent; padding: 12px 0">
+          <span style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px">{{cur}}</span>
+        </label>
+        <a href="ar-checkout.html" class="md-btn" style="width: 100%; margin-top: 16px; min-height: 56px; display: flex; align-items: center; justify-content: center; border-radius: 16px; background: #0B1424; color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 17px; text-decoration: none">{{donateLabel}}</a>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 10px">
+          <button type="button" class="md-btn" style="min-height: 48px; border: 0; border-radius: 14px; background: #000000; color: #FFFFFF; font-family: IBM Plex Sans Arabic, sans-serif; font-weight: 600; font-size: 15px; cursor: pointer">Apple Pay</button>
+          <button type="button" class="md-btn" style="min-height: 48px; border: 1.5px solid #D5DEE3; border-radius: 14px; background: #FFFFFF; color: #0B1424; font-family: IBM Plex Sans Arabic, sans-serif; font-weight: 600; font-size: 15px; cursor: pointer">Google Pay</button>
+        </div>
+        <p style="margin: 14px 0 0; font-size: 13px; line-height: 1.5; color: #4A5568; text-align: center">مدينة تأخذ 0%. تُخصم رسوم معالجة البطاقة (نحو 3%) ما لم تختر تغطيتها. أمثلة الأثر توضيحية.</p>
+      </div>
+    </div>
+  </section>
+  <div style="border-top: 1px solid #EEF2F4; border-bottom: 1px solid #EEF2F4; background: #FBFCFD; overflow: hidden" aria-label="لماذا يثق المتبرعون بمدينة">
+    <div class="md-marquee" style="display: flex; width: max-content; gap: 48px; padding: 18px 0; font-family: Alexandria, sans-serif; font-weight: 600; font-size: 17px; color: #2A3446; white-space: nowrap">
+      <template data-for="{{marquee}}" data-as="m">
+        <div style="display: flex; gap: 48px; align-items: center"><span>{{m}}</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
+      </template>
+    </div>
+  </div>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #5A60E8; line-height: 1"><span class="md-count md-countv" style="--n: 2"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">حملة مستضافة</div></div>
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #1A8FC2; line-height: 1">$<span class="md-count md-countv" style="--n: 4"></span>M+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">جُمعت لقضايا الخير</div></div>
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #037A72; line-height: 1"><span class="md-count md-countv" style="--n: 40"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">متبرع حول العالم</div></div>
+      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: 0; color: #017A5B; line-height: 1"><span class="md-count md-countv" style="--n: 35"></span>+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">دولة وصلنا إليها</div></div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">تبرّع حسب القضية</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">اختر ما يحرّك قلبك.</h2>
+      </div>
+      <a href="ar-discover.html" style="font-weight: 600; font-size: 15px; text-decoration: none">كل القضايا ←</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 14px; margin-top: 30px">
+      <template data-for="{{causeCards}}" data-as="k">
+        <a href="ar-discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
+          <div style="width: 48px; height: 48px; border-radius: 14px; background: {{k.tint}}; display: flex; align-items: center; justify-content: center">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="{{k.ink}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{{k.icon}}"></path></svg>
+          </div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 18px">{{k.label}}</div>
+          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">{{k.desc}}</div>
+        </a>
+      </template>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">مميّز الآن</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">نداءات تحتاجك هذا الأسبوع.</h2>
+      </div>
+      <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568; border: 1px dashed #C9D4DA; padding: 6px 10px; border-radius: 999px">تُحدَّث يوميًا</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 18px; margin-top: 30px">
+      <template data-for="{{campaigns}}" data-as="p">
+        <a href="ar-campaign.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; border: 1px solid #E3EAEE; border-radius: 24px; overflow: hidden; background: #FFFFFF; text-decoration: none; color: #0B1424">
+          <div class="md-ph" style="position: relative; height: 210px; background: #E9EEF1; overflow: hidden">
+            <img src="{{p.img}}" alt="{{p.alt}}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: {{p.pos}}; display: block">
+            <div style="position: absolute; right: 14px; top: 14px; display: flex; gap: 6px; flex-wrap: wrap">
+              <div style="font-size: 12px; font-weight: 600; background: #FFFFFF; color: #0B1424; padding: 5px 10px; border-radius: 999px">جمعية موثّقة</div>
+              <template data-if="{{p.zakat}}"><div style="font-size: 12px; font-weight: 600; background: #0B1424; color: #FFFFFF; padding: 5px 10px; border-radius: 999px">مستحقة للزكاة</div></template>
+            </div>
+          </div>
+          <div style="padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+            <div style="font-size: 13px; color: #037A72; font-weight: 600">{{p.org}}</div>
+            <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1.25; letter-spacing: 0">{{p.title}}</div>
+            <div style="margin-top: auto; padding-top: 8px">
+              <div style="height: 8px; border-radius: 8px; background: #E9EEF1; overflow: hidden"><div class="md-bar md-barv" style="height: 100%; width: {{p.pct}}%; border-radius: 8px; background: linear-gradient(90deg, #7077FB, #23BCF6 55%, #07A8A3)"></div></div>
+              <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 14px"><span><b>{{p.raised}}</b> <span style="color: #4A5568">مجموعة</span></span><span style="color: #4A5568">{{p.pct}}% من {{p.goal}}</span></div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 10px">رُوجعت القصة · نوفمبر 2026</div>
+            </div>
+          </div>
+        </a>
+      </template>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="position: relative; overflow: hidden; isolation: isolate; border-radius: 32px; background: #F2F8FA; border: 1px solid #DDECF1; padding: clamp(28px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 36px; align-items: center">
+      <svg viewBox="0 0 600 300" aria-hidden="true" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: 0; width: 60%; height: 100%; z-index: -1; opacity: .5">
+        <path d="M 0 300 C 200 240, 360 120, 600 60" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none"></path>
+        <path d="M 40 300 C 240 250, 400 140, 600 90" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".7"></path>
+        <path d="M 80 300 C 280 260, 440 160, 600 120" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".26"></path>
+      </svg>
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">رمضان 2027 · يبدأ نحو 8 فبراير</div>
+        <h2 style="margin: 12px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 46px); letter-spacing: 0; line-height: 1.08">لا تفوّت<br>العشر الأواخر.</h2>
+        <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #3B4657; max-width: 480px">اضبطه مرة واحدة. نتبرع عنك كل ليلة، فتبلغ صدقتك ليلة القدر حتى لو كنت نائمًا أو مسافرًا أو معتكفًا.</p>
+        <a href="ar-ramadan.html" class="md-btn" style="display: inline-flex; align-items: center; margin-top: 24px; min-height: 52px; padding: 14px 24px; border-radius: 999px; background: #0B1424; color: #FFFFFF; font-weight: 600; text-decoration: none">جدوِل لياليّ العشر</a>
+      </div>
+      <div>
+        <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; max-width: 440px">
+          <template data-for="{{nights}}" data-as="n">
+            <div class="{{n.cls}}" style="aspect-ratio: 1; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: {{n.bg}}; color: {{n.fg}}; border: 1.5px solid {{n.bd}}; animation-delay: {{n.delay}}">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; line-height: 1">{{n.day}}</div>
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; margin-top: 3px">الليلة</div>
+            </div>
+          </template>
+        </div>
+        <div style="margin-top: 14px; font-size: 14px; color: #3B4657">الليالي الوترية مميزة: الليالي التي يُتحرّى فيها ليلة القدر.</div>
+      </div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 40px; align-items: center">
+    <div class="md-reveal">
+      <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">الزكاة ببساطة</div>
+      <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">احسب زكاتك في دقيقة.</h2>
+      <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #3B4657">ثم ادفعها إلى حملات صنّفها مجلس العلماء مستحقة للزكاة. يظهر في كل تقييم من راجعه ومتى.</p>
+      <div style="display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap">
+        <a href="ar-zakat.html" style="font-weight: 600; text-decoration: none">حاسبة الزكاة الكاملة ←</a>
+        <a href="ar-zakat.html" style="font-weight: 600; text-decoration: none">اقرأ سياسة الزكاة ←</a>
+      </div>
+    </div>
+    <div class="md-reveal" style="border: 1px solid #E3EAEE; border-radius: 28px; padding: 26px; background: #FFFFFF; box-shadow: 0 30px 60px -36px rgba(11,20,36,0.25)">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px">
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">النقد والمدخرات<input type="number" min="0" inputMode="decimal" value="{{zCash}}" onChange="{{setZCash}}" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">الذهب والفضة<input type="number" min="0" inputMode="decimal" value="{{zGold}}" onChange="{{setZGold}}" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">الأسهم والاستثمارات<input type="number" min="0" inputMode="decimal" value="{{zInv}}" onChange="{{setZInv}}" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142">ديون مستحقة الآن<input type="number" min="0" inputMode="decimal" value="{{zDebt}}" onChange="{{setZDebt}}" placeholder="0" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+        <label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 600; color: #263142; grid-column: 1 / -1">النصاب اليوم بـ {{cur}} (حسب سعر الذهب أو الفضة الحالي)<input type="number" min="0" inputMode="decimal" value="{{zNisab}}" onChange="{{setZNisab}}" placeholder="أدخل قيمة النصاب اليوم" style="min-height: 46px; border: 1.5px solid #D5DEE3; border-radius: 12px; padding: 10px 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 16px; color: #0B1424"></label>
+      </div>
+      <div style="margin-top: 18px; border-radius: 18px; background: #F2F8FA; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap">
+        <div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #037A72">زكاتك (2.5%)</div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 34px; letter-spacing: 0; margin-top: 4px">{{zDue}}</div>
+          <div style="font-size: 13px; color: #3B4657; margin-top: 2px">{{zNote}}</div>
+        </div>
+        <a href="ar-zakat.html" class="md-btn" style="min-height: 48px; display: inline-flex; align-items: center; padding: 12px 20px; border-radius: 999px; background: #0B1424; color: #FFFFFF; font-weight: 600; text-decoration: none">ادفع زكاتي</a>
+      </div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">الجمعيات الموثّقة</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">تابع الجمعيات التي تثق بها.</h2>
+      </div>
+      <a href="ar-charity.html" style="font-weight: 600; font-size: 15px; text-decoration: none">كل الجمعيات ←</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 14px; margin-top: 30px">
+      <template data-for="{{charities}}" data-as="ch">
+        <div class="md-lift md-reveal" style="border: 1px solid #E3EAEE; border-radius: 22px; padding: 20px; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center">
+            <div style="width: 48px; height: 48px; border-radius: 14px; background: {{ch.tint}}; color: #FFFFFF; font-family: Alexandria, sans-serif; font-weight: 700; font-size: 17px; display: flex; align-items: center; justify-content: center">{{ch.initials}}</div>
+            <div style="min-width: 0">
+              <a href="ar-charity.html" style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 16px; color: #0B1424; text-decoration: none">{{ch.name}}</a>
+              <div style="font-size: 13px; color: #4A5568">{{ch.country}} · رقم التسجيل ⁦81234 5678 RR0001⁩</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 6px; flex-wrap: wrap">
+            <div style="font-size: 12px; font-weight: 600; color: #037A72; background: #EAF6F7; padding: 5px 10px; border-radius: 999px">موثّقة</div>
+            <div style="font-size: 12px; font-weight: 600; color: #3E44C9; background: #EEF0FF; padding: 5px 10px; border-radius: 999px">تقييم الزكاة: {{ch.rating}}</div>
+          </div>
+          <button type="button" class="md-chip" onClick="{{ch.toggle}}" aria-pressed="{{ch.on}}" style="margin-top: 4px; min-height: 44px; border-radius: 12px; font-family: IBM Plex Sans Arabic, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; border: 1.5px solid {{ch.bd}}; background: {{ch.bg}}; color: {{ch.fg}}">{{ch.btn}}</button>
+        </div>
+      </template>
+    </div>
+    <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 12px">تظهر التقييمات مع اسم المراجِع والتاريخ في كل ملف.</div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="text-align: center; max-width: 720px; margin: 0 auto">
+      <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">لماذا تتبرع عبر مدينة</div>
+      <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">كل تبرع يُراجَع ويُتتبَّع ويُحمى.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin-top: 36px">
+      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 13px; color: #5A60E8">01</div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">يُراجع قبل النشر</div>
+        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">نتحقق من تسجيل كل جمعية، ويقيّم مجلس العلماء طريقة تعاملها مع الزكاة.</p>
+      </div>
+      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 13px; color: #1A8FC2">02</div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">تحديثات تراها بعينك</div>
+        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">تحديثات بالصور والفيديو من الميدان، مباشرة إلى بريدك أو تطبيق مدينة.</p>
+      </div>
+      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #0B1424; color: #FFFFFF; position: relative; overflow: hidden">
+        <div class="md-shine" style="position: absolute; right: 0; left: 0; top: 0; height: 4px"></div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 13px; color: #7FD9F9">03</div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">ضمان العطاء من مدينة</div>
+        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #D5DDE8">إذا ثبت أن الحملة احتيالية، نعيد إليك تبرعك. بلا ألاعيب في الشروط.</p>
+        <a href="ar-trust.html" style="display: inline-block; margin-top: 14px; color: #7FD9F9; font-weight: 600; text-decoration: none">كيف يعمل الضمان ←</a>
+      </div>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
+    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">مدينة تعلّم</div>
+        <h2 style="margin: 10px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: 0; line-height: 1.1">أسئلة العطاء، وإجاباتها.</h2>
+      </div>
+      <a href="ar-learn.html" style="font-weight: 600; font-size: 15px; text-decoration: none">كل الإجابات ←</a>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; margin-top: 30px">
+      <template data-for="{{articles}}" data-as="r">
+        <a href="ar-learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
+          <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #037A72">{{r.tag}}</div>
+          <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: 0">{{r.q}}</div>
+          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">{{r.a}}</div>
+          <div style="margin-top: auto; font-size: 13px; color: #4A5568">راجعه الشيخ حمزة إدريس · قراءة في دقيقتين</div>
+        </a>
+      </template>
+    </div>
+  </section>
+  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px">
+    <div class="md-reveal" style="border-radius: 32px; background: #F6F9FA; border: 1px solid #E3EAEE; padding: clamp(28px, 4vw, 56px); display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 40px; align-items: center; overflow: hidden">
+      <div>
+        <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; color: #037A72">تطبيق مدينة · قريبًا</div>
+        <h2 style="margin: 12px 0 0; font-family: Alexandria, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 46px); letter-spacing: 0; line-height: 1.08">تابع الخير<br>صنعتَه أنت.</h2>
+        <p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #3B4657; max-width: 460px">تابع الجمعيات، واحصل على تحديثات الحملات التي دعمتها، وتبرّع بنقرة واحدة عبر Apple Pay أو Google Pay.</p>
+        <div style="display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap">
+          <a href="#" class="md-btn" style="min-height: 52px; display: inline-flex; align-items: center; padding: 12px 20px; border-radius: 14px; background: #0B1424; color: #FFFFFF; font-weight: 600; text-decoration: none">أخبرني عند الإطلاق</a>
+          <a href="ar-signin-donor.html" style="min-height: 52px; display: inline-flex; align-items: center; padding: 12px 6px; font-weight: 600; text-decoration: none">افتح بوابة المتبرع ←</a>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <div class="md-float" style="width: 290px; height: 560px; border-radius: 44px; background: #0B1424; padding: 12px; box-shadow: 0 50px 90px -40px rgba(11,20,36,0.5)">
+          <div style="width: 100%; height: 100%; border-radius: 34px; background: linear-gradient(180deg, #F6F9FA, #FFFFFF); padding: 22px 16px; display: flex; flex-direction: column; gap: 12px; overflow: hidden">
+            <img src="madinah-wordmark.png" alt="" style="height: 22px; width: auto; align-self: flex-start">
+            <div style="font-family: Alexandria, sans-serif; font-weight: 700; font-size: 20px; margin-top: 6px">المتابَعة</div>
+            <div class="md-n1" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 16px; padding: 12px; box-shadow: 0 10px 24px -16px rgba(11,20,36,0.3)">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; color: #037A72">تحديث جديد</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 4px">وصلت حقائب الشتاء إلى 120 عائلة</div>
+              <div style="font-size: 12px; color: #4A5568; margin-top: 2px">جسر الأمل للإغاثة · قبل ساعتين</div>
+            </div>
+            <div class="md-n2" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 16px; padding: 12px; box-shadow: 0 10px 24px -16px rgba(11,20,36,0.3)">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; color: #5A60E8">اقتربنا</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 4px">بئر القرية مموّلة بنسبة 92%</div>
+              <div style="height: 6px; border-radius: 6px; background: #E9EEF1; margin-top: 8px; overflow: hidden"><div style="width: 92%; height: 100%; background: linear-gradient(90deg, #7077FB, #23BCF6, #07A8A3)"></div></div>
+            </div>
+            <div class="md-n3" style="background: #0B1424; color: #FFFFFF; border-radius: 16px; padding: 12px">
+              <div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 10px; color: #7FD9F9">الليلة · الليلة السابعة والعشرون</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 4px">يخرج تبرعك المجدول عند المغرب.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer style="background: #F6F9FA; border-top: 1px solid #E3EAEE">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 32px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <img src="madinah-wordmark.png" alt="مدينة" style="height: 30px; width: auto; align-self: flex-start">
+        <div style="font-size: 14px; line-height: 1.6; color: #3B4657">مجتمع من المعطائين. شركة مدينة للعطاء، 245 شارع كينغ الشرقي، تورنتو، أونتاريو.</div>
+      </div>
+      <nav aria-label="تبرّع" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">تبرّع</div><a href="ar.html" style="color: #0B1424; text-decoration: none">الأكثر حاجة</a><a href="ar-zakat.html" style="color: #0B1424; text-decoration: none">زكاة</a><a href="ar-discover.html" style="color: #0B1424; text-decoration: none">غزة</a><a href="ar-discover.html" style="color: #0B1424; text-decoration: none">الأيتام</a><a href="ar-discover.html" style="color: #0B1424; text-decoration: none">المياه</a></nav>
+      <nav aria-label="تعلّم" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">تعلّم</div><a href="ar-zakat.html" style="color: #0B1424; text-decoration: none">حاسبة الزكاة</a><a href="ar-learn.html" style="color: #0B1424; text-decoration: none">أدلة العطاء</a><a href="#" style="color: #0B1424; text-decoration: none">رمضان</a><a href="ar-merch.html" style="color: #0B1424; text-decoration: none">المنتجات</a></nav>
+      <nav aria-label="الجمعيات" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">الجمعيات</div><a href="ar-signin-client.html" style="color: #0B1424; text-decoration: none">ابدأ حملة تبرعات</a><a href="ar-signin-client.html" style="color: #0B1424; text-decoration: none">بوابة العميل</a><a href="ar-charity.html" style="color: #0B1424; text-decoration: none">شارة الشريك</a><a href="ar-signin-client.html" style="color: #0B1424; text-decoration: none">احصل على التوثيق</a></nav>
+      <nav aria-label="مدينة" style="display: flex; flex-direction: column; gap: 10px; font-size: 14px"><div style="font-family: Alexandria, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 0; color: #4A5568">مدينة</div><a href="ar-about.html" style="color: #0B1424; text-decoration: none">من نحن</a><a href="ar-trust.html" style="color: #0B1424; text-decoration: none">الثقة والضمان</a><a href="ar-trust.html" style="color: #0B1424; text-decoration: none">الرسوم</a><a href="ar-faq.html" style="color: #0B1424; text-decoration: none">تواصل معنا</a></nav>
+    </div>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 18px 24px 28px; border-top: 1px solid #E3EAEE; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 13px; color: #4A5568">
+      <div>© 2026 مدينة. جميع الحقوق محفوظة.</div>
+      <div style="display: flex; gap: 16px"><a href="#" style="color: #4A5568">الخصوصية</a><a href="#" style="color: #4A5568">الشروط</a><a href="#" style="color: #4A5568">ملفات تعريف الارتباط</a></div>
+    </div>
+  </footer>
+</div></template>
+<script type="text/x-dc-logic" id="dc-logic" data-props='{"animate":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":6155}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { lang: 'ar', cur: 'USD', cause: 'most', freq: 'once', amt: 1, custom: '', followed: {}, zCash: '', zGold: '', zInv: '', zDebt: '', zNisab: '' };
+  }
+  renderVals() {
+    const s = this.state;
+    const T = {
+      en: { lead: 'Give where it’s', accent: 'needed most.', sub: 'Verified charities, scholar-reviewed zakat and 0% platform fees. Choose a cause and give in under a minute.', cta: 'Donate', dir: 'ltr' },
+      ar: { lead: 'تبرّع حيث', accent: 'تشتدّ الحاجة.', sub: 'جمعيات خيرية موثّقة، وزكاة يراجعها العلماء، وبدون رسوم منصّة. اختر قضية وتبرّع في أقل من دقيقة.', cta: 'تبرّع', dir: 'rtl' },
+      tr: { lead: 'En çok ihtiyaç olan', accent: 'yere bağış yapın.', sub: 'Doğrulanmış hayır kurumları, âlimlerce incelenen zekât ve %0 platform ücreti. Bir amaç seçin, bir dakikadan kısa sürede bağış yapın.', cta: 'Bağış yap', dir: 'ltr' },
+      fr: { lead: 'Donnez là où', accent: 'le besoin est le plus grand.', sub: 'Associations vérifiées, zakat examinée par des savants et 0 % de frais de plateforme. Choisissez une cause et donnez en moins d’une minute.', cta: 'Faire un don', dir: 'ltr' },
+      ur: { lead: 'وہاں عطیہ کریں', accent: 'جہاں سب سے زیادہ ضرورت ہے۔', sub: 'تصدیق شدہ خیراتی ادارے، علما کی جانچ شدہ زکوٰۃ، اور پلیٹ فارم فیس صفر۔ ایک مقصد چنیں اور ایک منٹ میں عطیہ کریں۔', cta: 'عطیہ کریں', dir: 'rtl' }
+    };
+    const t = T[s.lang] || T.en;
+    const SETS = { USD: [25, 50, 100, 250], CAD: [35, 70, 140, 350], GBP: [20, 40, 80, 200], EUR: [25, 50, 100, 250], TRY: [1000, 2000, 4000, 10000], AED: [100, 200, 400, 1000], MYR: [100, 200, 500, 1000] };
+    const fmt = (v) => { try { return new Intl.NumberFormat('en', { style: 'currency', currency: s.cur, maximumFractionDigits: 0 }).format(v); } catch (e) { return s.cur + ' ' + Math.round(v); } };
+    const IMPACT = {
+      most: ['طعام عاجل لعائلة', 'أسبوع من الوجبات', 'رعاية طبية لطفل', 'حقيبة إيواء طارئة'],
+      zakat: ['سلة غذائية لعائلة', 'مساعدة في إيجار عائلة', 'رسوم مدرسية ليتيم', 'سداد دين عن عائلة'],
+      gaza: ['وجبات ساخنة لعائلة', 'مياه نظيفة لأسبوع', 'مستلزمات طبية', 'حقيبة إيواء شتوية'],
+      orphans: ['أدوات مدرسية', 'شهر من الوجبات', 'شهر من الرعاية الكاملة', 'ثلاثة أشهر من الرعاية'],
+      water: ['مياه لعائلة لمدة شهر', 'فلتر مياه لمنزل', 'إصلاح مضخة القرية', 'مساهمة في بئر جديدة'],
+      masjid: ['سجاد صلاة', 'شهر من فواتير الخدمات', 'حلقات قرآن لفصل دراسي', 'مساهمة في الترميم']
+    };
+    const CAUSES = [['most', 'الأكثر حاجة'], ['zakat', 'زكاة'], ['gaza', 'غزة'], ['orphans', 'الأيتام'], ['water', 'المياه'], ['masjid', 'المساجد']];
+    const causes = CAUSES.map(([id, label]) => {
+      const on = s.cause === id;
+      return { label, on: on ? 'true' : 'false', bd: on ? '#0B1424' : '#D5DEE3', bg: on ? '#0B1424' : '#FFFFFF', fg: on ? '#FFFFFF' : '#0B1424', pick: () => this.setState({ cause: id }) };
+    });
+    const set = SETS[s.cur] || SETS.USD;
+    const amounts = set.map((v, i) => {
+      const on = s.amt === i && !s.custom;
+      return { label: fmt(v), impact: IMPACT[s.cause][i], on: on ? 'true' : 'false', bd: on ? '#07A8A3' : '#E3EAEE', bg: on ? '#EAF6F7' : '#FFFFFF', pick: () => this.setState({ amt: i, custom: '' }) };
+    });
+    const chosen = s.custom ? Number(s.custom) : set[s.amt];
+    const monthly = s.freq === 'monthly';
+    const donateLabel = t.cta + ' ' + (chosen > 0 ? fmt(chosen) : '') + (monthly ? ' / شهريًا' : '');
+    const num = (x) => { const n = parseFloat(x); return isNaN(n) ? 0 : n; };
+    const total = num(s.zCash) + num(s.zGold) + num(s.zInv) - num(s.zDebt);
+    const nisab = num(s.zNisab);
+    let zDue = fmt(0), zNote = 'أدخل أموالك لترى زكاتك.';
+    if (total > 0 && nisab > 0 && total < nisab) { zNote = 'أقل من النصاب الذي أدخلته، فلا تجب الزكاة.'; }
+    else if (total > 0) { zDue = fmt(total * 0.025); zNote = nisab > 0 ? 'ثروتك فوق النصاب.' : 'أضف قيمة النصاب اليوم لتأكيد وجوب الزكاة.'; }
+    const CCARDS = [
+      ['الأكثر حاجة', 'تُرسل إلى أكثر النداءات الموثّقة إلحاحًا. ننشر وجهتها كل شهر.', '#EEF0FF', '#5A60E8', 'M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z'],
+      ['زكاة', 'فقط إلى حملات صنّفها مجلس العلماء مستحقة للزكاة.', '#E3F6FD', '#1A8FC2', 'M12 3v18M7 7h7.5a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6H17'],
+      ['غزة', 'غذاء ومياه ومأوى ومساعدات طبية عبر شركاء موثّقين.', '#E6F6F4', '#037A72', 'M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z'],
+      ['الأيتام', 'كفالة شهرية تغطي الطعام والتعليم والرعاية.', '#E2F5EF', '#017A5B', 'M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21v-2a6 6 0 0 1 12 0v2'],
+      ['المياه', 'آبار ومضخات وفلاتر تدوم لسنوات.', '#E3F6FD', '#1A8FC2', 'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z'],
+      ['المساجد', 'بناء المساجد والمراكز المجتمعية وترميمها وتشغيلها.', '#EEF0FF', '#5A60E8', 'M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4']
+    ];
+    const causeCards = CCARDS.map(([label, desc, tint, ink, icon]) => ({ label, desc, tint, ink, icon }));
+    const campaigns = [
+      { org: 'جسر الأمل للإغاثة', title: 'دفء الشتاء للعائلات النازحة', raised: fmt(SETS[s.cur][3] * 194), goal: fmt(SETS[s.cur][3] * 280), pct: 69, zakat: true, img: 'food-parcel.jpg', alt: 'جدّة وأطفال مع سلة غذائية طارئة', pos: 'center 35%', tint: 'linear-gradient(135deg, #7077FB, #23BCF6)', icon: 'M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z' },
+      { org: 'صندوق كليرويل للمياه', title: 'بئر لقرية من 600 شخص', raised: fmt(SETS[s.cur][3] * 92), goal: fmt(SETS[s.cur][3] * 100), pct: 92, zakat: false, img: 'well-pump.jpg', alt: 'أهل القرية حول بئر جديدة بمضخة يدوية', pos: 'center 40%', tint: 'linear-gradient(135deg, #23BCF6, #07A8A3)', icon: 'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z' },
+      { org: 'فوانيس صغيرة لرعاية الأيتام', title: 'اكفل تعليم طفل لمدة عام', raised: fmt(SETS[s.cur][3] * 41), goal: fmt(SETS[s.cur][3] * 120), pct: 34, zakat: true, img: 'school-lunch.jpg', alt: 'تلاميذ يضحكون خلال وجبة الغداء المدرسية', pos: 'center 45%', tint: 'linear-gradient(135deg, #07A8A3, #01966F)', icon: 'M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21v-2a6 6 0 0 1 12 0v2' }
+    ];
+    const nights = [21, 22, 23, 24, 25, 26, 27, 28, 29, 30].map((d, i) => {
+      const odd = d % 2 === 1;
+      return { day: d, cls: odd ? 'md-pulse' : '', bg: odd ? 'linear-gradient(135deg, #7077FB, #23BCF6 60%, #07A8A3)' : '#FFFFFF', fg: odd ? '#061321' : '#3B4657', bd: odd ? 'transparent' : '#D5DEE3', delay: (i * 0.25).toFixed(2) + 's' };
+    });
+    const CH = [
+      ['sr', 'HB', 'جسر الأمل للإغاثة', 'كندا', 'A', 'linear-gradient(135deg, #7077FB, #23BCF6)'],
+      ['sw', 'CW', 'صندوق كليرويل للمياه', 'المملكة المتحدة', 'A', 'linear-gradient(135deg, #23BCF6, #07A8A3)'],
+      ['so', 'LL', 'فوانيس صغيرة لرعاية الأيتام', 'الولايات المتحدة', 'B', 'linear-gradient(135deg, #07A8A3, #01966F)'],
+      ['sm', 'NM', 'صندوق مسجد النور', 'تركيا', 'A', 'linear-gradient(135deg, #5A60E8, #07A8A3)']
+    ];
+    const charities = CH.map(([id, initials, name, country, rating, tint]) => {
+      const on = !!s.followed[id];
+      return { initials, name, country, rating, tint, on: on ? 'true' : 'false', btn: on ? 'المتابَعة' : 'متابعة', bd: on ? '#07A8A3' : '#0B1424', bg: on ? '#EAF6F7' : '#FFFFFF', fg: on ? '#037A72' : '#0B1424', toggle: () => this.setState({ followed: Object.assign({}, s.followed, { [id]: !on }) }) };
+    });
+    const articles = [
+      { tag: 'الزكاة', q: 'هل يجوز دفع زكاتي لغزة؟', a: 'نعم، إلى حملات تصل إلى المستحقين. ابحث عن شارة الاستحقاق للزكاة التي يراجعها مجلس العلماء.' },
+      { tag: 'رمضان', q: 'كم زكاة الفطر هذا العام؟', a: 'يعتمد ذلك على مكان إقامتك. ننشر المبلغ لكل دولة، بمراجعة علمائنا وتاريخها.' },
+      { tag: 'الزكاة', q: 'هل تجب الزكاة في العملات الرقمية؟', a: 'يرى أكثر العلماء أن العملات الرقمية المدّخرة أو المعدّة للتجارة مال زكوي. إليك طريقة تقييمها.' }
+    ];
+    const marquee = ['0% رسوم منصّة', 'جمعيات موثّقة', 'زكاة بمراجعة العلماء', 'ضمان العطاء', 'Apple Pay وGoogle Pay', '⁦+35⁩ دولة', '0% رسوم منصّة', 'جمعيات موثّقة', 'زكاة بمراجعة العلماء', 'ضمان العطاء', 'Apple Pay وGoogle Pay', '⁦+35⁩ دولة'];
+    const onSel = { bg: '#FFFFFF', fg: '#0B1424', sh: '0 2px 8px rgba(11,20,36,0.12)' };
+    const offSel = { bg: 'transparent', fg: '#4A5568', sh: 'none' };
+    const o = monthly ? offSel : onSel, m = monthly ? onSel : offSel;
+    return {
+      rootClass: this.props.animate === false ? 'md-off' : '',
+      lang: s.lang, cur: s.cur, dir: t.dir, t,
+      setLang: (e) => this.setState({ lang: e.target.value }),
+      setCur: (e) => this.setState({ cur: e.target.value, custom: '' }),
+      causes, amounts, custom: s.custom, setCustom: (e) => this.setState({ custom: e.target.value }),
+      donateLabel,
+      setOnce: () => this.setState({ freq: 'once' }), setMonthly: () => this.setState({ freq: 'monthly' }),
+      onceOn: monthly ? 'false' : 'true', monthlyOn: monthly ? 'true' : 'false',
+      onceBg: o.bg, onceFg: o.fg, onceSh: o.sh, monthlyBg: m.bg, monthlyFg: m.fg, monthlySh: m.sh,
+      marquee, causeCards, campaigns, nights, charities, articles,
+      zCash: s.zCash, zGold: s.zGold, zInv: s.zInv, zDebt: s.zDebt, zNisab: s.zNisab,
+      setZCash: (e) => this.setState({ zCash: e.target.value }), setZGold: (e) => this.setState({ zGold: e.target.value }),
+      setZInv: (e) => this.setState({ zInv: e.target.value }), setZDebt: (e) => this.setState({ zDebt: e.target.value }),
+      setZNisab: (e) => this.setState({ zNisab: e.target.value }),
+      zDue, zNote
+    };
+  }
+}
+</script>
+<script src="dc-lite.js"></script>
+</body>
+</html>

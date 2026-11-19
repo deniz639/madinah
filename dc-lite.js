@@ -85,7 +85,7 @@
       }
       if (a.tagName === 'DETAILS') continue; /* let the visitor open/close FAQs */
       morph(a, b);
-      if (a.tagName === 'SELECT') { var sel = b.querySelector('option[selected]'); if (sel) a.value = sel.value || sel.textContent; }
+      if (a.tagName === 'SELECT') { var sel = b.querySelector('option[selected]'); if (b.hasAttribute('value')) a.value = b.getAttribute('value'); else if (sel) a.value = sel.value || sel.textContent; }
     }
     while (lc.length > nc.length) live.removeChild(live.lastChild);
   }
