@@ -9,7 +9,7 @@
 <meta property="og:description" content="Give to verified Muslim charities with 0% platform fees. Zakat-eligible causes, instant receipts and proof of impact.">
 <meta property="og:image" content="madinah-wordmark.png">
 <link rel="icon" type="image/png" href="favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;family=Caveat:wght@500;600;700&amp;family=Aref+Ruqaa:wght@400;700&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#FFFFFF}
 a{color:#037A72}a:hover{color:#025A54}
@@ -75,20 +75,184 @@ a{color:#037A72}a:hover{color:#025A54}
 @media (prefers-reduced-motion: reduce){.md-toast:first-child{opacity:1!important}}
 .md-mnav{display:none;position:static}.md-mnav summary{list-style:none;cursor:pointer}.md-mnav summary::-webkit-details-marker{display:none}.md-mnav[open] .md-mnav-ic1{display:none}.md-mnav:not([open]) .md-mnav-ic2{display:none}
 @media (max-width: 860px){.md-navlinks{display:none!important}.md-mnav{display:block}.md-hide-sm{display:none!important}.md-hero-in{padding-top:36px!important;padding-bottom:150px!important;gap:36px!important}.md-stats{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}.md-stats>div{padding:18px!important}.md-stats>div>div:first-child{font-size:34px!important;letter-spacing:-1px!important}.md-hero-ph{height:240px!important}.md-hero-fig{margin-top:56px!important}}
+
+.md-home{--dx:1}
+.md-grid{background-image:linear-gradient(rgba(11,20,36,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(11,20,36,.045) 1px,transparent 1px);background-size:56px 56px;background-position:center top}
+.md-head{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid rgba(11,20,36,.06)}
+.md-nl{color:#0B1424;text-decoration:none;position:relative}.md-nl::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:linear-gradient(90deg,#7077FB,#23BCF6,#07A8A3);transform:scaleX(0);transform-origin:left;transition:transform .3s}.md-nl:hover::after{transform:scaleX(1)}
+.md-cur{display:flex;align-items:center;gap:6px;font-family:Poppins,sans-serif;font-weight:600;font-size:10px;letter-spacing:1.5px;color:#4A5568}.md-cur select{font-family:Inter,sans-serif;font-size:13px;padding:7px 8px;border:1px solid #D5DEE3;border-radius:999px;background:#FFFFFF;color:#0B1424}
+.md-cta{display:inline-flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-weight:600;font-size:15px;color:#061321!important;text-decoration:none;padding:11px 22px;border-radius:999px;background:linear-gradient(135deg,#7077FB,#23BCF6 55%,#07A8A3);box-shadow:0 10px 30px -12px rgba(35,188,246,.75)}
+.md-cta:hover{box-shadow:0 14px 34px -10px rgba(35,188,246,.95)}
+.md-cta-lg{font-size:17px;padding:16px 30px;min-height:56px}
+.md-ghost{display:inline-flex;align-items:center;min-height:56px;padding:16px 28px;border-radius:999px;border:1.5px solid #0B1424;color:#0B1424!important;text-decoration:none;font-family:Poppins,sans-serif;font-weight:600;font-size:17px;background:#FFFFFF}
+.md-now{transition:opacity .35s,transform .35s;position:absolute;right:24px;top:100%;margin-top:10px;display:flex;gap:8px;align-items:center;font-family:Poppins,sans-serif;font-weight:600;font-size:11px;letter-spacing:2px;color:#6B7686;background:rgba(255,255,255,.9);border:1px solid #E3EAEE;border-radius:999px;padding:6px 12px}
+.md-tk{height:16px;overflow:hidden}.md-tk-r{animation:mdTick 12s cubic-bezier(.7,0,.2,1) infinite}.md-tk-i{height:16px;line-height:16px;color:#0B1424;white-space:nowrap}
+@keyframes mdTick{0%,20%{transform:translateY(0)}25%,45%{transform:translateY(-16px)}50%,70%{transform:translateY(-32px)}75%,95%{transform:translateY(-48px)}100%{transform:translateY(-64px)}}
+.md-acc{background:linear-gradient(100deg,#5A60E8 0%,#1A9FD8 45%,#07A8A3 75%,#01966F 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.md-hand{font-family:Caveat,cursive;font-weight:600;line-height:1.15;color:#0B1424}
+.md-h1{font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(42px,5.2vw,78px);line-height:1.02;letter-spacing:-.045em;animation:mdRise .9s .2s both}
+.md-h2{font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(34px,4.6vw,68px);line-height:1.05;letter-spacing:-.04em}
+.md-lead{font-size:clamp(17px,1.35vw,20px);line-height:1.6;color:#3B4657;animation:mdRise .9s .32s both}
+.md-tags{display:flex;flex-wrap:wrap;gap:8px 18px;animation:mdFade 1s .7s both}
+.md-tag{display:inline-block;font-family:Poppins,sans-serif;font-weight:600;font-size:12px;letter-spacing:1.5px;color:#0B1424}.md-tag2{color:#037A72}
+.md-pin{position:relative}
+.md-stick{position:relative;padding:110px 0}
+#hero .md-stick{padding:70px 0 90px}
+.md-art{position:relative}
+.md-art-cap{position:absolute;font-family:Poppins,sans-serif;font-size:12px;letter-spacing:1.5px;color:#4A5568;background:#FFFFFF;border:1px solid #E3EAEE;border-radius:999px;padding:7px 12px;box-shadow:0 10px 30px -18px rgba(11,20,36,.4);transition:opacity .4s}
+.md-art-cap b{color:#0B1424}.md-cap1{left:4%;top:12%}.md-cap2{right:2%;bottom:10%}
+html.md-js .md-art-fallback{display:none!important}html:not(.md-js) #md-particles{display:none!important}
+html.md-js .md-cap1{opacity:calc(1 - var(--m,0)*2)}html.md-js .md-cap2{opacity:calc(var(--m,1)*2 - 1)}
+/* chapter 02 mosaic */
+.md-mosaic-wrap{position:relative;max-width:1240px;margin:44px auto 0;padding:0 24px;perspective:1400px}
+.md-mosaic{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.md-tile{margin:0;position:relative;border-radius:22px;overflow:hidden;background:#F6F9FA;border:1px solid #E3EAEE;aspect-ratio:4/3.1;box-shadow:0 30px 60px -40px rgba(11,20,36,.45)}
+.md-tile-ph{position:absolute;inset:0}.md-tile figcaption{position:absolute;left:12px;right:12px;bottom:12px;font-family:Poppins,sans-serif;font-weight:700;font-size:15px;line-height:1.25;color:#FFFFFF;text-shadow:0 2px 14px rgba(0,0,0,.55)}
+.md-tile::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(180deg,transparent,rgba(6,19,33,.65));pointer-events:none}
+.md-tile-q{display:flex;flex-direction:column;justify-content:flex-end;padding:18px;background:#FFFFFF;border:1.5px solid #CDEBEC}.md-tile-q::after{display:none}
+.md-tile-q>div{font-family:Poppins,sans-serif;font-weight:700;font-size:19px;line-height:1.2;letter-spacing:-.3px}
+.md-thread{position:absolute;left:0;right:0;top:4%;width:100%;height:92%;pointer-events:none;z-index:2;overflow:visible}
+.md-thread path{stroke-dasharray:1;stroke-dashoffset:calc(1 - var(--p,1));filter:drop-shadow(0 4px 10px rgba(35,188,246,.45))}
+.md-mos-line{max-width:760px;margin:34px auto 0;padding:0 24px;text-align:center;font-size:19px;line-height:1.55;color:#3B4657}
+/* chapter 03 flow */
+.md-steps,.md-pills{list-style:none;margin:0;padding:0;display:flex;gap:8px;flex-wrap:wrap}
+.md-steps li,.md-pills li{font-family:Poppins,sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;color:#6B7686;border:1px solid #E3EAEE;background:#FFFFFF;border-radius:999px;padding:7px 12px}
+.md-flow{margin-top:44px;display:grid;grid-template-columns:150px 1fr minmax(0,330px) 1fr minmax(0,330px) 1fr 150px;align-items:center}
+.md-node{display:flex;flex-direction:column;align-items:center;gap:12px}
+.md-node-lab,.md-ch-lab{font-family:Poppins,sans-serif;font-weight:600;font-size:11px;letter-spacing:2px;color:#6B7686;text-align:center}
+.md-coins{display:grid;grid-template-columns:repeat(2,34px);gap:8px}
+.md-coin{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Poppins,sans-serif;font-weight:700;color:#061321;background:linear-gradient(135deg,#7077FB,#23BCF6 60%,#07A8A3);box-shadow:0 6px 16px -6px rgba(35,188,246,.8)}
+.md-pipe{height:4px;margin:0 8px;border-radius:4px;background:#E3EAEE;position:relative;overflow:hidden}.md-pipe i{position:absolute;inset:0;background:linear-gradient(90deg,#7077FB,#23BCF6,#07A8A3);transform-origin:left;transform:scaleX(1)}
+.md-chamber{background:#FFFFFF;border:1.5px solid #E3EAEE;border-radius:24px;padding:20px;box-shadow:0 30px 60px -44px rgba(11,20,36,.5)}
+.md-ch-lab{text-align:start}.md-ch-q{font-family:Poppins,sans-serif;font-weight:700;font-size:18px;line-height:1.25;margin-top:8px;letter-spacing:-.3px}
+.md-ch-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:4px}.md-ch-list li::before{content:"✓ ";color:#07A8A3;font-weight:700}
+.md-dbars{display:flex;align-items:flex-end;gap:7px;height:88px;margin-top:16px}.md-dbars i{flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,#23BCF6,#07A8A3);height:calc(var(--h)*100%);transform-origin:bottom}
+.md-ch-stats{margin-top:14px;display:grid;gap:4px;font-size:14px;color:#3B4657}.md-ch-stats b{color:#0B1424;font-family:Poppins,sans-serif}
+.md-out-ic{width:76px;height:76px;border-radius:24px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#07A8A3,#01966F);box-shadow:0 18px 40px -16px rgba(1,150,111,.8)}
+/* chapter 04 */
+.md-tick{width:24px;height:24px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#23BCF6,#07A8A3)}
+/* chapter 05 */
+.md-hwrap{margin-top:40px;overflow:visible}
+.md-htrack{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:18px;max-width:1240px;margin:0 auto;padding:0 24px}
+.md-stage{background:#FFFFFF;border:1.5px solid #E3EAEE;border-radius:26px;padding:24px;display:flex;flex-direction:column;box-shadow:0 30px 60px -46px rgba(11,20,36,.5)}
+.md-stage h3{margin:18px 0 10px;font-family:Poppins,sans-serif;font-weight:700;font-size:40px;letter-spacing:-1.4px;line-height:1}
+.md-stage p{margin:8px 0 0;font-size:15.5px;line-height:1.55;color:#3B4657}
+.md-stage-n{font-family:Poppins,sans-serif;font-weight:700;font-size:13px;color:#037A72;letter-spacing:1px}
+.md-stage-end{background:transparent;border:1.5px dashed #CDEBEC;box-shadow:none;justify-content:center}
+.md-hbar{display:none}
+/* chapter 06 */
+.md-phone{position:relative;width:300px;height:600px;border-radius:46px;background:#FFFFFF;border:10px solid #0B1424;box-shadow:0 60px 100px -50px rgba(11,20,36,.6);overflow:hidden;flex-shrink:0}
+.md-notch{position:absolute;top:8px;left:50%;transform:translateX(-50%);width:96px;height:24px;border-radius:14px;background:#0B1424;z-index:3}
+.md-scr{position:absolute;inset:0;padding-top:42px;opacity:0;transition:opacity .45s,transform .45s;transform:translateY(14px)}
+.md-scr1{opacity:1;transform:none}
+.md-scr-ph{height:230px;overflow:hidden}
+.md-scr-bar{height:6px;border-radius:6px;background:#EEF2F4;margin-top:12px;overflow:hidden}.md-scr-bar i{display:block;height:100%;background:linear-gradient(90deg,#7077FB,#23BCF6,#07A8A3)}
+.md-scr-btn{margin-top:12px;min-height:44px;border-radius:12px;background:#0B1424;color:#FFFFFF;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center}
+.md-scr-amts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}.md-scr-amts span{border:1.5px solid #E3EAEE;border-radius:12px;padding:12px;text-align:center;font-family:Poppins,sans-serif;font-weight:700}.md-scr-amts .on{border-color:#07A8A3;background:#EAF6F7}
+.md-scr-tog{display:grid;grid-template-columns:1fr 1fr;background:#EEF2F4;border-radius:10px;padding:3px;margin-top:12px;font-size:13px;font-weight:600;text-align:center}.md-scr-tog span{padding:7px}.md-scr-tog .on{background:#FFFFFF;border-radius:8px;box-shadow:0 2px 6px rgba(11,20,36,.12)}
+.md-scr-ok{width:64px;height:64px;border-radius:50%;margin:0 auto;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#07A8A3,#01966F)}
+.md-phone-stage{display:none}
+.md-phone-static{max-width:1240px;margin:40px auto 0;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:24px}
+.md-mini{display:flex;flex-direction:column;align-items:center;text-align:center}.md-mini-lab{font-family:Poppins,sans-serif;font-weight:600;font-size:11px;letter-spacing:2px;color:#037A72;margin-bottom:12px}
+.md-phone-sm{width:250px;height:500px;border-width:8px;border-radius:40px}.md-phone-sm .md-scr-ph{height:190px}
+.md-side{position:relative;width:min(340px,26vw);height:220px}
+.md-sl,.md-sr{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;opacity:0;transition:opacity .45s,transform .45s;transform:translateY(12px)}
+.md-sl{text-align:end}.md-sl1,.md-sr1{opacity:1;transform:none}
+.md-sr-big{font-family:Poppins,sans-serif;font-weight:700;font-size:52px;letter-spacing:-2px;line-height:1;margin-top:8px}
+/* numbers */
+.md-nums{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.md-big{font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(84px,12vw,190px);line-height:.9;letter-spacing:-.06em}
+.md-mid{font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(48px,6vw,88px);line-height:1;letter-spacing:-.05em;color:#0B1424}
+.md-big-cap{margin-top:14px;font-size:17px;line-height:1.5;color:#3B4657;max-width:440px}
+.md-nums2{margin-top:56px;padding-top:36px;border-top:1px solid #E3EAEE;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+/* ways rows */
+.md-rows{margin-top:40px;border-top:1px solid #E3EAEE}
+.md-row{position:relative;display:grid;grid-template-columns:60px minmax(0,1.1fr) minmax(0,1.6fr) 170px 30px;gap:20px;align-items:center;padding:26px 8px;border-bottom:1px solid #E3EAEE;text-decoration:none;color:#0B1424!important;overflow:hidden;isolation:isolate}
+.md-row::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#EEF0FF,#E3F6FD 50%,#E2F5EF);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.md-row:hover::before{transform:scaleX(1)}
+.md-row-n{font-family:Poppins,sans-serif;font-weight:600;font-size:13px;color:#037A72;letter-spacing:1px}
+.md-row-t{font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(26px,3vw,40px);letter-spacing:-1.2px;line-height:1.05;transition:transform .35s}.md-row:hover .md-row-t{transform:translateX(calc(var(--dx)*8px))}
+.md-row-d{font-size:15px;line-height:1.5;color:#3B4657}.md-row-tag{font-family:Poppins,sans-serif;font-weight:600;font-size:11px;letter-spacing:1.5px;color:#037A72;text-align:end}
+.md-row-ar{font-size:22px;color:#037A72;transition:transform .35s}.md-row:hover .md-row-ar{transform:translateX(calc(var(--dx)*6px))}
+.md-pill-link{font-weight:600;color:#037A72;text-decoration:none;border:1.5px solid #CDEBEC;border-radius:999px;padding:10px 16px}
+/* faq */
+.md-faq{border-top:1px solid #E3EAEE}
+.md-q{border-bottom:1px solid #E3EAEE}.md-q summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 4px;font-family:Poppins,sans-serif;font-weight:600;font-size:19px;letter-spacing:-.3px}
+.md-q summary::-webkit-details-marker{display:none}.md-q-i{flex-shrink:0;width:34px;height:34px;border-radius:50%;border:1.5px solid #D5DEE3;display:flex;align-items:center;justify-content:center;font-size:20px;color:#037A72;transition:transform .3s,background .3s}
+.md-q[open] .md-q-i{transform:rotate(45deg);background:#EAF6F7;border-color:#CDEBEC}.md-q p{margin:0;padding:0 50px 22px 4px;font-size:16px;line-height:1.65;color:#3B4657}
+.md-q[open] p{animation:mdRise .45s both}
+/* end */
+.md-end-glow{position:absolute;left:50%;top:50%;width:900px;height:520px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(35,188,246,.22),rgba(7,168,163,.12) 55%,transparent);filter:blur(10px);animation:mdGlowPulse 7s ease-in-out infinite}
+html.md-scrolled .md-now{opacity:0;transform:translateY(-6px);pointer-events:none}
+/* guide */
+.md-guide{display:none}
+html.md-js .md-guide{display:flex;position:fixed;right:18px;bottom:14px;z-index:60;align-items:flex-end;gap:6px;pointer-events:none}
+.md-bubble{max-width:250px;background:#FFFFFF;border:1.5px solid #CDEBEC;border-radius:16px 16px 4px 16px;padding:9px 13px;box-shadow:0 18px 40px -22px rgba(11,20,36,.5);margin-bottom:58px;transition:opacity .3s,transform .3s}
+.md-bubble.md-swap{opacity:0;transform:translateY(6px)}
+.md-lantern{transform-origin:31px 2px;animation:mdSwing 4.5s ease-in-out infinite}.md-glowc{animation:mdGlowPulse 3s ease-in-out infinite}
+.md-eye{transform-box:fill-box;transform-origin:center;animation:mdBlink 5s infinite}
+@keyframes mdSwing{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+@keyframes mdBlink{0%,94%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
+html[lang="ar"] .md-hand,[dir="rtl"] .md-hand,.md-hand:lang(ar){font-family:'Aref Ruqaa',serif;font-weight:700;line-height:1.5}
+html[lang="ar"] .md-h1,html[lang="ar"] .md-h2,html[lang="ar"] .md-big,html[lang="ar"] .md-mid,html[lang="ar"] .md-row-t,html[lang="ar"] .md-stage h3,html[lang="ar"] .md-sr-big,html[lang="ar"] .md-tag,html[lang="ar"] .md-steps li,html[lang="ar"] .md-pills li,html[lang="ar"] .md-now,html[lang="ar"] .md-node-lab,html[lang="ar"] .md-ch-lab,html[lang="ar"] .md-row-tag,html[lang="ar"] .md-art-cap{letter-spacing:0!important}
+html[lang="ar"] .md-h1,html[lang="ar"] .md-h2{line-height:1.25}
+/* reveal on scroll (only once JS is running) */
+html.md-js [data-rv]{opacity:0;transform:translateY(36px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+/* ---------- scroll-story mode (desktop browsers only, switched on by JS) ---------- */
+html.md-scrolly #hero{height:175vh}
+html.md-scrolly #ch2{height:260vh}html.md-scrolly #ch3{height:330vh}html.md-scrolly #ch5{height:340vh}html.md-scrolly #ch6{height:380vh}
+html.md-scrolly .md-pin>.md-stick{position:sticky;top:0;height:100vh;padding:96px 0 40px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+html.md-scrolly #hero>.md-stick{padding-top:70px}
+html.md-scrolly #hero .md-hero-g{transform:translateY(calc(var(--p)*-40px));opacity:calc(1.25 - var(--p)*.9)}
+html.md-scrolly .md-mosaic{transform:rotateX(calc((1 - var(--p))*22deg)) scale(calc(1.18 - var(--p)*.24)) translateY(calc((1 - var(--p))*60px));transform-origin:50% 30%}
+html.md-scrolly .md-mosaic-wrap{margin-top:30px}
+html.md-scrolly .md-tile{opacity:clamp(0,(var(--p)*7 - var(--d,0)),1)}
+.md-t0{--d:0}.md-t1{--d:.4}.md-t2{--d:.8}.md-t3{--d:1.2}.md-t4{--d:1.6}.md-t5{--d:2}.md-t6{--d:2.4}.md-t7{--d:2.8}
+html.md-scrolly .md-mos-line{opacity:clamp(0,(var(--p) - .6)*5,1);transform:translateY(calc(clamp(0,(.8 - var(--p))*5,1)*20px))}
+html.md-scrolly #ch3 .md-pp1 i{transform:scaleX(clamp(0,(var(--p) - .05)*6,1))}
+html.md-scrolly #ch3 .md-pp2 i{transform:scaleX(clamp(0,(var(--p) - .42)*6,1))}
+html.md-scrolly #ch3 .md-pp3 i{transform:scaleX(clamp(0,(var(--p) - .78)*6,1))}
+html.md-scrolly #ch3 .md-coin{transform:translateX(calc(var(--dx)*clamp(0,(var(--p) - .04 - var(--i)*.012)*6,1)*170px)) scale(calc(1 - clamp(0,(var(--p) - .04 - var(--i)*.012)*6,1)*.6));opacity:calc(1 - clamp(0,(var(--p) - .1 - var(--i)*.012)*6,1))}
+html.md-scrolly #ch3 .md-c1{opacity:calc(.35 + clamp(0,(var(--p) - .12)*5,1)*.65);border-color:color-mix(in srgb,#07A8A3 calc(clamp(0,(var(--p) - .12)*5,1)*100%),#E3EAEE)}
+html.md-scrolly #ch3 .md-ch-list li{opacity:clamp(0,(var(--p) - .18 - var(--k)*.05)*10,1)}
+html.md-scrolly #ch3 .md-c2{opacity:calc(.35 + clamp(0,(var(--p) - .5)*5,1)*.65);border-color:color-mix(in srgb,#07A8A3 calc(clamp(0,(var(--p) - .5)*5,1)*100%),#E3EAEE)}
+html.md-scrolly #ch3 .md-dbars i{transform:scaleY(clamp(0,(var(--p) - .52)*4,1))}
+html.md-scrolly #ch3 .md-ch-stats{opacity:clamp(0,(var(--p) - .66)*8,1)}
+html.md-scrolly #ch3 .md-n-out{opacity:calc(.3 + clamp(0,(var(--p) - .86)*8,1)*.7);transform:scale(calc(.85 + clamp(0,(var(--p) - .86)*8,1)*.15))}
+html.md-scrolly #ch3[data-s="1"] .md-s1,html.md-scrolly #ch3[data-s="2"] .md-s2,html.md-scrolly #ch3[data-s="3"] .md-s3,html.md-scrolly #ch3[data-s="4"] .md-s4{color:#061321;border-color:transparent;background:linear-gradient(135deg,#7077FB,#23BCF6 60%,#07A8A3)}
+html.md-scrolly .md-hwrap{overflow:visible}
+html.md-scrolly .md-htrack{display:flex;gap:22px;width:max-content;max-width:none;padding-block:0;padding-inline:max(24px,calc((100vw - 1240px)/2));transform:translateX(calc(var(--dx)*-1*var(--p)*var(--tw,1200px)))}
+html.md-scrolly .md-stage{width:380px;min-height:300px}
+html.md-scrolly .md-hbar{display:block;max-width:1192px;margin:34px auto 0;height:4px;border-radius:4px;background:#E3EAEE;overflow:hidden}
+html.md-scrolly .md-hbar i{display:block;height:100%;background:linear-gradient(90deg,#7077FB,#23BCF6,#07A8A3);transform-origin:left;transform:scaleX(var(--p))}
+html.md-scrolly .md-phone-static{display:none}
+html.md-scrolly .md-phone-stage{display:flex;justify-content:center;align-items:center;gap:56px;margin-top:26px}
+html.md-scrolly #ch6 .md-phone{height:min(600px,62vh);width:min(300px,31vh)}
+html.md-scrolly #ch6 .md-scr-ph{height:min(230px,24vh)}
+html.md-scrolly #ch6 .md-scr1,html.md-scrolly #ch6 .md-sl1,html.md-scrolly #ch6 .md-sr1{opacity:0;transform:translateY(12px)}
+html.md-scrolly #ch6[data-s="1"] .md-scr1,html.md-scrolly #ch6[data-s="2"] .md-scr2,html.md-scrolly #ch6[data-s="3"] .md-scr3,html.md-scrolly #ch6[data-s="4"] .md-scr4,
+html.md-scrolly #ch6[data-s="1"] .md-sl1,html.md-scrolly #ch6[data-s="2"] .md-sl2,html.md-scrolly #ch6[data-s="3"] .md-sl3,html.md-scrolly #ch6[data-s="4"] .md-sl4,
+html.md-scrolly #ch6[data-s="1"] .md-sr1,html.md-scrolly #ch6[data-s="2"] .md-sr2,html.md-scrolly #ch6[data-s="3"] .md-sr3,html.md-scrolly #ch6[data-s="4"] .md-sr4{opacity:1;transform:none}
+html.md-scrolly #ch6[data-s="1"] .md-pl1,html.md-scrolly #ch6[data-s="2"] .md-pl2,html.md-scrolly #ch6[data-s="3"] .md-pl3,html.md-scrolly #ch6[data-s="4"] .md-pl4{color:#061321;border-color:transparent;background:linear-gradient(135deg,#7077FB,#23BCF6 60%,#07A8A3)}
+html:not(.md-scrolly) .md-pills{display:none}
+@media (max-width: 1100px){.md-flow{grid-template-columns:1fr;gap:14px;justify-items:stretch}.md-pipe{height:28px;width:4px;margin:0 auto}.md-node{align-items:center}}
+@media (max-width: 860px){.md-hero-g{grid-template-columns:1fr!important}.md-art{max-width:460px;margin:0 auto}.md-give-in,.md-faq-in{grid-template-columns:1fr!important;gap:36px!important}.md-faq-in>div:first-child{position:static!important}
+ .md-mosaic{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.md-nums,.md-nums2{grid-template-columns:1fr;gap:26px}.md-row{grid-template-columns:40px minmax(0,1fr) 24px;gap:10px 14px}.md-row-d{grid-column:2/3}.md-row-tag{grid-column:2/3;text-align:start}.md-row-ar{grid-row:1;grid-column:3}
+ .md-stick{padding:70px 0}.md-now{display:none}.md-bubble{display:none}.md-lantern{width:42px;height:65px}html.md-js .md-guide{right:10px;bottom:10px}.md-q summary{font-size:17px}.md-tile figcaption{font-size:13px}.md-tile-q>div{font-size:15px}}
+@media (prefers-reduced-motion: reduce){html.md-js [data-rv]{opacity:1!important;transform:none!important}.md-tk-r,.md-lantern,.md-eye,.md-glowc,.md-end-glow{animation:none!important}}
 </style>
 </head>
 <body>
-<div id="app"><div class="" style="font-family: Inter, system-ui, sans-serif; color: #0B1424; background: #FFFFFF; overflow: hidden">
-  <div style="background: #F6F9FA; border-bottom: 1px solid #E3EAEE">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; font-size: 13px; color: #3B4657">
-      <div style="display: flex; gap: 18px; flex-wrap: wrap; align-items: center">
-        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>0% platform fee</div>
-        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Scholar-reviewed zakat</div>
-        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Giving Guarantee</div>
-      </div>
+<div id="app"><div class=" md-home" style="font-family: Inter, system-ui, sans-serif; color: #0B1424; background: #FFFFFF; overflow-x: clip">
+
+  <header class="md-head">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px">
+      <a href="index.html" aria-label="Madinah home" style="display: flex"><img src="madinah-wordmark.png" alt="Madinah" style="height: 32px; width: auto; display: block"></a>
+      <nav class="md-navlinks" aria-label="Main" style="display: flex; gap: 26px; font-size: 15px; font-weight: 500">
+        <a href="discover.html" class="md-nl">Discover</a><a href="zakat.html" class="md-nl">Zakat</a><a href="charity.html" class="md-nl">Charities</a><a href="learn.html" class="md-nl">Learn</a><a href="ramadan.html" class="md-nl">Ramadan</a><a href="merch.html" class="md-nl">Merch</a>
+      </nav>
       <div style="display: flex; gap: 10px; align-items: center">
-        <label style="display: flex; gap: 6px; align-items: center; font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1px; color: #4A5568">CURRENCY
-          <select value="USD" data-dc-change="h0" style="font-family: Inter, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
+        <label class="md-hide-sm md-cur"><span>CURRENCY</span><select value="USD" data-dc-change="h0" style="font-family: Inter, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
             <option value="USD">USD $</option>
             <option value="CAD">CAD $</option>
             <option value="GBP">GBP £</option>
@@ -96,74 +260,87 @@ a{color:#037A72}a:hover{color:#025A54}
             <option value="TRY">TRY ₺</option>
             <option value="AED">AED</option>
             <option value="MYR">MYR</option>
-          </select>
-        </label>
-      </div>
-    </div>
-  </div>
-  <header style="position: relative; z-index: 20; border-bottom: 1px solid #EEF2F4; background: rgba(255,255,255,0.92)">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
-      <a href="index.html" aria-label="Madinah home" style="display: flex"><img src="madinah-wordmark.png" alt="Madinah" style="height: 34px; width: auto; display: block"></a>
-      <nav class="md-navlinks" aria-label="Main" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
-        <a href="discover.html" style="color: #0B1424; text-decoration: none">Discover</a>
-        <a href="zakat.html" style="color: #0B1424; text-decoration: none">Zakat</a>
-        <a href="charity.html" style="color: #0B1424; text-decoration: none">Charities</a>
-        <a href="learn.html" style="color: #0B1424; text-decoration: none">Learn</a>
-        <a href="ramadan.html" style="color: #0B1424; text-decoration: none">Ramadan</a>
-        <a href="merch.html" style="color: #0B1424; text-decoration: none">Merch</a>
-      </nav>
-      <div style="display: flex; gap: 10px; align-items: center">
-        <a data-lang-switch="" href="ar.html" class="md-hide-sm" lang="ar" style="font-size: 15px; font-weight: 600; color: #037A72; text-decoration: none; padding: 10px 12px; border-radius: 10px; border: 1.5px solid #CDEBEC">العربية</a><a href="signin-donor.html" class="md-hide-sm" style="font-size: 15px; font-weight: 500; color: #0B1424; text-decoration: none; padding: 10px 12px">Sign in</a>
-        <a href="#donate" class="md-btn" style="font-size: 15px; font-weight: 600; color: #FFFFFF; background: #0B1424; text-decoration: none; padding: 12px 20px; border-radius: 999px; min-height: 44px; display: flex; align-items: center">Donate</a>
+          </select></label>
+        <a data-lang-switch="" href="ar.html" class="md-hide-sm" lang="ar" style="font-size: 15px; font-weight: 600; color: #037A72; text-decoration: none; padding: 9px 12px; border-radius: 999px; border: 1.5px solid #CDEBEC">العربية</a><a href="signin-donor.html" class="md-hide-sm" style="font-size: 15px; font-weight: 500; color: #0B1424; text-decoration: none; padding: 10px 8px">Sign in</a>
+        <a href="#donate" class="md-btn md-cta" style="min-height: 44px">Donate</a>
         <details class="md-mnav"><summary aria-label="Menu" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #D5DEE3; display: flex; align-items: center; justify-content: center; background: #FFFFFF"><svg class="md-mnav-ic1" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="md-mnav-ic2" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary><nav aria-label="Mobile" style="position: absolute; left: 0; right: 0; top: 100%; background: #FFFFFF; border-bottom: 1px solid #E3EAEE; box-shadow: 0 30px 50px -30px rgba(11,20,36,0.35); padding: 8px 24px 20px; display: flex; flex-direction: column"><a href="discover.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Discover<span aria-hidden="true" style="color: #037A72">→</span></a><a href="zakat.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Zakat<span aria-hidden="true" style="color: #037A72">→</span></a><a href="charity.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Charities<span aria-hidden="true" style="color: #037A72">→</span></a><a href="learn.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Learn<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ramadan.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Ramadan<span aria-hidden="true" style="color: #037A72">→</span></a><a href="merch.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Merch<span aria-hidden="true" style="color: #037A72">→</span></a><a href="about.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">About<span aria-hidden="true" style="color: #037A72">→</span></a><a href="faq.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Help and FAQ<span aria-hidden="true" style="color: #037A72">→</span></a><a href="signin-donor.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Sign in<span aria-hidden="true" style="color: #037A72">→</span></a></nav></details>
       </div>
     </div>
+    <div class="md-now md-hide-sm" aria-hidden="true"><span>NOW GIVING:</span><div class="md-tk"><div class="md-tk-r"><div class="md-tk-i"><span style="color: #037A72">ZAKAT</span> · <span>$120</span> · <span>Toronto</span></div><div class="md-tk-i"><span style="color: #037A72">WATER</span> · <span>$250</span> · <span>Manchester</span></div><div class="md-tk-i"><span style="color: #037A72">ORPHANS</span> · <span>$45 monthly</span> · <span>Dubai</span></div><div class="md-tk-i"><span style="color: #037A72">GAZA</span> · <span>₺750</span> · <span>Istanbul</span></div><div class="md-tk-i"><span style="color: #037A72">ZAKAT</span> · <span>$120</span> · <span>Toronto</span></div></div></div></div>
   </header>
-  <section id="donate" style="position: relative; isolation: isolate; overflow: hidden">
-    <svg class="md-draw" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1">
-      <defs><linearGradient id="mdHeroG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".5" stop-color="#23BCF6"></stop><stop offset=".8" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient></defs>
-      <path d="M 520 780 C 760 600, 900 360, 1460 300" stroke="url(#mdHeroG)" stroke-width="1.3" fill="none" opacity=".35"></path>
-      <path d="M 545 780 C 785 610, 925 380, 1460 330" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".3"></path>
-      <path d="M 570 780 C 810 620, 950 400, 1460 360" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".26"></path>
-      <path d="M 595 780 C 835 630, 975 420, 1460 390" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".22"></path>
-      <path d="M 620 780 C 860 640, 1000 440, 1460 420" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".35"></path>
-      <path d="M 645 780 C 885 650, 1025 460, 1460 450" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".3"></path>
-      <path d="M -20 120 C 180 60, 300 200, 520 -20" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".35"></path>
-      <path d="M -20 150 C 200 90, 320 230, 560 -20" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".28"></path>
-      <path d="M -20 180 C 220 120, 340 260, 600 -20" stroke="url(#mdHeroG)" stroke-width="1" fill="none" opacity=".22"></path>
-    </svg>
-    <svg class="md-sky" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 300px; z-index: -1"><defs><linearGradient id="mdSkyG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".45" stop-color="#23BCF6"></stop><stop offset=".75" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient><radialGradient id="mdSkyGlow" cx="50%" cy="100%" r="60%"><stop offset="0" stop-color="#07A8A3" stop-opacity=".22"></stop><stop offset="1" stop-color="#07A8A3" stop-opacity="0"></stop></radialGradient></defs><ellipse class="md-glow" cx="720" cy="300" rx="320" ry="190" fill="url(#mdSkyGlow)"></ellipse><g fill="none" stroke="url(#mdSkyG)" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M 120 290 H 1320" stroke-width="1.4" opacity="0.8"></path><path pathLength="1" d="M 260 290 V 264 Q 276 244 292 264 V 290 M 300 290 V 264 Q 316 244 332 264 V 290 M 340 290 V 264 Q 356 244 372 264 V 290 M 380 290 V 264 Q 396 244 412 264 V 290 M 420 290 V 264 Q 436 244 452 264 V 290 M 460 290 V 264 Q 476 244 492 264 V 290 M 500 290 V 264 Q 516 244 532 264 V 290 M 540 290 V 264 Q 556 244 572 264 V 290 M 580 290 V 264 Q 596 244 612 264 V 290 M 860 290 V 264 Q 876 244 892 264 V 290 M 900 290 V 264 Q 916 244 932 264 V 290 M 940 290 V 264 Q 956 244 972 264 V 290 M 980 290 V 264 Q 996 244 1012 264 V 290 M 1020 290 V 264 Q 1036 244 1052 264 V 290 M 1060 290 V 264 Q 1076 244 1092 264 V 290 M 1100 290 V 264 Q 1116 244 1132 264 V 290 M 1140 290 V 264 Q 1156 244 1172 264 V 290" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 250 236 H 600 M 840 236 H 1190" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 332 290 V 110 M 348 290 V 110 M 326 190 H 354 V 182 H 326 Z M 326 140 H 354 V 132 H 326 Z M 332 110 H 348 M 332 110 L 340 70 L 348 110 M 340 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 461 290 V 80 M 479 290 V 80 M 455 160 H 485 V 152 H 455 Z M 455 110 H 485 V 102 H 455 Z M 461 80 H 479 M 461 80 L 470 40 L 479 80 M 470 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 591 290 V 104 M 609 290 V 104 M 585 184 H 615 V 176 H 585 Z M 585 134 H 615 V 126 H 585 Z M 591 104 H 609 M 591 104 L 600 64 L 609 104 M 600 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 831 290 V 104 M 849 290 V 104 M 825 184 H 855 V 176 H 825 Z M 825 134 H 855 V 126 H 825 Z M 831 104 H 849 M 831 104 L 840 64 L 849 104 M 840 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 961 290 V 80 M 979 290 V 80 M 955 160 H 985 V 152 H 955 Z M 955 110 H 985 V 102 H 955 Z M 961 80 H 979 M 961 80 L 970 40 L 979 80 M 970 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 1092 290 V 110 M 1108 290 V 110 M 1086 190 H 1114 V 182 H 1086 Z M 1086 140 H 1114 V 132 H 1086 Z M 1092 110 H 1108 M 1092 110 L 1100 70 L 1108 110 M 1100 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 501 236 V 210 M 569 236 V 210 M 501 210 C 501 169, 524 152, 535 150 C 545 152, 569 169, 569 210 M 535 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 871 236 V 210 M 939 236 V 210 M 871 210 C 871 169, 894 152, 905 150 C 915 152, 939 169, 939 210 M 905 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 652 290 V 194 H 788 V 290" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 640 194 H 800" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 658 194 C 646 130, 676 78, 720 64 C 764 78, 794 130, 782 194" stroke-width="2" opacity="1"></path><path pathLength="1" d="M 720 64 V 40" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 672 270 V 230 Q 680 218 688 230 V 270 M 700 270 V 230 Q 708 218 716 230 V 270 M 728 270 V 230 Q 736 218 744 230 V 270 M 756 270 V 230 Q 764 218 772 230 V 270" stroke-width="1.1" opacity="0.7"></path></g><path class="md-cres" d="M 727 22 A 9 9 0 1 1 727 38 A 7 7 0 1 0 727 22 Z" fill="#07A8A3"></path></svg>
-    <svg class="md-moon" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="position: absolute; right: 7%; top: 44px; z-index: -1"><path pathLength="1" d="M 40 8 A 24 24 0 1 0 56 44 A 19 19 0 1 1 40 8 Z" fill="none" stroke="url(#mdHeroG)" stroke-width="1.6" stroke-linejoin="round"></path></svg>
-    <div class="md-hero-in" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 250px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 56px; align-items: center">
-      <div dir="ltr" lang="en">
-        <div class="md-rise" style="display: inline-flex; gap: 8px; align-items: center; font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 1.5px; color: #037A72; background: #EAF6F7; border: 1px solid #CDEBEC; padding: 7px 12px; border-radius: 999px">
-          <div class="md-pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #07A8A3"></div>TRUSTED MUSLIM GIVING · 0% PLATFORM FEE
-        </div>
-        <h1 class="md-rise md-d1" style="margin: 22px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -2px; text-wrap: balance">Give where it’s <span style="position: relative; display: inline-block">needed most.<svg class="md-underline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: 0; bottom: -10px; width: 100%; height: 16px"><path d="M 4 14 C 80 4, 200 4, 296 12" stroke="url(#mdHeroG)" stroke-width="5" fill="none" stroke-linecap="round"></path></svg></span></h1>
-        <p class="md-rise md-d2" style="margin: 28px 0 0; font-size: 19px; line-height: 1.6; color: #3B4657; max-width: 520px">Verified charities, scholar-reviewed zakat and 0% platform fees. Choose a cause and give in under a minute.</p>
-        <div class="md-rise md-d3" style="display: flex; gap: 22px; margin-top: 30px; flex-wrap: wrap">
-          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #EEF0FF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linejoin="round"></path><path d="M9 12l2 2 4-4" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>Verified charities</b><br><span style="color: #4A5568">registration checked</span></div></div>
-          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E3F6FD; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4" stroke="#1A8FC2" stroke-width="2" fill="none" stroke-linecap="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>Zakat rated</b><br><span style="color: #4A5568">by a scholars’ board</span></div></div>
-          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E2F5EF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" stroke="#017A5B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>Money-back</b><br><span style="color: #4A5568">Giving Guarantee</span></div></div>
-        </div>
-        <figure class="md-rise md-d4 md-hero-fig" style="position: relative; margin: 48px 0 0; max-width: 560px">
-          <div class="md-hero-ph" style="position: relative; height: 290px; border-radius: 26px; overflow: hidden; background: #E9EEF1; box-shadow: 0 40px 70px -42px rgba(11,20,36,0.55)">
-            <img src="hero-water-tap.jpg" alt="Two children drinking clean water from a new tap" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block">
-            <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,19,33,0.82) 0%, rgba(6,19,33,0.25) 45%, rgba(6,19,33,0) 70%), linear-gradient(120deg, rgba(112,119,251,0.18), rgba(7,168,163,0) 55%)"></div>
-            <div class="md-sheen" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 30%; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.28), rgba(255,255,255,0))"></div>
-            <div style="position: absolute; left: 16px; top: 16px; display: inline-flex; align-items: center; gap: 8px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1.4px; color: #FFFFFF; background: rgba(11,20,36,0.38); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.22); padding: 6px 11px; border-radius: 999px"><span class="md-pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #3FE0C5"></span>FUNDED BY DONORS LIKE YOU</div>
-            <figcaption style="position: absolute; left: 20px; right: 20px; bottom: 18px; color: #FFFFFF">
-              <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.5px; line-height: 1.15">Clean water, delivered.</div>
-              <div style="font-size: 13.5px; color: rgba(255,255,255,0.86); margin-top: 4px">2,140 families now drink safe water · Clearwell Water Trust</div>
-              <div style="margin-top: 12px; height: 4px; border-radius: 4px; background: rgba(255,255,255,0.22); overflow: hidden"><div class="md-bar md-shine" style="height: 100%; width: 86%; border-radius: 4px"></div></div>
-            </figcaption>
+  <section id="hero" data-pin="" class="md-pin md-grid" data-note="Hi! Scroll and watch your gift find its way.">
+    <div class="md-stick">
+      <div class="md-hero-g" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 32px; align-items: center">
+        <div style="position: relative; z-index: 2">
+          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #4A5568; animation: mdRise .8s .1s both">TRUSTED MUSLIM GIVING · 0% PLATFORM FEE</div>
+          <h1 class="md-h1" style="margin: 18px 0 0 0">Give from the <span class="md-acc">heart.</span><br>See where it <span class="md-acc">goes.</span></h1>
+          <p class="md-lead" style="margin: 22px 0 0 0; max-width: 540px">Madinah checks every charity, has zakat reviewed by scholars and shows you proof when your gift arrives. Same heart, full receipts.</p>
+          <div style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 18px 22px; align-items: center; animation: mdRise .8s .45s both">
+            <div style="display: flex; align-items: baseline; gap: 10px"><span class="md-acc" style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -1px">$4M+</span><span style="font-size: 14px; color: #4A5568">raised by 40K+ donors</span></div>
+            <a href="#donate" class="md-btn md-cta md-cta-lg">Give now</a>
+            <a href="zakat.html" style="font-weight: 600; font-size: 15px; color: #037A72; text-decoration: none">Calculate zakat →</a>
           </div>
-          <div class="md-float" aria-hidden="true" style="position: absolute; right: -18px; top: -22px; width: 250px; height: 62px; background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #E3EAEE; border-radius: 18px; box-shadow: 0 24px 44px -26px rgba(11,20,36,0.45); padding: 0 14px">
-            <div style="position: relative; height: 100%"><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #7077FB, #23BCF6); color: #061321; font-family: Poppins, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">AR</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>Aisha</b> <span style="color: #4A5568">from Toronto</span><br><span style="color: #037A72; font-weight: 600">gave $50</span> <span style="color: #4A5568">· just now</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #23BCF6, #07A8A3); color: #061321; font-family: Poppins, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">OK</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>Omar</b> <span style="color: #4A5568">from London</span><br><span style="color: #037A72; font-weight: 600">gave £25</span> <span style="color: #4A5568">· 1 min ago</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #07A8A3, #01966F); color: #061321; font-family: Poppins, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">FY</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>Fatma</b> <span style="color: #4A5568">from Istanbul</span><br><span style="color: #037A72; font-weight: 600">gave ₺750</span> <span style="color: #4A5568">· 2 min ago</span></div></div></div>
-          </div>
-        </figure>
+          <div class="md-tags" style="margin-top: 38px"><span class="md-tag">GIVE.ZAKAT</span><span class="md-tag">GIVE.SADAQAH</span><span class="md-tag">GIVE.MONTHLY</span><span class="md-tag">GIVE.WAQF</span><span class="md-tag md-tag2">TRACK.VERIFIED</span><span class="md-tag md-tag2">TRACK.DELIVERED</span><span class="md-tag md-tag2">TRACK.RECEIPT</span><span class="md-tag md-tag2">TRACK.UPDATE</span></div>
+        </div>
+        <div class="md-art" aria-hidden="true">
+          <canvas id="md-particles" width="640" height="560" style="width: 100%; height: auto; display: block"></canvas>
+          <svg class="md-art-fallback" viewBox="0 0 640 560" style="width: 100%; height: auto; display: block">
+            <defs><linearGradient id="mdHg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".55" stop-color="#23BCF6"></stop><stop offset="1" stop-color="#07A8A3"></stop></linearGradient>
+            <pattern id="mdDots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="2.3" fill="url(#mdHg)"></circle></pattern></defs>
+            <path d="M320 470 C 170 380, 110 300, 120 220 C 130 140, 230 110, 320 190 C 410 110, 510 140, 520 220 C 530 300, 470 380, 320 470z" fill="url(#mdDots)"></path>
+          </svg>
+          <div class="md-art-cap md-cap1"><b>HEART</b> · why we give</div>
+          <div class="md-art-cap md-cap2"><b>PROOF</b> · where it went</div>
+        </div>
       </div>
-      <div class="md-rise md-d2" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 28px; padding: 28px; box-shadow: 0 40px 80px -40px rgba(11,20,36,0.28), 0 2px 0 0 rgba(255,255,255,1) inset; position: relative">
+    </div>
+  </section>
+  <section id="ch2" data-pin="" class="md-pin" data-note="That's a real gift. Our job is the proof that it arrived.">
+    <div class="md-stick">
+      <div style="text-align: center; position: relative; z-index: 3; padding: 0 24px"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 02</div><h2 class="md-h2" style="margin: 14px auto 0; max-width: 900px">Every gift is a promise.<br>We help you <span class="md-acc">keep it.</span></h2></div>
+      <div class="md-mosaic-wrap">
+        <div class="md-mosaic"><figure class="md-tile md-t0"><div class="md-tile-ph"><img src="food-parcel.jpg" alt="A grandmother and children with an emergency food parcel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div><figcaption>Winter warmth for displaced families</figcaption></figure><div class="md-tile md-tile-q md-t1"><div>Still wondering if it ever arrived?</div><span class="md-tag md-tag2" style="margin-top: 14px">TRACK.UPDATE</span></div><figure class="md-tile md-t2"><div class="md-tile-ph"><img src="well-pump.jpg" alt="Villagers gathered around a new hand-pump well" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block"></div><figcaption>A well for a village of 600</figcaption></figure><figure class="md-tile md-t3"><div class="md-tile-ph"><img src="meals-girls.jpg" alt="Girls sharing a hot meal at a community food distribution" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><figcaption>Hot meals for families in Gaza</figcaption></figure><figure class="md-tile md-t4"><div class="md-tile-ph"><img src="school-lunch.jpg" alt="Schoolchildren laughing over their school lunch" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 45%; display: block"></div><figcaption>A school year for an orphan</figcaption></figure><div class="md-tile md-tile-q md-t5"><div>The gift you can actually follow.</div><span class="md-tag md-tag2" style="margin-top: 14px">TRACK.UPDATE</span></div><figure class="md-tile md-t6"><div class="md-tile-ph"><img src="hero-water-tap.jpg" alt="Two children drinking clean water from a new tap" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><figcaption>Clean water, delivered</figcaption></figure><figure class="md-tile md-t7"><div class="md-tile-ph"><img src="water-collect.jpg" alt="Two girls collecting water from a muddy puddle" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><figcaption>Before the new pump came</figcaption></figure></div>
+        <svg class="md-thread" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="mdTh" x1="0" x2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".5" stop-color="#23BCF6"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient></defs>
+          <path pathLength="1" d="M-20 420 C 140 430, 210 300, 330 330 S 520 400, 610 260 S 820 120, 930 190 S 1120 120, 1230 60" fill="none" stroke="url(#mdTh)" stroke-width="5" stroke-linecap="round"></path></svg>
+      </div>
+      <p class="md-mos-line"><b>Pick a cause. We make sure it arrives</b>, then show you the photos, the date and the families reached.</p>
+    </div>
+  </section>
+  <section id="ch3" data-pin="" class="md-pin md-grid" data-note="This is the part most sites skip. We don't." data-s="1">
+    <div class="md-stick">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+          <div><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 03 · THE JOURNEY OF A GIFT</div><h2 class="md-h2" style="margin: 14px 0 0 0">Heart <span class="md-acc">+ proof</span>, in that order.</h2></div>
+          <ol class="md-steps" aria-label="Steps"><li class="md-s1">01 GIFT IN</li><li class="md-s2">02 CHECKED</li><li class="md-s3">03 DELIVERED</li><li class="md-s4">04 PROOF OUT</li></ol>
+        </div>
+        <div class="md-flow">
+          <div class="md-node md-n-in"><div class="md-node-lab">YOUR GIFT</div><div class="md-coins"><span class="md-coin" style="--i: 0">$</span><span class="md-coin" style="--i: 1">$</span><span class="md-coin" style="--i: 2">$</span><span class="md-coin" style="--i: 3">$</span><span class="md-coin" style="--i: 4">$</span><span class="md-coin" style="--i: 5">$</span></div></div>
+          <div class="md-pipe md-pp1"><i></i></div>
+          <div class="md-chamber md-c1"><div class="md-ch-lab">CHECK CHAMBER</div><div class="md-ch-q">Is this charity real, and can it take zakat?</div>
+            <ul class="md-ch-list"><li style="--k: 0"><span class="md-hand" style="font-size: 26px">registration checked</span></li><li style="--k: 1"><span class="md-hand" style="font-size: 26px">zakat rated by scholars</span></li><li style="--k: 2"><span class="md-hand" style="font-size: 26px">accounts reviewed</span></li><li style="--k: 3"><span class="md-hand" style="font-size: 26px">story dated and signed off</span></li></ul></div>
+          <div class="md-pipe md-pp2"><i></i></div>
+          <div class="md-chamber md-c2"><div class="md-ch-lab">DELIVERY CHAMBER</div><div class="md-ch-q">Did it reach the people it promised?</div>
+            <div class="md-dbars"><i style="--h: .38"></i><i style="--h: .55"></i><i style="--h: .47"></i><i style="--h: .72"></i><i style="--h: .9"></i><i style="--h: 1"></i></div>
+            <div class="md-ch-stats"><div><b>2,140</b> families reached</div><div><b>41 days</b> from gift to delivery</div><div><b>100%</b> of zakat to eligible people</div></div>
+            <div style="font-size: 12px; color: #6B7686; margin-top: 6px">example numbers</div></div>
+          <div class="md-pipe md-pp3"><i></i></div>
+          <div class="md-node md-n-out"><div class="md-node-lab">PROOF YOU CAN SEE</div><div class="md-out-ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></div><div style="font-size: 13px; color: #3B4657; text-align: center; line-height: 1.4">photos, dates<br>and a receipt</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="donate" class="md-grid" style="position: relative; padding: 120px 24px" data-note="Thirty seconds. I timed it.">
+    <div class="md-give-in" style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: 56px; align-items: center">
+      <div id="rv-give" data-rv="">
+        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 04 · GIVE</div>
+        <h2 class="md-h2" style="margin: 14px 0 0 0">Choose a cause.<br>Give in <span class="md-acc">thirty seconds.</span></h2>
+        <p class="md-lead" style="margin: 20px 0 0 0; max-width: 500px">Pick what moves you, choose an amount in your own currency and pay with Apple Pay, Google Pay or card. No account needed.</p>
+        <div style="margin-top: 26px; display: grid; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0B1424"><span class="md-tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span>Verified charities, registration checked</div><div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0B1424"><span class="md-tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span>Zakat rated by a scholars’ board</div><div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0B1424"><span class="md-tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span>Money-back Giving Guarantee</div>
+        </div>
+        <div style="margin-top: 30px"><span class="md-hand" style="font-size: 28px; color: #3B4657">“The receipt landed before I put my phone down.”</span><div style="font-size: 13px; color: #6B7686; margin-top: 4px">Aisha R., monthly donor since 2024</div></div>
+      </div>
+      <div id="rv-box" data-rv="" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 28px; padding: 28px; box-shadow: 0 40px 80px -40px rgba(11,20,36,0.28), 0 2px 0 0 rgba(255,255,255,1) inset; position: relative">
         <div class="md-shine" style="position: absolute; left: 28px; right: 28px; top: -1px; height: 3px; border-radius: 3px"></div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
           <h2 style="margin: 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.4px">Quick donate</h2>
@@ -230,107 +407,48 @@ a{color:#037A72}a:hover{color:#025A54}
       </div>
     </div>
   </section>
-  <div style="border-top: 1px solid #EEF2F4; border-bottom: 1px solid #EEF2F4; background: #FBFCFD; overflow: hidden" aria-label="Why donors trust Madinah">
-    <div class="md-marquee" style="display: flex; width: max-content; gap: 48px; padding: 18px 0; font-family: Poppins, sans-serif; font-weight: 600; font-size: 17px; color: #2A3446; white-space: nowrap">
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>0% platform fee</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Verified charities</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Scholar-reviewed zakat</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Giving Guarantee</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Apple Pay and Google Pay</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>35+ countries</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>0% platform fee</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Verified charities</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Scholar-reviewed zakat</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Giving Guarantee</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>Apple Pay and Google Pay</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-        <div style="display: flex; gap: 48px; align-items: center"><span>35+ countries</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      
-    </div>
-  </div>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #5A60E8; line-height: 1"><span class="md-count md-countv" style="--n: 2"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">campaigns hosted</div></div>
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #1A8FC2; line-height: 1">$<span class="md-count md-countv" style="--n: 4"></span>M+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">raised for good causes</div></div>
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #037A72; line-height: 1"><span class="md-count md-countv" style="--n: 40"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">donors worldwide</div></div>
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #017A5B; line-height: 1"><span class="md-count md-countv" style="--n: 35"></span>+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">countries reached</div></div>
+  <section id="ch5" data-pin="" class="md-pin" data-note="Every gift has a life. We follow it to the finish.">
+    <div class="md-stick">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 05 · THE LIFE OF A DONATION</div><h2 class="md-h2" style="margin: 14px 0 0 0">From a tap to a <span class="md-acc">thank-you.</span></h2></div>
+      <div class="md-hwrap"><div class="md-htrack"><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">01</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Choose</h3><p><b class="md-acc">heart:</b> Pick the cause that moves you, from Gaza to your local masjid.</p><p><b style="color: #037A72">proof:</b> Every campaign shows its charity’s registration and zakat rating.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">02</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Give</h3><p><b class="md-acc">heart:</b> Once or monthly, in your own currency, in thirty seconds.</p><p><b style="color: #037A72">proof:</b> 0% platform fee. Card costs shown before you pay.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">03</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Verify</h3><p><b class="md-acc">heart:</b> Your zakat only goes where scholars say it can.</p><p><b style="color: #037A72">proof:</b> Funds follow a published policy until the charity confirms delivery.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">04</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Deliver</h3><p><b class="md-acc">heart:</b> Teams on the ground deliver food, water, shelter and care.</p><p><b style="color: #037A72">proof:</b> Photos, video and dates come back from the field.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">05</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Report</h3><p><b class="md-acc">heart:</b> You see the faces and places your gift reached.</p><p><b style="color: #037A72">proof:</b> A receipt for your records and a yearly giving summary.</p></article><div class="md-stage md-stage-end"><div><span class="md-hand" style="font-size: 30px">…and then it starts again, next month.</span></div><a href="#donate" class="md-btn md-cta" style="margin-top: 18px; align-self: flex-start">Start a gift</a></div></div></div>
+      <div class="md-hbar"><i></i></div>
     </div>
   </section>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
-      <div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">GIVE BY CAUSE</div>
-        <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Choose what moves you.</h2>
+  <section id="ch6" data-pin="" class="md-pin md-grid" data-note="Four moments. Each one has a feeling and a receipt." data-s="1">
+    <div class="md-stick">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+        <div><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 06 · INSIDE THE MADINAH APP</div><h2 class="md-h2" style="margin: 14px 0 0 0">Four taps from <span class="md-acc">feeling</span> to <span class="md-acc">proof.</span></h2></div>
+        <ol class="md-pills"><li class="md-pl md-pl1">DISCOVER</li><li class="md-pl md-pl2">GIVE</li><li class="md-pl md-pl3">RECEIPT</li><li class="md-pl md-pl4">UPDATE</li></ol>
       </div>
-      <a href="discover.html" style="font-weight: 600; font-size: 15px; text-decoration: none">See all causes →</a>
+      <div class="md-phone-stage">
+        <div class="md-side md-side-l"><div class="md-sl md-sl1"><span class="md-hand" style="font-size: 30px">A face, a place and a deadline. Every story is checked before it goes live.</span></div><div class="md-sl md-sl2"><span class="md-hand" style="font-size: 30px">Thirty seconds, one tap. Apple Pay, Google Pay or card.</span></div><div class="md-sl md-sl3"><span class="md-hand" style="font-size: 30px">A receipt you can trust, the second you give.</span></div><div class="md-sl md-sl4"><span class="md-hand" style="font-size: 30px">Then the part most sites skip: proof it arrived.</span></div></div><div class="md-phone"><div class="md-notch"></div><div class="md-scr md-scr1"><div class="md-scr-ph"><img src="food-parcel.jpg" alt="A grandmother and children with an emergency food parcel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">VERIFIED · ZAKAT-ELIGIBLE</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter warmth for displaced families</div><div class="md-scr-bar"><i style="width: 69%"></i></div><div style="font-size: 12px; color: #4A5568; margin-top: 6px">$48,500 raised · 69%</div><div class="md-scr-btn">Donate</div></div></div><div class="md-scr md-scr2"><div style="padding: 18px 14px"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 17px">Choose an amount</div><div class="md-scr-amts"><span>$25</span><span class="on">$100</span><span>$250</span><span>$500</span></div><div class="md-scr-tog"><span class="on">Once</span><span>Monthly</span></div><div style="font-size: 12px; color: #4A5568; margin-top: 12px">A winter kit for one family</div><div class="md-scr-btn" style="background: #000000"> Pay $100</div><div class="md-scr-btn" style="background: #FFFFFF; color: #0B1424; border: 1.5px solid #D5DEE3">Google Pay</div></div></div><div class="md-scr md-scr3"><div style="padding: 34px 14px 14px; text-align: center"><div class="md-scr-ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; margin-top: 14px">Gift received</div><div style="font-size: 13px; color: #4A5568; margin-top: 4px">$100 to Hope Bridge Relief</div><div style="margin-top: 16px; background: #F6F9FA; border: 1px solid #E3EAEE; border-radius: 12px; padding: 10px; font-size: 12px; text-align: start; line-height: 1.6">Receipt <b>HBR-2026-004811</b><br>Zakat · 19 Nov 2026<br>Saved to your portal</div></div></div><div class="md-scr md-scr4"><div class="md-scr-ph" style="height: 190px"><img src="meals-girls.jpg" alt="Girls sharing a hot meal at a community food distribution" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">UPDATE · 2 DAYS AGO</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter kits delivered to 120 families</div><div style="font-size: 12px; color: #4A5568; margin-top: 6px; line-height: 1.5">Your gift was part of this distribution. Photos taken on the day.</div></div></div></div><div class="md-side md-side-r"><div class="md-sr md-sr1"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">Verified</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= registration + scholar review</div></div><div class="md-sr md-sr2"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">0% fee</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= you choose to cover card costs</div></div><div class="md-sr md-sr3"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">Receipt</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= emailed and saved in your portal</div></div><div class="md-sr md-sr4"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">Delivered</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= photos + date + families reached</div></div></div>
+      </div>
+      <div class="md-phone-static"><div class="md-mini"><div class="md-mini-lab">DISCOVER</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div class="md-scr-ph"><img src="food-parcel.jpg" alt="A grandmother and children with an emergency food parcel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">VERIFIED · ZAKAT-ELIGIBLE</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter warmth for displaced families</div><div class="md-scr-bar"><i style="width: 69%"></i></div><div style="font-size: 12px; color: #4A5568; margin-top: 6px">$48,500 raised · 69%</div><div class="md-scr-btn">Donate</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">A face, a place and a deadline. Every story is checked before it goes live.</span></div></div><div class="md-mini"><div class="md-mini-lab">GIVE</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div style="padding: 18px 14px"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 17px">Choose an amount</div><div class="md-scr-amts"><span>$25</span><span class="on">$100</span><span>$250</span><span>$500</span></div><div class="md-scr-tog"><span class="on">Once</span><span>Monthly</span></div><div style="font-size: 12px; color: #4A5568; margin-top: 12px">A winter kit for one family</div><div class="md-scr-btn" style="background: #000000"> Pay $100</div><div class="md-scr-btn" style="background: #FFFFFF; color: #0B1424; border: 1.5px solid #D5DEE3">Google Pay</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">Thirty seconds, one tap. Apple Pay, Google Pay or card.</span></div></div><div class="md-mini"><div class="md-mini-lab">RECEIPT</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div style="padding: 34px 14px 14px; text-align: center"><div class="md-scr-ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; margin-top: 14px">Gift received</div><div style="font-size: 13px; color: #4A5568; margin-top: 4px">$100 to Hope Bridge Relief</div><div style="margin-top: 16px; background: #F6F9FA; border: 1px solid #E3EAEE; border-radius: 12px; padding: 10px; font-size: 12px; text-align: start; line-height: 1.6">Receipt <b>HBR-2026-004811</b><br>Zakat · 19 Nov 2026<br>Saved to your portal</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">A receipt you can trust, the second you give.</span></div></div><div class="md-mini"><div class="md-mini-lab">UPDATE</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div class="md-scr-ph" style="height: 190px"><img src="meals-girls.jpg" alt="Girls sharing a hot meal at a community food distribution" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">UPDATE · 2 DAYS AGO</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter kits delivered to 120 families</div><div style="font-size: 12px; color: #4A5568; margin-top: 6px; line-height: 1.5">Your gift was part of this distribution. Photos taken on the day.</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">Then the part most sites skip: proof it arrived.</span></div></div></div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 14px; margin-top: 30px">
-      
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #EEF0FF; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#5A60E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">Most needed</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">Sent to the most urgent verified appeals. Where it went is published each month.</div>
-        </a>
-      
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3F6FD; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1A8FC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 7h7.5a3 3 0 0 1 0 6H9a3 3 0 0 0 0 6H17"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">Zakat</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">Only to campaigns our scholars’ board has rated zakat-eligible.</div>
-        </a>
-      
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E6F6F4; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#037A72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">Gaza</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">Food, water, shelter and medical aid through verified partners.</div>
-        </a>
-      
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E2F5EF; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#017A5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21v-2a6 6 0 0 1 12 0v2"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">Orphans</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">Monthly sponsorship that covers food, school and care.</div>
-        </a>
-      
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #E3F6FD; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1A8FC2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">Water</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">Wells, pumps and filters that last for years.</div>
-        </a>
-      
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: #EEF0FF; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#5A60E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">Masjids</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">Build, repair and run masjids and community centres.</div>
-        </a>
-      
+  </section>
+  <section id="nums" style="padding: 130px 24px 90px; position: relative" data-note="Real counts only. We don't make these up.">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 07 · THE NUMBERS</div>
+      <div class="md-nums">
+        <div id="rv-n1" data-rv=""><div class="md-big md-acc">$<span data-count="4">4</span>M+</div><div class="md-big-cap">raised for good causes, through verified charities.</div></div>
+        <div id="rv-n2" data-rv=""><div class="md-big">0<span style="font-size: .55em">%</span></div><div class="md-big-cap">platform fee. Card costs are shown, and you can cover them.</div></div>
+      </div>
+      <div class="md-nums2">
+        <div id="rv-n3" data-rv=""><div class="md-mid"><span data-count="40">40</span>K+</div><div class="md-big-cap">donors worldwide</div></div>
+        <div id="rv-n4" data-rv=""><div class="md-mid"><span data-count="2">2</span>K+</div><div class="md-big-cap">campaigns hosted</div></div>
+        <div id="rv-n5" data-rv=""><div class="md-mid"><span data-count="35">35</span>+</div><div class="md-big-cap">countries reached</div></div>
+      </div>
     </div>
   </section>
   <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
     <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
       <div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">FEATURED NOW</div>
+        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">CHAPTER 08 · FEATURED NOW</div>
         <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Appeals that need you this week.</h2>
       </div>
       <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1px; color: #4A5568; border: 1px dashed #C9D4DA; padding: 6px 10px; border-radius: 999px">UPDATED DAILY</div>
@@ -394,6 +512,15 @@ a{color:#037A72}a:hover{color:#025A54}
           </div>
         </a>
       
+    </div>
+  </section>
+  <section id="ways" style="padding: 110px 24px 40px" data-note="Pick one. Or let us pick the most urgent.">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+        <div><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 09 · WAYS TO GIVE</div><h2 class="md-h2" style="margin: 14px 0 0 0">Six causes. <span class="md-acc">One promise.</span></h2></div>
+        <a href="discover.html" class="md-pill-link">All causes →</a>
+      </div>
+      <div class="md-rows"><a href="discover.html" class="md-row" id="rv-w0" data-rv=""><span class="md-row-n">01</span><span class="md-row-t">Most needed</span><span class="md-row-d">Sent to the most urgent verified appeals. Where it went is published each month.</span><span class="md-row-tag">SADAQAH + ZAKAT</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w1" data-rv=""><span class="md-row-n">02</span><span class="md-row-t">Zakat</span><span class="md-row-d">Only to campaigns our scholars’ board has rated zakat-eligible.</span><span class="md-row-tag">ZAKAT-ELIGIBLE</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w2" data-rv=""><span class="md-row-n">03</span><span class="md-row-t">Gaza</span><span class="md-row-d">Food, water, shelter and medical aid through verified partners.</span><span class="md-row-tag">SADAQAH + ZAKAT</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w3" data-rv=""><span class="md-row-n">04</span><span class="md-row-t">Orphans</span><span class="md-row-d">Monthly sponsorship that covers food, school and care.</span><span class="md-row-tag">MONTHLY</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w4" data-rv=""><span class="md-row-n">05</span><span class="md-row-t">Water</span><span class="md-row-d">Wells, pumps and filters that last for years.</span><span class="md-row-tag">SADAQAH JARIYAH</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w5" data-rv=""><span class="md-row-n">06</span><span class="md-row-t">Masjids</span><span class="md-row-d">Build, repair and run masjids and community centres.</span><span class="md-row-tag">SADAQAH JARIYAH</span><span class="md-row-ar" aria-hidden="true">→</span></a></div>
     </div>
   </section>
   <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
@@ -568,62 +695,10 @@ a{color:#037A72}a:hover{color:#025A54}
     </div>
     <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 12px">RATINGS SHOW THE REVIEWER AND DATE ON EACH PROFILE.</div>
   </section>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-reveal" style="text-align: center; max-width: 720px; margin: 0 auto">
-      <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">WHY GIVE THROUGH MADINAH</div>
-      <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Every gift is checked, tracked and protected.</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin-top: 36px">
-      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; color: #5A60E8">01</div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">Checked before it goes live</div>
-        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">We verify each charity’s registration, and our scholars’ board rates how it handles zakat.</p>
-      </div>
-      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; color: #1A8FC2">02</div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">Updates you can see</div>
-        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">Photo and video updates from the ground, straight to your inbox or the Madinah app.</p>
-      </div>
-      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #0B1424; color: #FFFFFF; position: relative; overflow: hidden">
-        <div class="md-shine" style="position: absolute; left: 0; right: 0; top: 0; height: 4px"></div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; color: #7FD9F9">03</div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">The Madinah Giving Guarantee</div>
-        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #D5DDE8">If a campaign is proven fraudulent, we refund your donation. No small print games.</p>
-        <a href="trust.html" style="display: inline-block; margin-top: 14px; color: #7FD9F9; font-weight: 600; text-decoration: none">How the guarantee works →</a>
-      </div>
-    </div>
-  </section>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
-      <div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">MADINAH LEARN</div>
-        <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Your giving questions, answered.</h2>
-      </div>
-      <a href="learn.html" style="font-weight: 600; font-size: 15px; text-decoration: none">All answers →</a>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; margin-top: 30px">
-      
-        <a href="learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1.5px; color: #037A72">ZAKAT</div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: -0.3px">Can I give my zakat to Gaza?</div>
-          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">Yes, to campaigns that reach eligible recipients. Look for the zakat-eligible badge, which our scholars’ board reviews.</div>
-          <div style="margin-top: auto; font-size: 13px; color: #4A5568">Reviewed by Shaykh Hamza Idris · 2 min read</div>
-        </a>
-      
-        <a href="learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1.5px; color: #037A72">RAMADAN</div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: -0.3px">How much is zakat al-fitr this year?</div>
-          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">It depends on where you live. We publish the amount for each country, reviewed and dated by our scholars.</div>
-          <div style="margin-top: auto; font-size: 13px; color: #4A5568">Reviewed by Shaykh Hamza Idris · 2 min read</div>
-        </a>
-      
-        <a href="learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1.5px; color: #037A72">ZAKAT</div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: -0.3px">Is zakat due on crypto?</div>
-          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">Most scholars treat crypto held as savings or for trade as zakatable wealth. Here’s how to value it.</div>
-          <div style="margin-top: auto; font-size: 13px; color: #4A5568">Reviewed by Shaykh Hamza Idris · 2 min read</div>
-        </a>
-      
+  <section id="faq" style="padding: 110px 24px" data-note="Ask anything. Nothing here is small print.">
+    <div class="md-faq-in" style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px; align-items: start">
+      <div style="position: sticky; top: 110px"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">BEFORE YOU GIVE</div><h2 class="md-h2" style="margin: 14px 0 0 0">Questions donors <span class="md-acc">ask first.</span></h2><p class="md-lead" style="margin: 18px 0 0 0">Still unsure? <a href="faq.html" style="font-weight: 600">Read the full help centre</a> or <a href="learn.html" style="font-weight: 600">ask our scholars</a>.</p></div>
+      <div class="md-faq"><details class="md-q"><summary><span>Who are the charities on Madinah?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Registered charities whose registration we check before any campaign goes live. Each profile shows its registration number, country and team.</p></details><details class="md-q"><summary><span>Does Madinah take a cut?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>No platform fee. Card processing (about 3%) is deducted unless you choose to cover it, and you see it before you pay.</p></details><details class="md-q"><summary><span>How do I know my zakat is handled correctly?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Only campaigns our scholars’ board rates zakat-eligible can accept zakat. Each rating shows who reviewed it and when.</p></details><details class="md-q"><summary><span>Can I give my zakat to Gaza?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Yes, to campaigns that reach eligible recipients. Look for the zakat-eligible badge.</p></details><details class="md-q"><summary><span>Will I get a receipt?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Yes. Instantly by email and in your donor portal, plus a yearly giving summary you can download.</p></details><details class="md-q"><summary><span>What if a campaign turns out to be fake?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>The Madinah Giving Guarantee: if a campaign is proven fake, your gift is refunded.</p></details><details class="md-q"><summary><span>Can I give monthly, and cancel later?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Yes. Choose monthly when you give, then pause or cancel any time from your donor portal.</p></details><details class="md-q"><summary><span>Is zakat due on crypto?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Most scholars treat crypto held as savings or for trade as zakatable wealth. Our Learn guide explains how to value it.</p></details></div>
     </div>
   </section>
   <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px">
@@ -661,6 +736,16 @@ a{color:#037A72}a:hover{color:#025A54}
       </div>
     </div>
   </section>
+  
+  <section id="end" class="md-grid" style="padding: 150px 24px 160px; text-align: center; position: relative; overflow: hidden" data-note="Go on. I'll wave when the receipt lands.">
+    <div class="md-end-glow" aria-hidden="true"></div>
+    <div style="position: relative; max-width: 980px; margin: 0 auto">
+      <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 10 · YOUR GIFT NEXT</div>
+      <h2 class="md-h1" style="margin: 18px 0 0 0">Give once.<br><span class="md-acc">Watch it arrive.</span></h2>
+      <p class="md-lead" style="margin: 22px auto 0; max-width: 620px">Verified charities, scholar-reviewed zakat and proof when your gift lands. 0% platform fee, every time.</p>
+      <div style="margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap"><a href="#donate" class="md-btn md-cta md-cta-lg">Give now</a><a href="discover.html" class="md-btn md-ghost">See all campaigns</a></div>
+    </div>
+  </section>
   <footer style="background: #F6F9FA; border-top: 1px solid #E3EAEE">
     <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 32px">
       <div style="display: flex; flex-direction: column; gap: 12px">
@@ -677,18 +762,26 @@ a{color:#037A72}a:hover{color:#025A54}
       <div style="display: flex; gap: 16px"><a href="#" style="color: #4A5568">Privacy</a><a href="#" style="color: #4A5568">Terms</a><a href="#" style="color: #4A5568">Cookies</a></div>
     </div>
   </footer>
+  <div class="md-guide" aria-hidden="true">
+    <div class="md-bubble"><span class="md-hand md-note" style="font-size: 21px">Hi! Scroll and watch your gift find its way.</span></div>
+    <svg class="md-lantern" width="62" height="96" viewBox="0 0 62 96"><defs><linearGradient id="mdLg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".6" stop-color="#23BCF6"></stop><stop offset="1" stop-color="#07A8A3"></stop></linearGradient><radialGradient id="mdGl" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#FFE9A8"></stop><stop offset="1" stop-color="#FFE9A8" stop-opacity="0"></stop></radialGradient></defs>
+      <path d="M31 2v10" stroke="#0B1424" stroke-width="2.5" stroke-linecap="round"></path><path d="M23 12h16l-3 7H26z" fill="#0B1424"></path>
+      <circle cx="31" cy="50" r="30" fill="url(#mdGl)" class="md-glowc"></circle>
+      <path d="M18 22 Q31 16 44 22 L48 70 Q31 78 14 70z" fill="url(#mdLg)"></path><path d="M22 26 Q31 22 40 26 L43 66 Q31 71 19 66z" fill="#FFFFFF" opacity=".88"></path>
+      <circle cx="26" cy="44" r="3" fill="#0B1424" class="md-eye"></circle><circle cx="36" cy="44" r="3" fill="#0B1424" class="md-eye"></circle><path d="M26 53 Q31 58 36 53" stroke="#0B1424" stroke-width="2.4" fill="none" stroke-linecap="round"></path>
+      <path d="M17 76h28l-4 9H21z" fill="#0B1424"></path><path d="M31 85v8" stroke="#0B1424" stroke-width="2.5" stroke-linecap="round"></path></svg>
+  </div>
 </div></div>
-<template id="dc-tpl"><div class="{{rootClass}}" style="font-family: Inter, system-ui, sans-serif; color: #0B1424; background: #FFFFFF; overflow: hidden">
-  <div style="background: #F6F9FA; border-bottom: 1px solid #E3EAEE">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; font-size: 13px; color: #3B4657">
-      <div style="display: flex; gap: 18px; flex-wrap: wrap; align-items: center">
-        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>0% platform fee</div>
-        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Scholar-reviewed zakat</div>
-        <div style="display: flex; gap: 6px; align-items: center"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="#037A72" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg>Giving Guarantee</div>
-      </div>
+<template id="dc-tpl"><div class="{{rootClass}} md-home" style="font-family: Inter, system-ui, sans-serif; color: #0B1424; background: #FFFFFF; overflow-x: clip">
+
+  <header class="md-head">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px">
+      <a href="index.html" aria-label="Madinah home" style="display: flex"><img src="madinah-wordmark.png" alt="Madinah" style="height: 32px; width: auto; display: block"></a>
+      <nav class="md-navlinks" aria-label="Main" style="display: flex; gap: 26px; font-size: 15px; font-weight: 500">
+        <a href="discover.html" class="md-nl">Discover</a><a href="zakat.html" class="md-nl">Zakat</a><a href="charity.html" class="md-nl">Charities</a><a href="learn.html" class="md-nl">Learn</a><a href="ramadan.html" class="md-nl">Ramadan</a><a href="merch.html" class="md-nl">Merch</a>
+      </nav>
       <div style="display: flex; gap: 10px; align-items: center">
-        <label style="display: flex; gap: 6px; align-items: center; font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1px; color: #4A5568">CURRENCY
-          <select value="{{cur}}" onChange="{{setCur}}" style="font-family: Inter, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
+        <label class="md-hide-sm md-cur"><span>CURRENCY</span><select value="{{cur}}" onChange="{{setCur}}" style="font-family: Inter, sans-serif; font-size: 13px; padding: 6px 8px; border: 1px solid #D5DEE3; border-radius: 8px; background: #FFFFFF; color: #0B1424">
             <option value="USD">USD $</option>
             <option value="CAD">CAD $</option>
             <option value="GBP">GBP £</option>
@@ -696,74 +789,87 @@ a{color:#037A72}a:hover{color:#025A54}
             <option value="TRY">TRY ₺</option>
             <option value="AED">AED</option>
             <option value="MYR">MYR</option>
-          </select>
-        </label>
-      </div>
-    </div>
-  </div>
-  <header style="position: relative; z-index: 20; border-bottom: 1px solid #EEF2F4; background: rgba(255,255,255,0.92)">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px">
-      <a href="index.html" aria-label="Madinah home" style="display: flex"><img src="madinah-wordmark.png" alt="Madinah" style="height: 34px; width: auto; display: block"></a>
-      <nav class="md-navlinks" aria-label="Main" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500">
-        <a href="discover.html" style="color: #0B1424; text-decoration: none">Discover</a>
-        <a href="zakat.html" style="color: #0B1424; text-decoration: none">Zakat</a>
-        <a href="charity.html" style="color: #0B1424; text-decoration: none">Charities</a>
-        <a href="learn.html" style="color: #0B1424; text-decoration: none">Learn</a>
-        <a href="ramadan.html" style="color: #0B1424; text-decoration: none">Ramadan</a>
-        <a href="merch.html" style="color: #0B1424; text-decoration: none">Merch</a>
-      </nav>
-      <div style="display: flex; gap: 10px; align-items: center">
-        <a data-lang-switch href="ar.html" class="md-hide-sm" lang="ar" style="font-size: 15px; font-weight: 600; color: #037A72; text-decoration: none; padding: 10px 12px; border-radius: 10px; border: 1.5px solid #CDEBEC">العربية</a><a href="signin-donor.html" class="md-hide-sm" style="font-size: 15px; font-weight: 500; color: #0B1424; text-decoration: none; padding: 10px 12px">Sign in</a>
-        <a href="#donate" class="md-btn" style="font-size: 15px; font-weight: 600; color: #FFFFFF; background: #0B1424; text-decoration: none; padding: 12px 20px; border-radius: 999px; min-height: 44px; display: flex; align-items: center">Donate</a>
+          </select></label>
+        <a data-lang-switch href="ar.html" class="md-hide-sm" lang="ar" style="font-size: 15px; font-weight: 600; color: #037A72; text-decoration: none; padding: 9px 12px; border-radius: 999px; border: 1.5px solid #CDEBEC">العربية</a><a href="signin-donor.html" class="md-hide-sm" style="font-size: 15px; font-weight: 500; color: #0B1424; text-decoration: none; padding: 10px 8px">Sign in</a>
+        <a href="#donate" class="md-btn md-cta" style="min-height: 44px">Donate</a>
         <details class="md-mnav"><summary aria-label="Menu" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #D5DEE3; display: flex; align-items: center; justify-content: center; background: #FFFFFF"><svg class="md-mnav-ic1" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg class="md-mnav-ic2" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0B1424" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></summary><nav aria-label="Mobile" style="position: absolute; left: 0; right: 0; top: 100%; background: #FFFFFF; border-bottom: 1px solid #E3EAEE; box-shadow: 0 30px 50px -30px rgba(11,20,36,0.35); padding: 8px 24px 20px; display: flex; flex-direction: column"><a href="discover.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Discover<span aria-hidden="true" style="color: #037A72">→</span></a><a href="zakat.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Zakat<span aria-hidden="true" style="color: #037A72">→</span></a><a href="charity.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Charities<span aria-hidden="true" style="color: #037A72">→</span></a><a href="learn.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Learn<span aria-hidden="true" style="color: #037A72">→</span></a><a href="ramadan.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Ramadan<span aria-hidden="true" style="color: #037A72">→</span></a><a href="merch.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Merch<span aria-hidden="true" style="color: #037A72">→</span></a><a href="about.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">About<span aria-hidden="true" style="color: #037A72">→</span></a><a href="faq.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Help and FAQ<span aria-hidden="true" style="color: #037A72">→</span></a><a href="signin-donor.html" style="display: flex; align-items: center; justify-content: space-between; min-height: 52px; padding: 0 4px; border-bottom: 1px solid #EEF2F4; color: #0B1424; text-decoration: none; font-size: 17px; font-weight: 600">Sign in<span aria-hidden="true" style="color: #037A72">→</span></a></nav></details>
       </div>
     </div>
+    <div class="md-now md-hide-sm" aria-hidden="true"><span>NOW GIVING:</span><div class="md-tk"><div class="md-tk-r"><div class="md-tk-i"><span style="color: #037A72">ZAKAT</span> · <span>$120</span> · <span>Toronto</span></div><div class="md-tk-i"><span style="color: #037A72">WATER</span> · <span>$250</span> · <span>Manchester</span></div><div class="md-tk-i"><span style="color: #037A72">ORPHANS</span> · <span>$45 monthly</span> · <span>Dubai</span></div><div class="md-tk-i"><span style="color: #037A72">GAZA</span> · <span>₺750</span> · <span>Istanbul</span></div><div class="md-tk-i"><span style="color: #037A72">ZAKAT</span> · <span>$120</span> · <span>Toronto</span></div></div></div></div>
   </header>
-  <section id="donate" style="position: relative; isolation: isolate; overflow: hidden">
-    <svg class="md-draw" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1">
-      <defs><linearGradient id="mdHeroG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".5" stop-color="#23BCF6"></stop><stop offset=".8" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient></defs>
-      <path d="M 520 780 C 760 600, 900 360, 1460 300" stroke="url(#mdHeroG)" stroke-width="1.3" fill="none" opacity=".35"></path>
-      <path d="M 545 780 C 785 610, 925 380, 1460 330" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".3"></path>
-      <path d="M 570 780 C 810 620, 950 400, 1460 360" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".26"></path>
-      <path d="M 595 780 C 835 630, 975 420, 1460 390" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".22"></path>
-      <path d="M 620 780 C 860 640, 1000 440, 1460 420" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".35"></path>
-      <path d="M 645 780 C 885 650, 1025 460, 1460 450" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".3"></path>
-      <path d="M -20 120 C 180 60, 300 200, 520 -20" stroke="url(#mdHeroG)" stroke-width="1.2" fill="none" opacity=".35"></path>
-      <path d="M -20 150 C 200 90, 320 230, 560 -20" stroke="url(#mdHeroG)" stroke-width="1.1" fill="none" opacity=".28"></path>
-      <path d="M -20 180 C 220 120, 340 260, 600 -20" stroke="url(#mdHeroG)" stroke-width="1" fill="none" opacity=".22"></path>
-    </svg>
-    <svg class="md-sky" viewBox="0 0 1440 300" preserveAspectRatio="xMidYMax meet" aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 300px; z-index: -1"><defs><linearGradient id="mdSkyG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7077FB"></stop><stop offset=".45" stop-color="#23BCF6"></stop><stop offset=".75" stop-color="#07A8A3"></stop><stop offset="1" stop-color="#01966F"></stop></linearGradient><radialGradient id="mdSkyGlow" cx="50%" cy="100%" r="60%"><stop offset="0" stop-color="#07A8A3" stop-opacity=".22"></stop><stop offset="1" stop-color="#07A8A3" stop-opacity="0"></stop></radialGradient></defs><ellipse class="md-glow" cx="720" cy="300" rx="320" ry="190" fill="url(#mdSkyGlow)"></ellipse><g fill="none" stroke="url(#mdSkyG)" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M 120 290 H 1320" stroke-width="1.4" opacity="0.8"></path><path pathLength="1" d="M 260 290 V 264 Q 276 244 292 264 V 290 M 300 290 V 264 Q 316 244 332 264 V 290 M 340 290 V 264 Q 356 244 372 264 V 290 M 380 290 V 264 Q 396 244 412 264 V 290 M 420 290 V 264 Q 436 244 452 264 V 290 M 460 290 V 264 Q 476 244 492 264 V 290 M 500 290 V 264 Q 516 244 532 264 V 290 M 540 290 V 264 Q 556 244 572 264 V 290 M 580 290 V 264 Q 596 244 612 264 V 290 M 860 290 V 264 Q 876 244 892 264 V 290 M 900 290 V 264 Q 916 244 932 264 V 290 M 940 290 V 264 Q 956 244 972 264 V 290 M 980 290 V 264 Q 996 244 1012 264 V 290 M 1020 290 V 264 Q 1036 244 1052 264 V 290 M 1060 290 V 264 Q 1076 244 1092 264 V 290 M 1100 290 V 264 Q 1116 244 1132 264 V 290 M 1140 290 V 264 Q 1156 244 1172 264 V 290" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 250 236 H 600 M 840 236 H 1190" stroke-width="1.2" opacity="0.7"></path><path pathLength="1" d="M 332 290 V 110 M 348 290 V 110 M 326 190 H 354 V 182 H 326 Z M 326 140 H 354 V 132 H 326 Z M 332 110 H 348 M 332 110 L 340 70 L 348 110 M 340 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 461 290 V 80 M 479 290 V 80 M 455 160 H 485 V 152 H 455 Z M 455 110 H 485 V 102 H 455 Z M 461 80 H 479 M 461 80 L 470 40 L 479 80 M 470 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 591 290 V 104 M 609 290 V 104 M 585 184 H 615 V 176 H 585 Z M 585 134 H 615 V 126 H 585 Z M 591 104 H 609 M 591 104 L 600 64 L 609 104 M 600 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 831 290 V 104 M 849 290 V 104 M 825 184 H 855 V 176 H 825 Z M 825 134 H 855 V 126 H 825 Z M 831 104 H 849 M 831 104 L 840 64 L 849 104 M 840 64 V 50" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 961 290 V 80 M 979 290 V 80 M 955 160 H 985 V 152 H 955 Z M 955 110 H 985 V 102 H 955 Z M 961 80 H 979 M 961 80 L 970 40 L 979 80 M 970 40 V 26" stroke-width="1.5" opacity="1"></path><path pathLength="1" d="M 1092 290 V 110 M 1108 290 V 110 M 1086 190 H 1114 V 182 H 1086 Z M 1086 140 H 1114 V 132 H 1086 Z M 1092 110 H 1108 M 1092 110 L 1100 70 L 1108 110 M 1100 70 V 56" stroke-width="1.5" opacity="0.55"></path><path pathLength="1" d="M 501 236 V 210 M 569 236 V 210 M 501 210 C 501 169, 524 152, 535 150 C 545 152, 569 169, 569 210 M 535 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 871 236 V 210 M 939 236 V 210 M 871 210 C 871 169, 894 152, 905 150 C 915 152, 939 169, 939 210 M 905 150 V 138" stroke-width="1.4" opacity="0.85"></path><path pathLength="1" d="M 652 290 V 194 H 788 V 290" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 640 194 H 800" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 658 194 C 646 130, 676 78, 720 64 C 764 78, 794 130, 782 194" stroke-width="2" opacity="1"></path><path pathLength="1" d="M 720 64 V 40" stroke-width="1.6" opacity="1"></path><path pathLength="1" d="M 672 270 V 230 Q 680 218 688 230 V 270 M 700 270 V 230 Q 708 218 716 230 V 270 M 728 270 V 230 Q 736 218 744 230 V 270 M 756 270 V 230 Q 764 218 772 230 V 270" stroke-width="1.1" opacity="0.7"></path></g><path class="md-cres" d="M 727 22 A 9 9 0 1 1 727 38 A 7 7 0 1 0 727 22 Z" fill="#07A8A3"></path></svg>
-    <svg class="md-moon" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true" style="position: absolute; right: 7%; top: 44px; z-index: -1"><path pathLength="1" d="M 40 8 A 24 24 0 1 0 56 44 A 19 19 0 1 1 40 8 Z" fill="none" stroke="url(#mdHeroG)" stroke-width="1.6" stroke-linejoin="round"></path></svg>
-    <div class="md-hero-in" style="max-width: 1200px; margin: 0 auto; padding: 64px 24px 250px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 56px; align-items: center">
-      <div dir="{{dir}}" lang="{{lang}}">
-        <div class="md-rise" style="display: inline-flex; gap: 8px; align-items: center; font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 1.5px; color: #037A72; background: #EAF6F7; border: 1px solid #CDEBEC; padding: 7px 12px; border-radius: 999px">
-          <div class="md-pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #07A8A3"></div>TRUSTED MUSLIM GIVING · 0% PLATFORM FEE
-        </div>
-        <h1 class="md-rise md-d1" style="margin: 22px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.04; letter-spacing: -2px; text-wrap: balance">{{t.lead}} <span style="position: relative; display: inline-block">{{t.accent}}<svg class="md-underline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true" style="position: absolute; left: 0; bottom: -10px; width: 100%; height: 16px"><path d="M 4 14 C 80 4, 200 4, 296 12" stroke="url(#mdHeroG)" stroke-width="5" fill="none" stroke-linecap="round"></path></svg></span></h1>
-        <p class="md-rise md-d2" style="margin: 28px 0 0; font-size: 19px; line-height: 1.6; color: #3B4657; max-width: 520px">{{t.sub}}</p>
-        <div class="md-rise md-d3" style="display: flex; gap: 22px; margin-top: 30px; flex-wrap: wrap">
-          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #EEF0FF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linejoin="round"></path><path d="M9 12l2 2 4-4" stroke="#5A60E8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>Verified charities</b><br><span style="color: #4A5568">registration checked</span></div></div>
-          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E3F6FD; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M6 20v-6a6 6 0 0 1 12 0v6M12 4v4" stroke="#1A8FC2" stroke-width="2" fill="none" stroke-linecap="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>Zakat rated</b><br><span style="color: #4A5568">by a scholars’ board</span></div></div>
-          <div style="display: flex; gap: 10px; align-items: center"><div style="width: 40px; height: 40px; border-radius: 12px; background: #E2F5EF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5" stroke="#017A5B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="font-size: 14px; line-height: 1.35"><b>Money-back</b><br><span style="color: #4A5568">Giving Guarantee</span></div></div>
-        </div>
-        <figure class="md-rise md-d4 md-hero-fig" style="position: relative; margin: 48px 0 0; max-width: 560px">
-          <div class="md-hero-ph" style="position: relative; height: 290px; border-radius: 26px; overflow: hidden; background: #E9EEF1; box-shadow: 0 40px 70px -42px rgba(11,20,36,0.55)">
-            <img src="hero-water-tap.jpg" alt="Two children drinking clean water from a new tap" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block">
-            <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,19,33,0.82) 0%, rgba(6,19,33,0.25) 45%, rgba(6,19,33,0) 70%), linear-gradient(120deg, rgba(112,119,251,0.18), rgba(7,168,163,0) 55%)"></div>
-            <div class="md-sheen" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; left: 0; width: 30%; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.28), rgba(255,255,255,0))"></div>
-            <div style="position: absolute; left: 16px; top: 16px; display: inline-flex; align-items: center; gap: 8px; font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1.4px; color: #FFFFFF; background: rgba(11,20,36,0.38); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.22); padding: 6px 11px; border-radius: 999px"><span class="md-pulse" style="width: 7px; height: 7px; border-radius: 50%; background: #3FE0C5"></span>FUNDED BY DONORS LIKE YOU</div>
-            <figcaption style="position: absolute; left: 20px; right: 20px; bottom: 18px; color: #FFFFFF">
-              <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.5px; line-height: 1.15">Clean water, delivered.</div>
-              <div style="font-size: 13.5px; color: rgba(255,255,255,0.86); margin-top: 4px">2,140 families now drink safe water · Clearwell Water Trust</div>
-              <div style="margin-top: 12px; height: 4px; border-radius: 4px; background: rgba(255,255,255,0.22); overflow: hidden"><div class="md-bar md-shine" style="height: 100%; width: 86%; border-radius: 4px"></div></div>
-            </figcaption>
+  <section id="hero" data-pin class="md-pin md-grid" data-note="Hi! Scroll and watch your gift find its way.">
+    <div class="md-stick">
+      <div class="md-hero-g" style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 32px; align-items: center">
+        <div style="position: relative; z-index: 2">
+          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #4A5568; animation: mdRise .8s .1s both">TRUSTED MUSLIM GIVING · 0% PLATFORM FEE</div>
+          <h1 class="md-h1" style="margin: 18px 0 0 0">Give from the <span class="md-acc">heart.</span><br>See where it <span class="md-acc">goes.</span></h1>
+          <p class="md-lead" style="margin: 22px 0 0 0; max-width: 540px">Madinah checks every charity, has zakat reviewed by scholars and shows you proof when your gift arrives. Same heart, full receipts.</p>
+          <div style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 18px 22px; align-items: center; animation: mdRise .8s .45s both">
+            <div style="display: flex; align-items: baseline; gap: 10px"><span class="md-acc" style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -1px">$4M+</span><span style="font-size: 14px; color: #4A5568">raised by 40K+ donors</span></div>
+            <a href="#donate" class="md-btn md-cta md-cta-lg">Give now</a>
+            <a href="zakat.html" style="font-weight: 600; font-size: 15px; color: #037A72; text-decoration: none">Calculate zakat →</a>
           </div>
-          <div class="md-float" aria-hidden="true" style="position: absolute; right: -18px; top: -22px; width: 250px; height: 62px; background: rgba(255,255,255,0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid #E3EAEE; border-radius: 18px; box-shadow: 0 24px 44px -26px rgba(11,20,36,0.45); padding: 0 14px">
-            <div style="position: relative; height: 100%"><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #7077FB, #23BCF6); color: #061321; font-family: Poppins, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">AR</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>Aisha</b> <span style="color: #4A5568">from Toronto</span><br><span style="color: #037A72; font-weight: 600">gave $50</span> <span style="color: #4A5568">· just now</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #23BCF6, #07A8A3); color: #061321; font-family: Poppins, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">OK</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>Omar</b> <span style="color: #4A5568">from London</span><br><span style="color: #037A72; font-weight: 600">gave £25</span> <span style="color: #4A5568">· 1 min ago</span></div></div><div class="md-toast" style="position: absolute; inset: 0; display: flex; align-items: center; gap: 10px"><div style="flex-shrink: 0; width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, #07A8A3, #01966F); color: #061321; font-family: Poppins, sans-serif; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center">FY</div><div style="font-size: 13px; line-height: 1.35; min-width: 0"><b>Fatma</b> <span style="color: #4A5568">from Istanbul</span><br><span style="color: #037A72; font-weight: 600">gave ₺750</span> <span style="color: #4A5568">· 2 min ago</span></div></div></div>
-          </div>
-        </figure>
+          <div class="md-tags" style="margin-top: 38px"><span class="md-tag">GIVE.ZAKAT</span><span class="md-tag">GIVE.SADAQAH</span><span class="md-tag">GIVE.MONTHLY</span><span class="md-tag">GIVE.WAQF</span><span class="md-tag md-tag2">TRACK.VERIFIED</span><span class="md-tag md-tag2">TRACK.DELIVERED</span><span class="md-tag md-tag2">TRACK.RECEIPT</span><span class="md-tag md-tag2">TRACK.UPDATE</span></div>
+        </div>
+        <div class="md-art" aria-hidden="true">
+          <canvas id="md-particles" width="640" height="560" style="width: 100%; height: auto; display: block"></canvas>
+          <svg class="md-art-fallback" viewBox="0 0 640 560" style="width: 100%; height: auto; display: block">
+            <defs><linearGradient id="mdHg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"/><stop offset=".55" stop-color="#23BCF6"/><stop offset="1" stop-color="#07A8A3"/></linearGradient>
+            <pattern id="mdDots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="4.5" cy="4.5" r="2.3" fill="url(#mdHg)"/></pattern></defs>
+            <path d="M320 470 C 170 380, 110 300, 120 220 C 130 140, 230 110, 320 190 C 410 110, 510 140, 520 220 C 530 300, 470 380, 320 470z" fill="url(#mdDots)"/>
+          </svg>
+          <div class="md-art-cap md-cap1"><b>HEART</b> · why we give</div>
+          <div class="md-art-cap md-cap2"><b>PROOF</b> · where it went</div>
+        </div>
       </div>
-      <div class="md-rise md-d2" style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 28px; padding: 28px; box-shadow: 0 40px 80px -40px rgba(11,20,36,0.28), 0 2px 0 0 rgba(255,255,255,1) inset; position: relative">
+    </div>
+  </section>
+  <section id="ch2" data-pin class="md-pin" data-note="That's a real gift. Our job is the proof that it arrived.">
+    <div class="md-stick">
+      <div style="text-align: center; position: relative; z-index: 3; padding: 0 24px"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 02</div><h2 class="md-h2" style="margin: 14px auto 0; max-width: 900px">Every gift is a promise.<br>We help you <span class="md-acc">keep it.</span></h2></div>
+      <div class="md-mosaic-wrap">
+        <div class="md-mosaic"><figure class="md-tile md-t0"><div class="md-tile-ph"><img src="food-parcel.jpg" alt="A grandmother and children with an emergency food parcel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div><figcaption>Winter warmth for displaced families</figcaption></figure><div class="md-tile md-tile-q md-t1"><div>Still wondering if it ever arrived?</div><span class="md-tag md-tag2" style="margin-top: 14px">TRACK.UPDATE</span></div><figure class="md-tile md-t2"><div class="md-tile-ph"><img src="well-pump.jpg" alt="Villagers gathered around a new hand-pump well" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block"></div><figcaption>A well for a village of 600</figcaption></figure><figure class="md-tile md-t3"><div class="md-tile-ph"><img src="meals-girls.jpg" alt="Girls sharing a hot meal at a community food distribution" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><figcaption>Hot meals for families in Gaza</figcaption></figure><figure class="md-tile md-t4"><div class="md-tile-ph"><img src="school-lunch.jpg" alt="Schoolchildren laughing over their school lunch" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 45%; display: block"></div><figcaption>A school year for an orphan</figcaption></figure><div class="md-tile md-tile-q md-t5"><div>The gift you can actually follow.</div><span class="md-tag md-tag2" style="margin-top: 14px">TRACK.UPDATE</span></div><figure class="md-tile md-t6"><div class="md-tile-ph"><img src="hero-water-tap.jpg" alt="Two children drinking clean water from a new tap" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><figcaption>Clean water, delivered</figcaption></figure><figure class="md-tile md-t7"><div class="md-tile-ph"><img src="water-collect.jpg" alt="Two girls collecting water from a muddy puddle" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><figcaption>Before the new pump came</figcaption></figure></div>
+        <svg class="md-thread" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="mdTh" x1="0" x2="1"><stop offset="0" stop-color="#7077FB"/><stop offset=".5" stop-color="#23BCF6"/><stop offset="1" stop-color="#01966F"/></linearGradient></defs>
+          <path pathLength="1" d="M-20 420 C 140 430, 210 300, 330 330 S 520 400, 610 260 S 820 120, 930 190 S 1120 120, 1230 60" fill="none" stroke="url(#mdTh)" stroke-width="5" stroke-linecap="round"/></svg>
+      </div>
+      <p class="md-mos-line"><b>Pick a cause. We make sure it arrives</b>, then show you the photos, the date and the families reached.</p>
+    </div>
+  </section>
+  <section id="ch3" data-pin class="md-pin md-grid" data-note="This is the part most sites skip. We don't.">
+    <div class="md-stick">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+          <div><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 03 · THE JOURNEY OF A GIFT</div><h2 class="md-h2" style="margin: 14px 0 0 0">Heart <span class="md-acc">+ proof</span>, in that order.</h2></div>
+          <ol class="md-steps" aria-label="Steps"><li class="md-s1">01 GIFT IN</li><li class="md-s2">02 CHECKED</li><li class="md-s3">03 DELIVERED</li><li class="md-s4">04 PROOF OUT</li></ol>
+        </div>
+        <div class="md-flow">
+          <div class="md-node md-n-in"><div class="md-node-lab">YOUR GIFT</div><div class="md-coins"><span class="md-coin" style="--i: 0">$</span><span class="md-coin" style="--i: 1">$</span><span class="md-coin" style="--i: 2">$</span><span class="md-coin" style="--i: 3">$</span><span class="md-coin" style="--i: 4">$</span><span class="md-coin" style="--i: 5">$</span></div></div>
+          <div class="md-pipe md-pp1"><i></i></div>
+          <div class="md-chamber md-c1"><div class="md-ch-lab">CHECK CHAMBER</div><div class="md-ch-q">Is this charity real, and can it take zakat?</div>
+            <ul class="md-ch-list"><li style="--k: 0"><span class="md-hand" style="font-size: 26px">registration checked</span></li><li style="--k: 1"><span class="md-hand" style="font-size: 26px">zakat rated by scholars</span></li><li style="--k: 2"><span class="md-hand" style="font-size: 26px">accounts reviewed</span></li><li style="--k: 3"><span class="md-hand" style="font-size: 26px">story dated and signed off</span></li></ul></div>
+          <div class="md-pipe md-pp2"><i></i></div>
+          <div class="md-chamber md-c2"><div class="md-ch-lab">DELIVERY CHAMBER</div><div class="md-ch-q">Did it reach the people it promised?</div>
+            <div class="md-dbars"><i style="--h: .38"></i><i style="--h: .55"></i><i style="--h: .47"></i><i style="--h: .72"></i><i style="--h: .9"></i><i style="--h: 1"></i></div>
+            <div class="md-ch-stats"><div><b>2,140</b> families reached</div><div><b>41 days</b> from gift to delivery</div><div><b>100%</b> of zakat to eligible people</div></div>
+            <div style="font-size: 12px; color: #6B7686; margin-top: 6px">example numbers</div></div>
+          <div class="md-pipe md-pp3"><i></i></div>
+          <div class="md-node md-n-out"><div class="md-node-lab">PROOF YOU CAN SEE</div><div class="md-out-ic"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><div style="font-size: 13px; color: #3B4657; text-align: center; line-height: 1.4">photos, dates<br>and a receipt</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="donate" class="md-grid" style="position: relative; padding: 120px 24px" data-note="Thirty seconds. I timed it.">
+    <div class="md-give-in" style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: 56px; align-items: center">
+      <div id="rv-give" data-rv>
+        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 04 · GIVE</div>
+        <h2 class="md-h2" style="margin: 14px 0 0 0">Choose a cause.<br>Give in <span class="md-acc">thirty seconds.</span></h2>
+        <p class="md-lead" style="margin: 20px 0 0 0; max-width: 500px">Pick what moves you, choose an amount in your own currency and pay with Apple Pay, Google Pay or card. No account needed.</p>
+        <div style="margin-top: 26px; display: grid; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0B1424"><span class="md-tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Verified charities, registration checked</div><div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0B1424"><span class="md-tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Zakat rated by a scholars’ board</div><div style="display: flex; gap: 12px; align-items: center; font-size: 16px; color: #0B1424"><span class="md-tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span>Money-back Giving Guarantee</div>
+        </div>
+        <div style="margin-top: 30px"><span class="md-hand" style="font-size: 28px; color: #3B4657">“The receipt landed before I put my phone down.”</span><div style="font-size: 13px; color: #6B7686; margin-top: 4px">Aisha R., monthly donor since 2024</div></div>
+      </div>
+      <div id="rv-box" data-rv style="background: #FFFFFF; border: 1px solid #E3EAEE; border-radius: 28px; padding: 28px; box-shadow: 0 40px 80px -40px rgba(11,20,36,0.28), 0 2px 0 0 rgba(255,255,255,1) inset; position: relative">
         <div class="md-shine" style="position: absolute; left: 28px; right: 28px; top: -1px; height: 3px; border-radius: 3px"></div>
         <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px">
           <h2 style="margin: 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: 22px; letter-spacing: -0.4px">Quick donate</h2>
@@ -805,45 +911,48 @@ a{color:#037A72}a:hover{color:#025A54}
       </div>
     </div>
   </section>
-  <div style="border-top: 1px solid #EEF2F4; border-bottom: 1px solid #EEF2F4; background: #FBFCFD; overflow: hidden" aria-label="Why donors trust Madinah">
-    <div class="md-marquee" style="display: flex; width: max-content; gap: 48px; padding: 18px 0; font-family: Poppins, sans-serif; font-weight: 600; font-size: 17px; color: #2A3446; white-space: nowrap">
-      <template data-for="{{marquee}}" data-as="m">
-        <div style="display: flex; gap: 48px; align-items: center"><span>{{m}}</span><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.6 6.4L21 11l-6.4 2.6L12 20l-2.6-6.4L3 11l6.4-2.6z" fill="#23BCF6"></path></svg></div>
-      </template>
-    </div>
-  </div>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 16px">
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #5A60E8; line-height: 1"><span class="md-count md-countv" style="--n: 2"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">campaigns hosted</div></div>
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #1A8FC2; line-height: 1">$<span class="md-count md-countv" style="--n: 4"></span>M+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">raised for good causes</div></div>
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #037A72; line-height: 1"><span class="md-count md-countv" style="--n: 40"></span>K+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">donors worldwide</div></div>
-      <div class="md-reveal" style="padding: 24px; border-radius: 22px; background: #F6F9FA"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 52px; letter-spacing: -2px; color: #017A5B; line-height: 1"><span class="md-count md-countv" style="--n: 35"></span>+</div><div style="margin-top: 8px; font-size: 15px; color: #3B4657">countries reached</div></div>
+  <section id="ch5" data-pin class="md-pin" data-note="Every gift has a life. We follow it to the finish.">
+    <div class="md-stick">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 05 · THE LIFE OF A DONATION</div><h2 class="md-h2" style="margin: 14px 0 0 0">From a tap to a <span class="md-acc">thank-you.</span></h2></div>
+      <div class="md-hwrap"><div class="md-htrack"><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">01</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Choose</h3><p><b class="md-acc">heart:</b> Pick the cause that moves you, from Gaza to your local masjid.</p><p><b style="color: #037A72">proof:</b> Every campaign shows its charity’s registration and zakat rating.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">02</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Give</h3><p><b class="md-acc">heart:</b> Once or monthly, in your own currency, in thirty seconds.</p><p><b style="color: #037A72">proof:</b> 0% platform fee. Card costs shown before you pay.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">03</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Verify</h3><p><b class="md-acc">heart:</b> Your zakat only goes where scholars say it can.</p><p><b style="color: #037A72">proof:</b> Funds follow a published policy until the charity confirms delivery.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">04</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Deliver</h3><p><b class="md-acc">heart:</b> Teams on the ground deliver food, water, shelter and care.</p><p><b style="color: #037A72">proof:</b> Photos, video and dates come back from the field.</p></article><article class="md-stage"><div style="display: flex; justify-content: space-between; align-items: center"><span class="md-stage-n">05</span><span style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">STAGE</span></div>
+  <h3>Report</h3><p><b class="md-acc">heart:</b> You see the faces and places your gift reached.</p><p><b style="color: #037A72">proof:</b> A receipt for your records and a yearly giving summary.</p></article><div class="md-stage md-stage-end"><div><span class="md-hand" style="font-size: 30px">…and then it starts again, next month.</span></div><a href="#donate" class="md-btn md-cta" style="margin-top: 18px; align-self: flex-start">Start a gift</a></div></div></div>
+      <div class="md-hbar"><i></i></div>
     </div>
   </section>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
-      <div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">GIVE BY CAUSE</div>
-        <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Choose what moves you.</h2>
+  <section id="ch6" data-pin class="md-pin md-grid" data-note="Four moments. Each one has a feeling and a receipt.">
+    <div class="md-stick">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 0 24px; width: 100%; display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+        <div><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 06 · INSIDE THE MADINAH APP</div><h2 class="md-h2" style="margin: 14px 0 0 0">Four taps from <span class="md-acc">feeling</span> to <span class="md-acc">proof.</span></h2></div>
+        <ol class="md-pills"><li class="md-pl md-pl1">DISCOVER</li><li class="md-pl md-pl2">GIVE</li><li class="md-pl md-pl3">RECEIPT</li><li class="md-pl md-pl4">UPDATE</li></ol>
       </div>
-      <a href="discover.html" style="font-weight: 600; font-size: 15px; text-decoration: none">See all causes →</a>
+      <div class="md-phone-stage">
+        <div class="md-side md-side-l"><div class="md-sl md-sl1"><span class="md-hand" style="font-size: 30px">A face, a place and a deadline. Every story is checked before it goes live.</span></div><div class="md-sl md-sl2"><span class="md-hand" style="font-size: 30px">Thirty seconds, one tap. Apple Pay, Google Pay or card.</span></div><div class="md-sl md-sl3"><span class="md-hand" style="font-size: 30px">A receipt you can trust, the second you give.</span></div><div class="md-sl md-sl4"><span class="md-hand" style="font-size: 30px">Then the part most sites skip: proof it arrived.</span></div></div><div class="md-phone"><div class="md-notch"></div><div class="md-scr md-scr1"><div class="md-scr-ph"><img src="food-parcel.jpg" alt="A grandmother and children with an emergency food parcel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">VERIFIED · ZAKAT-ELIGIBLE</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter warmth for displaced families</div><div class="md-scr-bar"><i style="width: 69%"></i></div><div style="font-size: 12px; color: #4A5568; margin-top: 6px">$48,500 raised · 69%</div><div class="md-scr-btn">Donate</div></div></div><div class="md-scr md-scr2"><div style="padding: 18px 14px"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 17px">Choose an amount</div><div class="md-scr-amts"><span>$25</span><span class="on">$100</span><span>$250</span><span>$500</span></div><div class="md-scr-tog"><span class="on">Once</span><span>Monthly</span></div><div style="font-size: 12px; color: #4A5568; margin-top: 12px">A winter kit for one family</div><div class="md-scr-btn" style="background: #000000"> Pay $100</div><div class="md-scr-btn" style="background: #FFFFFF; color: #0B1424; border: 1.5px solid #D5DEE3">Google Pay</div></div></div><div class="md-scr md-scr3"><div style="padding: 34px 14px 14px; text-align: center"><div class="md-scr-ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; margin-top: 14px">Gift received</div><div style="font-size: 13px; color: #4A5568; margin-top: 4px">$100 to Hope Bridge Relief</div><div style="margin-top: 16px; background: #F6F9FA; border: 1px solid #E3EAEE; border-radius: 12px; padding: 10px; font-size: 12px; text-align: start; line-height: 1.6">Receipt <b>HBR-2026-004811</b><br>Zakat · 19 Nov 2026<br>Saved to your portal</div></div></div><div class="md-scr md-scr4"><div class="md-scr-ph" style="height: 190px"><img src="meals-girls.jpg" alt="Girls sharing a hot meal at a community food distribution" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">UPDATE · 2 DAYS AGO</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter kits delivered to 120 families</div><div style="font-size: 12px; color: #4A5568; margin-top: 6px; line-height: 1.5">Your gift was part of this distribution. Photos taken on the day.</div></div></div></div><div class="md-side md-side-r"><div class="md-sr md-sr1"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">Verified</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= registration + scholar review</div></div><div class="md-sr md-sr2"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">0% fee</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= you choose to cover card costs</div></div><div class="md-sr md-sr3"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">Receipt</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= emailed and saved in your portal</div></div><div class="md-sr md-sr4"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 2px; color: #6B7686">PROOF</div><div class="md-sr-big">Delivered</div><div style="font-size: 14px; color: #4A5568; margin-top: 6px">= photos + date + families reached</div></div></div>
+      </div>
+      <div class="md-phone-static"><div class="md-mini"><div class="md-mini-lab">DISCOVER</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div class="md-scr-ph"><img src="food-parcel.jpg" alt="A grandmother and children with an emergency food parcel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 35%; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">VERIFIED · ZAKAT-ELIGIBLE</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter warmth for displaced families</div><div class="md-scr-bar"><i style="width: 69%"></i></div><div style="font-size: 12px; color: #4A5568; margin-top: 6px">$48,500 raised · 69%</div><div class="md-scr-btn">Donate</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">A face, a place and a deadline. Every story is checked before it goes live.</span></div></div><div class="md-mini"><div class="md-mini-lab">GIVE</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div style="padding: 18px 14px"><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 17px">Choose an amount</div><div class="md-scr-amts"><span>$25</span><span class="on">$100</span><span>$250</span><span>$500</span></div><div class="md-scr-tog"><span class="on">Once</span><span>Monthly</span></div><div style="font-size: 12px; color: #4A5568; margin-top: 12px">A winter kit for one family</div><div class="md-scr-btn" style="background: #000000"> Pay $100</div><div class="md-scr-btn" style="background: #FFFFFF; color: #0B1424; border: 1.5px solid #D5DEE3">Google Pay</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">Thirty seconds, one tap. Apple Pay, Google Pay or card.</span></div></div><div class="md-mini"><div class="md-mini-lab">RECEIPT</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div style="padding: 34px 14px 14px; text-align: center"><div class="md-scr-ok"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 18px; margin-top: 14px">Gift received</div><div style="font-size: 13px; color: #4A5568; margin-top: 4px">$100 to Hope Bridge Relief</div><div style="margin-top: 16px; background: #F6F9FA; border: 1px solid #E3EAEE; border-radius: 12px; padding: 10px; font-size: 12px; text-align: start; line-height: 1.6">Receipt <b>HBR-2026-004811</b><br>Zakat · 19 Nov 2026<br>Saved to your portal</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">A receipt you can trust, the second you give.</span></div></div><div class="md-mini"><div class="md-mini-lab">UPDATE</div><div class="md-phone md-phone-sm"><div class="md-notch"></div><div class="md-scr" style="opacity: 1; transform: none"><div class="md-scr-ph" style="height: 190px"><img src="meals-girls.jpg" alt="Girls sharing a hot meal at a community food distribution" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block"></div><div style="padding: 14px"><div style="font-size: 11px; color: #037A72; font-weight: 700; letter-spacing: 1px">UPDATE · 2 DAYS AGO</div><div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 16px; margin-top: 6px; line-height: 1.25">Winter kits delivered to 120 families</div><div style="font-size: 12px; color: #4A5568; margin-top: 6px; line-height: 1.5">Your gift was part of this distribution. Photos taken on the day.</div></div></div></div><div style="margin-top: 14px"><span class="md-hand" style="font-size: 22px">Then the part most sites skip: proof it arrived.</span></div></div></div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 14px; margin-top: 30px">
-      <template data-for="{{causeCards}}" data-as="k">
-        <a href="discover.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 14px; padding: 22px 20px; border: 1px solid #E3EAEE; border-radius: 22px; background: #FFFFFF; text-decoration: none; color: #0B1424; min-height: 168px">
-          <div style="width: 48px; height: 48px; border-radius: 14px; background: {{k.tint}}; display: flex; align-items: center; justify-content: center">
-            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="{{k.ink}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{{k.icon}}"></path></svg>
-          </div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 18px">{{k.label}}</div>
-          <div style="font-size: 14px; color: #3B4657; line-height: 1.45">{{k.desc}}</div>
-        </a>
-      </template>
+  </section>
+  <section id="nums" style="padding: 130px 24px 90px; position: relative" data-note="Real counts only. We don't make these up.">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 07 · THE NUMBERS</div>
+      <div class="md-nums">
+        <div id="rv-n1" data-rv><div class="md-big md-acc">$<span data-count="4">4</span>M+</div><div class="md-big-cap">raised for good causes, through verified charities.</div></div>
+        <div id="rv-n2" data-rv><div class="md-big">0<span style="font-size: .55em">%</span></div><div class="md-big-cap">platform fee. Card costs are shown, and you can cover them.</div></div>
+      </div>
+      <div class="md-nums2">
+        <div id="rv-n3" data-rv><div class="md-mid"><span data-count="40">40</span>K+</div><div class="md-big-cap">donors worldwide</div></div>
+        <div id="rv-n4" data-rv><div class="md-mid"><span data-count="2">2</span>K+</div><div class="md-big-cap">campaigns hosted</div></div>
+        <div id="rv-n5" data-rv><div class="md-mid"><span data-count="35">35</span>+</div><div class="md-big-cap">countries reached</div></div>
+      </div>
     </div>
   </section>
   <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
     <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
       <div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">FEATURED NOW</div>
+        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">CHAPTER 08 · FEATURED NOW</div>
         <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Appeals that need you this week.</h2>
       </div>
       <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1px; color: #4A5568; border: 1px dashed #C9D4DA; padding: 6px 10px; border-radius: 999px">UPDATED DAILY</div>
@@ -869,6 +978,15 @@ a{color:#037A72}a:hover{color:#025A54}
           </div>
         </a>
       </template>
+    </div>
+  </section>
+  <section id="ways" style="padding: 110px 24px 40px" data-note="Pick one. Or let us pick the most urgent.">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
+        <div><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 09 · WAYS TO GIVE</div><h2 class="md-h2" style="margin: 14px 0 0 0">Six causes. <span class="md-acc">One promise.</span></h2></div>
+        <a href="discover.html" class="md-pill-link">All causes →</a>
+      </div>
+      <div class="md-rows"><a href="discover.html" class="md-row" id="rv-w0" data-rv><span class="md-row-n">01</span><span class="md-row-t">Most needed</span><span class="md-row-d">Sent to the most urgent verified appeals. Where it went is published each month.</span><span class="md-row-tag">SADAQAH + ZAKAT</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w1" data-rv><span class="md-row-n">02</span><span class="md-row-t">Zakat</span><span class="md-row-d">Only to campaigns our scholars’ board has rated zakat-eligible.</span><span class="md-row-tag">ZAKAT-ELIGIBLE</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w2" data-rv><span class="md-row-n">03</span><span class="md-row-t">Gaza</span><span class="md-row-d">Food, water, shelter and medical aid through verified partners.</span><span class="md-row-tag">SADAQAH + ZAKAT</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w3" data-rv><span class="md-row-n">04</span><span class="md-row-t">Orphans</span><span class="md-row-d">Monthly sponsorship that covers food, school and care.</span><span class="md-row-tag">MONTHLY</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w4" data-rv><span class="md-row-n">05</span><span class="md-row-t">Water</span><span class="md-row-d">Wells, pumps and filters that last for years.</span><span class="md-row-tag">SADAQAH JARIYAH</span><span class="md-row-ar" aria-hidden="true">→</span></a><a href="discover.html" class="md-row" id="rv-w5" data-rv><span class="md-row-n">06</span><span class="md-row-t">Masjids</span><span class="md-row-d">Build, repair and run masjids and community centres.</span><span class="md-row-tag">SADAQAH JARIYAH</span><span class="md-row-ar" aria-hidden="true">→</span></a></div>
     </div>
   </section>
   <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
@@ -953,48 +1071,10 @@ a{color:#037A72}a:hover{color:#025A54}
     </div>
     <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; color: #4A5568; margin-top: 12px">RATINGS SHOW THE REVIEWER AND DATE ON EACH PROFILE.</div>
   </section>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-reveal" style="text-align: center; max-width: 720px; margin: 0 auto">
-      <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">WHY GIVE THROUGH MADINAH</div>
-      <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Every gift is checked, tracked and protected.</h2>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin-top: 36px">
-      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; color: #5A60E8">01</div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">Checked before it goes live</div>
-        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">We verify each charity’s registration, and our scholars’ board rates how it handles zakat.</p>
-      </div>
-      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #F6F9FA">
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; color: #1A8FC2">02</div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">Updates you can see</div>
-        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #3B4657">Photo and video updates from the ground, straight to your inbox or the Madinah app.</p>
-      </div>
-      <div class="md-reveal" style="border-radius: 24px; padding: 28px; background: #0B1424; color: #FFFFFF; position: relative; overflow: hidden">
-        <div class="md-shine" style="position: absolute; left: 0; right: 0; top: 0; height: 4px"></div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 13px; color: #7FD9F9">03</div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; margin-top: 12px">The Madinah Giving Guarantee</div>
-        <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #D5DDE8">If a campaign is proven fraudulent, we refund your donation. No small print games.</p>
-        <a href="trust.html" style="display: inline-block; margin-top: 14px; color: #7FD9F9; font-weight: 600; text-decoration: none">How the guarantee works →</a>
-      </div>
-    </div>
-  </section>
-  <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 24px">
-    <div class="md-reveal" style="display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap">
-      <div>
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 2px; color: #037A72">MADINAH LEARN</div>
-        <h2 style="margin: 10px 0 0; font-family: Poppins, sans-serif; font-weight: 700; font-size: clamp(30px, 3.4vw, 44px); letter-spacing: -1.2px; line-height: 1.1">Your giving questions, answered.</h2>
-      </div>
-      <a href="learn.html" style="font-weight: 600; font-size: 15px; text-decoration: none">All answers →</a>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; margin-top: 30px">
-      <template data-for="{{articles}}" data-as="r">
-        <a href="learn.html" class="md-lift md-reveal" style="display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid #E3EAEE; border-radius: 22px; text-decoration: none; color: #0B1424; background: #FFFFFF; min-height: 210px">
-          <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 11px; letter-spacing: 1.5px; color: #037A72">{{r.tag}}</div>
-          <div style="font-family: Poppins, sans-serif; font-weight: 700; font-size: 21px; line-height: 1.25; letter-spacing: -0.3px">{{r.q}}</div>
-          <div style="font-size: 15px; line-height: 1.55; color: #3B4657">{{r.a}}</div>
-          <div style="margin-top: auto; font-size: 13px; color: #4A5568">Reviewed by Shaykh Hamza Idris · 2 min read</div>
-        </a>
-      </template>
+  <section id="faq" style="padding: 110px 24px" data-note="Ask anything. Nothing here is small print.">
+    <div class="md-faq-in" style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 48px; align-items: start">
+      <div style="position: sticky; top: 110px"><div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">BEFORE YOU GIVE</div><h2 class="md-h2" style="margin: 14px 0 0 0">Questions donors <span class="md-acc">ask first.</span></h2><p class="md-lead" style="margin: 18px 0 0 0">Still unsure? <a href="faq.html" style="font-weight: 600">Read the full help centre</a> or <a href="learn.html" style="font-weight: 600">ask our scholars</a>.</p></div>
+      <div class="md-faq"><details class="md-q"><summary><span>Who are the charities on Madinah?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Registered charities whose registration we check before any campaign goes live. Each profile shows its registration number, country and team.</p></details><details class="md-q"><summary><span>Does Madinah take a cut?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>No platform fee. Card processing (about 3%) is deducted unless you choose to cover it, and you see it before you pay.</p></details><details class="md-q"><summary><span>How do I know my zakat is handled correctly?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Only campaigns our scholars’ board rates zakat-eligible can accept zakat. Each rating shows who reviewed it and when.</p></details><details class="md-q"><summary><span>Can I give my zakat to Gaza?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Yes, to campaigns that reach eligible recipients. Look for the zakat-eligible badge.</p></details><details class="md-q"><summary><span>Will I get a receipt?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Yes. Instantly by email and in your donor portal, plus a yearly giving summary you can download.</p></details><details class="md-q"><summary><span>What if a campaign turns out to be fake?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>The Madinah Giving Guarantee: if a campaign is proven fake, your gift is refunded.</p></details><details class="md-q"><summary><span>Can I give monthly, and cancel later?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Yes. Choose monthly when you give, then pause or cancel any time from your donor portal.</p></details><details class="md-q"><summary><span>Is zakat due on crypto?</span><span class="md-q-i" aria-hidden="true">+</span></summary><p>Most scholars treat crypto held as savings or for trade as zakatable wealth. Our Learn guide explains how to value it.</p></details></div>
     </div>
   </section>
   <section style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 96px">
@@ -1032,6 +1112,16 @@ a{color:#037A72}a:hover{color:#025A54}
       </div>
     </div>
   </section>
+  
+  <section id="end" class="md-grid" style="padding: 150px 24px 160px; text-align: center; position: relative; overflow: hidden" data-note="Go on. I'll wave when the receipt lands.">
+    <div class="md-end-glow" aria-hidden="true"></div>
+    <div style="position: relative; max-width: 980px; margin: 0 auto">
+      <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 3px; color: #037A72">CHAPTER 10 · YOUR GIFT NEXT</div>
+      <h2 class="md-h1" style="margin: 18px 0 0 0">Give once.<br><span class="md-acc">Watch it arrive.</span></h2>
+      <p class="md-lead" style="margin: 22px auto 0; max-width: 620px">Verified charities, scholar-reviewed zakat and proof when your gift lands. 0% platform fee, every time.</p>
+      <div style="margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap"><a href="#donate" class="md-btn md-cta md-cta-lg">Give now</a><a href="discover.html" class="md-btn md-ghost">See all campaigns</a></div>
+    </div>
+  </section>
   <footer style="background: #F6F9FA; border-top: 1px solid #E3EAEE">
     <div style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); gap: 32px">
       <div style="display: flex; flex-direction: column; gap: 12px">
@@ -1048,8 +1138,102 @@ a{color:#037A72}a:hover{color:#025A54}
       <div style="display: flex; gap: 16px"><a href="#" style="color: #4A5568">Privacy</a><a href="#" style="color: #4A5568">Terms</a><a href="#" style="color: #4A5568">Cookies</a></div>
     </div>
   </footer>
+  <div class="md-guide" aria-hidden="true">
+    <div class="md-bubble"><span class="md-hand md-note" style="font-size: 21px">Hi! Scroll and watch your gift find its way.</span></div>
+    <svg class="md-lantern" width="62" height="96" viewBox="0 0 62 96"><defs><linearGradient id="mdLg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7077FB"/><stop offset=".6" stop-color="#23BCF6"/><stop offset="1" stop-color="#07A8A3"/></linearGradient><radialGradient id="mdGl" cx=".5" cy=".55" r=".5"><stop offset="0" stop-color="#FFE9A8"/><stop offset="1" stop-color="#FFE9A8" stop-opacity="0"/></radialGradient></defs>
+      <path d="M31 2v10" stroke="#0B1424" stroke-width="2.5" stroke-linecap="round"/><path d="M23 12h16l-3 7H26z" fill="#0B1424"/>
+      <circle cx="31" cy="50" r="30" fill="url(#mdGl)" class="md-glowc"/>
+      <path d="M18 22 Q31 16 44 22 L48 70 Q31 78 14 70z" fill="url(#mdLg)"/><path d="M22 26 Q31 22 40 26 L43 66 Q31 71 19 66z" fill="#FFFFFF" opacity=".88"/>
+      <circle cx="26" cy="44" r="3" fill="#0B1424" class="md-eye"/><circle cx="36" cy="44" r="3" fill="#0B1424" class="md-eye"/><path d="M26 53 Q31 58 36 53" stroke="#0B1424" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <path d="M17 76h28l-4 9H21z" fill="#0B1424"/><path d="M31 85v8" stroke="#0B1424" stroke-width="2.5" stroke-linecap="round"/></svg>
+  </div>
 </div></template>
-<script type="text/x-dc-logic" id="dc-logic" data-props='{"animate":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":6155}}'>
+<script type="text/x-dc-logic" id="dc-logic" data-props='{"animate":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":11800}}'>
+(function () {
+  if (typeof window === 'undefined' || window.__mdHome) return; window.__mdHome = true;
+  var de = document.documentElement; de.classList.add('md-js');
+  var sty = document.createElement('style'); document.head.appendChild(sty);
+  var shown = document.createElement('style'); document.head.appendChild(shown);
+  var mst = document.createElement('style'); document.head.appendChild(mst);
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rtl = (document.dir || de.getAttribute('dir') || '') === 'rtl' || !!document.querySelector('.md-home[dir="rtl"], [dir="rtl"] .md-home');
+  var seen = {}, counted = {}, lastNote = '', heroM = 0, t0 = performance.now();
+  function scrolly() { return !reduce && innerWidth >= 900 && innerHeight >= 560 && innerHeight <= 1500; }
+  function prog(s) { var r = s.getBoundingClientRect(), span = s.offsetHeight - innerHeight; return Math.min(1, Math.max(0, -r.top / Math.max(1, span))); }
+  function countUp(el) {
+    var to = parseFloat(el.getAttribute('data-count')), st = performance.now();
+    (function f(now) { var k = Math.min(1, (now - st) / 1600); k = 1 - Math.pow(1 - k, 3); el.textContent = String(Math.round(to * k)); if (k < 1) requestAnimationFrame(f); })(st);
+  }
+  function frame() {
+    var on = scrolly(); de.classList.toggle('md-scrolly', on); de.classList.add('md-js'); de.classList.toggle('md-scrolled', scrollY > 260);
+    var css = '.md-home{--dx:' + (rtl ? -1 : 1) + '}';
+    if (on) {
+      document.querySelectorAll('.md-home [data-pin]').forEach(function (s) {
+        var p = prog(s); css += '#' + s.id + '{--p:' + p.toFixed(4) + '}';
+        if (s.id === 'hero') heroM = p;
+        if (s.id === 'ch3') s.setAttribute('data-s', p < .2 ? 1 : p < .55 ? 2 : p < .85 ? 3 : 4);
+        if (s.id === 'ch6') s.setAttribute('data-s', Math.min(4, 1 + Math.floor(p * 4)));
+        if (s.id === 'ch5') { var tr = s.querySelector('.md-htrack'); if (tr) css += '#ch5{--tw:' + Math.max(0, tr.scrollWidth - innerWidth) + 'px}'; }
+      });
+    }
+    sty.textContent = css;
+    // reveal + counters + guide note
+    var add = '', mid = innerHeight * 0.55, note = '';
+    document.querySelectorAll('.md-home [data-rv]').forEach(function (el) {
+      if (!seen[el.id] && el.getBoundingClientRect().top < innerHeight * 0.9) seen[el.id] = 1;
+    });
+    for (var k in seen) add += '#' + k + '{opacity:1!important;transform:none!important}';
+    if (shown.textContent !== add) shown.textContent = add;
+    document.querySelectorAll('.md-home [data-count]').forEach(function (el, i) {
+      var key = 'c' + i; if (!counted[key] && el.getBoundingClientRect().top < innerHeight * 0.85) { counted[key] = 1; countUp(el); }
+    });
+    document.querySelectorAll('.md-home [data-note]').forEach(function (s) { var r = s.getBoundingClientRect(); if (r.top < mid && r.bottom > mid) note = s.getAttribute('data-note'); });
+    var nEl = document.querySelector('.md-note'), b = document.querySelector('.md-bubble');
+    if (nEl && note && note !== lastNote) {
+      lastNote = note; if (b) b.classList.add('md-swap');
+      setTimeout(function () { var n2 = document.querySelector('.md-note'); if (n2) n2.textContent = lastNote; var b2 = document.querySelector('.md-bubble'); if (b2) b2.classList.remove('md-swap'); }, 220);
+    }
+    requestAnimationFrame(frame);
+  }
+  // ---- particle hero: a heart that becomes rising bars ----
+  var P = [], N = 1500, cv, ctx, W = 640, H = 560;
+  function heartPts(n) { var a = []; while (a.length < n) { var x = Math.random() * 2.4 - 1.2, y = Math.random() * 2.4 - 1.3; var q = x * x + y * y - 1; if (q * q * q - x * x * y * y * y <= 0) a.push([W / 2 + x * 215, H / 2 - 14 - y * 200]); } return a; }
+  function barPts(n) { var a = [], bars = [.32, .46, .4, .62, .78, 1], bw = 58, gap = 22, x0 = (W - (bars.length * bw + (bars.length - 1) * gap)) / 2, base = H - 70;
+    var tot = bars.reduce(function (s, h) { return s + h; }, 0);
+    bars.forEach(function (h, i) { var c = Math.round(n * h / tot); for (var j = 0; j < c; j++) a.push([x0 + i * (bw + gap) + Math.random() * bw, base - Math.random() * h * 380]); });
+    while (a.length < n) a.push(a[a.length - 1]); return a.slice(0, n); }
+  function col(x) { var t = Math.max(0, Math.min(1, x / W)), A = [[112, 119, 251], [35, 188, 246], [7, 168, 163], [1, 150, 111]], s = t * 3, i = Math.min(2, Math.floor(s)), f = s - i;
+    return 'rgb(' + A[i].map(function (c, k) { return Math.round(c + (A[i + 1][k] - c) * f); }).join(',') + ')'; }
+  function initParticles() {
+    cv = document.getElementById('md-particles'); if (!cv || !cv.getContext) return false;
+    var dpr = Math.min(2, window.devicePixelRatio || 1); cv.width = W * dpr; cv.height = H * dpr; ctx = cv.getContext('2d'); ctx.scale(dpr, dpr);
+    var h = heartPts(N), b = barPts(N).sort(function (p, q) { return p[0] - q[0]; }); h.sort(function (p, q) { return p[0] - q[0]; });
+    for (var i = 0; i < N; i++) P.push({ a: h[i], b: b[i], x: W / 2 + (Math.random() - .5) * 900, y: H / 2 + (Math.random() - .5) * 900, r: 1.4 + Math.random() * 1.9, ph: Math.random() * 6.28 });
+    return true;
+  }
+  function draw(now) {
+    var c = document.getElementById('md-particles'); if (c && c !== cv) { cv = c; ctx = null; P = []; initParticles(); }
+    if (!ctx) { requestAnimationFrame(draw); return; }
+    var t = (now - t0) / 1000, m;
+    if (de.classList.contains('md-scrolly')) m = Math.min(1, Math.max(0, (heroM - .12) / .6));
+    else m = reduce ? 0 : (Math.sin(t * 0.55 - 1.6) + 1) / 2;
+    m = m * m * (3 - 2 * m);
+    mst.textContent = '#hero{--m:' + m.toFixed(3) + '}';
+    ctx.clearRect(0, 0, W, H);
+    for (var i = 0; i < P.length; i++) {
+      var q = P[i], tx = q.a[0] + (q.b[0] - q.a[0]) * m, ty = q.a[1] + (q.b[1] - q.a[1]) * m;
+      tx += Math.sin(t * 1.3 + q.ph) * 2.2 * (1 - m * .6); ty += Math.cos(t * 1.1 + q.ph) * 2.2 * (1 - m * .6);
+      if (m < .5) { var pulse = 1 + Math.sin(t * 2.4) * .025 * (1 - m * 2); tx = W / 2 + (tx - W / 2) * pulse; ty = (H / 2 - 14) + (ty - (H / 2 - 14)) * pulse; }
+      q.x += (tx - q.x) * .085; q.y += (ty - q.y) * .085;
+      ctx.globalAlpha = .55 + .45 * Math.sin(q.ph + t * 1.7) * .5 + .2;
+      ctx.fillStyle = col(q.x); ctx.beginPath(); ctx.arc(q.x, q.y, q.r, 0, 6.2832); ctx.fill();
+    }
+    ctx.globalAlpha = 1; requestAnimationFrame(draw);
+  }
+  function start() { requestAnimationFrame(frame); if (initParticles()) requestAnimationFrame(draw); else { var tries = 0, iv = setInterval(function () { if (initParticles() || ++tries > 40) { clearInterval(iv); if (ctx) requestAnimationFrame(draw); } }, 150); } }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
+})();
+
 class Component extends DCLogic {
   constructor(props) {
     super(props);
